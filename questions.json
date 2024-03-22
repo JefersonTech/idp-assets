@@ -255,7 +255,7 @@
           { "id": "4", "text": "Très négatif" }
         ],
         "requiredConfirmation": false,
-        "ageMin": 0,
+        "ageMin": 60,
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
@@ -275,7 +275,7 @@
           }
         ],
         "requiredConfirmation": false,
-        "ageMin": 0,
+        "ageMin": 60,
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
@@ -295,7 +295,7 @@
           }
         ],
         "requiredConfirmation": false,
-        "ageMin": 0,
+        "ageMin": 60,
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
@@ -334,7 +334,7 @@
           { "id": "2", "text": "Au travail" },
           { "id": "3", "text": "Lieu de formation (école, lycée, université)" },
           { "id": "4", "text": "Dans l'espace public" },
-          { "id": "5", "text": " Internet" },
+          { "id": "5", "text": "Internet" },
           { "id": "6", "text": "Evènement festifs (festivals, concerts, ...)" },
           {
             "id": "7",
@@ -354,7 +354,7 @@
         "options": [
           { "id": "1", "text": "en études ?" },
           { "id": "2", "text": "en emploi ?" },
-          { "id": "3", "text": " a la recherche d'un emploi ?" },
+          { "id": "3", "text": "a la recherche d'un emploi ?" },
           { "id": "4", "text": "en cumul étude-emploi ?" }
         ],
         "requiredConfirmation": false,
@@ -400,7 +400,7 @@
         "requiredConfirmation": false,
         "ageMin": 0,
         "ageMax": 100,
-        "gender": ["homme", "femme"]
+        "gender": ["femme"]
       },
       {
         "id": "27",
@@ -443,7 +443,7 @@
       },
       {
         "id": "30",
-        "question": "Avez vous un logement adapté à la préventiond des chutes (douche plutôt qu'une baignoire, barre de douche, revêtement anti-chutes, WC surelevées, ...) ?",
+        "question": "Avez vous un logement adapté à la prévention des chutes (douche plutôt qu'une baignoire, barre de douche, revêtement anti-chutes, WC surelevées, ...) ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -464,7 +464,7 @@
     "items": [
       {
         "id": "31",
-        "question": "Au cours des deux dernières semaines, Vous êtes-vous senti déprimé, ou sans espoir?",
+        "question": "Au cours des deux dernières semaines, Vous êtes-vous senti déprimé, ou sans espoir ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
