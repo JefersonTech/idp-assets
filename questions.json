@@ -251,7 +251,7 @@
         "options": [
           { "id": "1", "text": "Très positif" },
           { "id": "2", "text": "Plutôt positif" },
-          { "id": "3", "text": " Plutôt négatif" },
+          { "id": "3", "text": "Plutôt négatif" },
           { "id": "4", "text": "Très négatif" }
         ],
         "requiredConfirmation": false,
@@ -368,7 +368,7 @@
         "type": 2,
         "options": [
           { "id": "1", "text": "Oui, physiquement" },
-          { "id": "2", "text": "oui, psychologiquement" },
+          { "id": "2", "text": "Oui, psychologiquement" },
           { "id": "3", "text": "Non" }
         ],
         "requiredConfirmation": true,
