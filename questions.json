@@ -467,8 +467,8 @@
         "question": "Au cours des deux dernières semaines, Vous êtes-vous senti déprimé, ou sans espoir ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
+          { "id": "1", "text": "Oui","jump": "32" },
+          { "id": "2", "text": "Non","jump": "49" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
