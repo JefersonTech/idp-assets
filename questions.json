@@ -2166,7 +2166,7 @@
       },
       {
         "id": "118",
-        "question": "Trousse vous souvent (tous les jours) ?",
+        "question": "Toussez vous souvent (tous les jours) ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
