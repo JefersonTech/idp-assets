@@ -3123,10 +3123,10 @@
     ]
   },
   "test": {
-    "title": "test",
+    "title": "TESTS PHYSIQUES",
     "description": "",
     "endText": "",
-    "estimatedTime": "Tiempo estimado: 5m",
+    "estimatedTime": "Temps estimé : 25m",
     "items": [
       {
         "id": "182",
@@ -3155,8 +3155,7 @@
       },
 {
 "id": "208",
-        "question": "TEST DE VISION \nProcédure : Placez-vous à environ 50 cm devant l’écran\n• Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux\n• Couvrez votre oeil droit avec votre main droite\n• Fixez le point noir au milieu\n• Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l’oeil gauche"
-          ",
+        "question": "TEST DE VISION \nProcédure : Placez-vous à environ 50 cm devant l’écran\n• Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux\n• Couvrez votre oeil droit avec votre main droite\n• Fixez le point noir au milieu\n• Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l’oeil gauche",
         "type": 5,
         "options": [ ],
         "requiredConfirmation": true,
