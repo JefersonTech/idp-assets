@@ -1037,7 +1037,7 @@
       },
       {
         "id": "71",
-        "question": "Test de 3 mots :  Dire au sujet : Je vais vous dire trois mots. Je voudrais que vous les répétiez et que vous essayiez de les retenir car je vous les redemanderai tout à l’heure. DRAPEAU, FLEUR, PORTE. Puis dire au sujet : Répétez les 3 mots.",
+        "question": "Test de 3 mots  \nDire au sujet : Je vais vous dire trois mots. Je voudrais que vous les répétiez maintenant et que vous essayiez de les retenir car je vous les redemanderai tout à l’heure : DRAPEAU, FLEUR, PORTE.",
         "type": 8,
         "options": [
           { "id": "1", "text": "DRAPEAU" },
