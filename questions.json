@@ -94,7 +94,7 @@
       },
       {
         "id": "7",
-        "question": "Estimez votre état de santé au global",
+        "question": "Estimez votre état de santé au global : ",
         "type": 10,
         "options": [
           { "id": "1", "text": "Mauvais" },
@@ -761,7 +761,7 @@
       },
       {
         "id": "52",
-        "question": "A quel point vous êtes-vous senti triste ou heureux au cours du dernier mois ?  Indiquer/pointer sur l’échelle la valeur qui vous correspond le mieux  :",
+        "question": "A quel point vous êtes-vous senti triste ou heureux au cours du dernier mois ?  ",
         "type": 10,
         "options": [
           { "id": "1", "text": "Triste" },
@@ -774,7 +774,7 @@
       },
       {
         "id": "53",
-        "question": "A quel point vous êtes vous senti fatigué ou plein d'énergie au cours des 3 derniers mois  ? Indiquer/pointer sur l’échelle la valeur qui vous correspond le mieux  :",
+        "question": "A quel point vous êtes vous senti fatigué ou plein d'énergie au cours des 3 derniers mois  ? ",
         "type": 10,
         "options": [
           { "id": "1", "text": "Fatigué" },
@@ -1486,7 +1486,7 @@
       },
       {
         "id": "82",
-        "question": "Comment considérez-vous la qualité de votre audition (avec vos appareils auditifs, si besoin) au cours du dernier mois ? Indiquer/pointer sur l’échelle la valeur qui vous correspond le mieux (entre 0 et 100) :",
+        "question": "Comment considérez-vous la qualité de votre audition (avec vos appareils auditifs, si besoin) au cours du dernier mois ? ",
         "type": 10,
         "options": [
           { "id": "1", "text": "0" },
@@ -1546,7 +1546,7 @@
       },
       {
         "id": "86",
-        "question": "Comment considérez-vous la qualité de votre vue (avec vos lunettes si vous en avez) au cours du dernier mois ? Indiquer/pointer sur l’échelle la valeur qui vous correspond le mieux (entre 0 et 100) :",
+        "question": "Comment considérez-vous la qualité de votre vue (avec vos lunettes si vous en avez) au cours du dernier mois ? ",
         "type": 10,
         "options": [
           { "id": "1", "text": "0" },
@@ -1590,7 +1590,7 @@
       },
       {
         "id": "89",
-        "question": "Comment qualifiez-vous votre appétit au cours du dernier mois ? Indiquer/pointer sur l’échelle la valeur qui vous correspond le mieux :",
+        "question": "Comment qualifiez-vous votre appétit au cours du dernier mois ? ",
         "type": 10,
         "options": [
           { "id": "1", "text": "0" },
