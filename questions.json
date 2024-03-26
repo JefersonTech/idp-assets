@@ -3194,7 +3194,7 @@
           },
           {
             "id": "3",
-            "text": "Cercel trop grand",
+            "text": "Cercle trop grand",
             "picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/svgviewer-png-output3.png?raw=true"
           }
         ],
@@ -3202,202 +3202,8 @@
         "ageMax": null,
         "gender": ["homme", "femme"]
       },
-      {
-        "id": "183",
-        "question": "BIOIMPEDANCEMETRIE",
-        "type": 16,
-        "options": [],
-        "requiredConfirmation": true,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "184",
-        "question": "Test de lever de chaise  Demander au sujet de se lever d’une chaise 5 fois de suite, le plus vite possible, les bras croisés sur la poitrine. Lui laisser au moins 20 secondes.",
-        "type": 5,
-        "options": [],
-        "time": 20000,
-        "picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/chair_exercise.gif?raw=true",
-        "showStop": false,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "185",
-        "question": "Le sujet a-t-il réalisé les 5 levers de chaise?",
-        "type": 1,
-        "options": [
-          {
-            "id": "1",
-            "text": "Oui",
-            "jump": "96"
-          },
-          {
-            "id": "2",
-            "text": "Non",
-            "jump": "95"
-          }
-        ],
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "186",
-        "question": "Combien en a-t-il réalisé en 15 secondes ?",
-        "type": 12,
-        "options": [
-          {
-            "id": "1",
-            "text": "0",
-            "data": [
-              {
-                "id": "1",
-                "text": "0"
-              },
-              {
-                "id": "2",
-                "text": "1"
-              },
-              {
-                "id": "3",
-                "text": "2"
-              },
-              {
-                "id": "4",
-                "text": "3"
-              },
-              {
-                "id": "5",
-                "text": "4"
-              },
-              {
-                "id": "6",
-                "text": "5"
-              },
-              {
-                "id": "7",
-                "text": "6"
-              },
-              {
-                "id": "8",
-                "text": "7"
-              },
-              {
-                "id": "9",
-                "text": "8"
-              },
-              {
-                "id": "10",
-                "text": "9"
-              },
-              {
-                "id": "11",
-                "text": "10"
-              }
-            ]
-          }
-        ],
-        "requiredConfirmation": true,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "187",
-        "question": "Avez-vous fait le test en moins de 14 secondes (si le paticipant a moins de 80 ans) ou en moins de 16 secondes (si le participanta 80 ans ou plus) ?",
-        "type": 1,
-        "options": [
-          {
-            "id": "1",
-            "text": "Oui"
-          },
-          {
-            "id": "2",
-            "text": "Non"
-          }
-        ],
-        "requiredConfirmation": true,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "188",
-        "question": "Équilibre sur une jambe 60 secs",
-        "type": 5,
-        "options": [],
-        "time": 60000,
-        "picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/left_leg_exercise.gif?raw=true",
-        "showStop": true,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "199",
-        "question": "Équilibre sur l'autre jambe 60 secs",
-        "type": 5,
-        "options": [],
-        "time": 60000,
-        "picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/right_leg_exercise.gif?raw=true",
-        "showStop": true,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "200",
-        "question": "Force DYNAMOMETRE",
-        "type": 17,
-        "options": [],
-        "requiredConfirmation": true,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "201",
-        "question": "EQUILIBRE ROMBERG",
-        "type": 18,
-        "options": [],
-        "requiredConfirmation": true,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "202",
-        "question": "TUG",
-        "type": 19,
-        "options": [],
-        "requiredConfirmation": true,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "203",
-        "question": "MARCHE",
-        "type": 20,
-        "options": [],
-        "requiredConfirmation": true,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      }
-    ]
-  },
-  "visionTest": {
-    "title": "Vision Test",
-    "description": "Parlons de vous aujourd'hui",
-    "endText": "Félicitations, nous allons aborder vos conditions de vie.",
-    "estimatedTime": "Tiempo estimado: 5m",
-    "items": [
-      {
-        "id": "204",
+{
+"id": "204",
         "question": "Test de la vue",
         "type": 13,
         "options": [
@@ -3468,7 +3274,271 @@
         "ageMin": null,
         "ageMax": null,
         "gender": ["homme", "femme"]
+      },
+{
+"id": "208",
+        "question": "Test de la vue",
+        "type": 13,
+        "options": [
+          {
+            "id": "1",
+            "text": "Procédure :\n• Assurez-vous que rien ne se reflète sur votre écran\n• Placez-vous à environ 50 cm devant l’écran\n• Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux\n• Couvrez votre oeil droit avec votre main droite\n• Fixez le point noir au milieu\n• Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l’oeil gauche"
+          }
+        ],
+        "requiredConfirmation": true,
+"picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/visiontest.jpg?raw=true",
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "209",
+        "question": "Les lignes droites sont déformées ?",
+        "type": 22,
+        "options": [
+          {
+            "id": "1",
+            "text": "Oui"
+          },
+          {
+            "id": "2",
+            "text": "Non"
+          }
+        ],
+        
+        "requiredConfirmation": true,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "210",
+        "question": "Les lignes droites vous paraissent ternes ?",
+        "type": 1,
+        "options": [
+          {
+            "id": "1",
+            "text": "Oui"
+          },
+          {
+            "id": "2",
+            "text": "Non"
+          }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "211",
+        "question": "Vous voyez une ou plusieurs taches sombres au centre de la grille ?",
+        "type": 1,
+        "options": [
+          {
+            "id": "1",
+            "text": "Oui"
+          },
+          {
+            "id": "2",
+            "text": "Non"
+          }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+
+      {
+        "id": "212",
+        "question": "BIOIMPEDANCEMETRIE",
+        "type": 16,
+        "options": [],
+        "requiredConfirmation": true,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "213",
+        "question": "Test de lever de chaise  Demander au sujet de se lever d’une chaise 5 fois de suite, le plus vite possible, les bras croisés sur la poitrine. Lui laisser au moins 20 secondes.",
+        "type": 5,
+        "options": [],
+        "time": 20000,
+        "picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/chair_exercise.gif?raw=true",
+        "showStop": false,
+		"requiredConfirmation": true,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "214",
+        "question": "Le sujet a-t-il réalisé les 5 levers de chaise ?",
+        "type": 1,
+        "options": [
+          {
+            "id": "1",
+            "text": "Oui",
+            "jump": "96"
+          },
+          {
+            "id": "2",
+            "text": "Non",
+            "jump": "95"
+          }
+        ],
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "215",
+        "question": "Combien en a-t-il réalisé en 15 secondes ?",
+        "type": 12,
+        "options": [
+          {
+            "id": "1",
+            "text": "0",
+            "data": [
+              {
+                "id": "1",
+                "text": "0"
+              },
+              {
+                "id": "2",
+                "text": "1"
+              },
+              {
+                "id": "3",
+                "text": "2"
+              },
+              {
+                "id": "4",
+                "text": "3"
+              },
+              {
+                "id": "5",
+                "text": "4"
+              },
+              {
+                "id": "6",
+                "text": "5"
+              },
+              {
+                "id": "7",
+                "text": "6"
+              },
+              {
+                "id": "8",
+                "text": "7"
+              },
+              {
+                "id": "9",
+                "text": "8"
+              },
+              {
+                "id": "10",
+                "text": "9"
+              },
+              {
+                "id": "11",
+                "text": "10"
+              }
+            ]
+          }
+        ],
+        "requiredConfirmation": true,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "216",
+        "question": "Avez-vous fait le test en moins de 14 secondes (si le paticipant a moins de 80 ans) ou en moins de 16 secondes (si le participanta 80 ans ou plus) ?",
+        "type": 1,
+        "options": [
+          {
+            "id": "1",
+            "text": "Oui"
+          },
+          {
+            "id": "2",
+            "text": "Non"
+          }
+        ],
+        "requiredConfirmation": true,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "217",
+        "question": "Équilibre sur une jambe 60 secs",
+        "type": 5,
+        "options": [],
+        "time": 60000,
+        "picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/left_leg_exercise.gif?raw=true",
+        "showStop": true,
+		"requiredConfirmation": true,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "218",
+        "question": "Équilibre sur l'autre jambe 60 secs",
+        "type": 5,
+        "options": [],
+        "time": 60000,
+        "picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/right_leg_exercise.gif?raw=true",
+        "showStop": true,
+		"requiredConfirmation": true,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "219",
+        "question": "Force DYNAMOMETRE",
+        "type": 17,
+        "options": [],
+        "requiredConfirmation": true,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "220",
+        "question": "EQUILIBRE ROMBERG",
+        "type": 18,
+        "options": [],
+        "requiredConfirmation": true,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "221",
+        "question": "TUG",
+        "type": 19,
+        "options": [],
+        "requiredConfirmation": true,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "222",
+        "question": "MARCHE",
+        "type": 20,
+        "options": [],
+        "requiredConfirmation": true,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
       }
     ]
   }
-}
+ }
