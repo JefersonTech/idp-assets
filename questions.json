@@ -1396,7 +1396,7 @@
       },
       {
         "id": "76",
-        "question": "Lisez attentivement, Nous vous poserons une question sur ce texte ensuite.",
+        "question": "Lisez attentivement, nous vous poserons une question sur ce texte ensuite.",
         "type": 13,
         "options": [
           {
@@ -1419,7 +1419,7 @@
           { "id": "3", "text": "Marseille" },
           { "id": "4", "text": "Bordeaux" }
         ],
-        "requiredConfirmation": true,
+        "requiredConfirmation": false,
         "ageMin": 0,
         "ageMax": 100,
         "gender": ["homme", "femme"]
