@@ -345,7 +345,8 @@
         "requiredConfirmation": true,
         "ageMin": 0,
         "ageMax": 100,
-        "gender": ["homme", "femme"]
+        "gender": ["homme", "femme"],
+		"allowAppendOptions": true
       },
       {
         "id": "23",
@@ -1991,13 +1992,15 @@
           { "id": "1", "text": "Infection" },
           { "id": "2", "text": "Grippe" },
           { "id": "3", "text": "COVID" },
-          { "id": "4", "text": "Autre :" },
-          { "id": "5", "text": "Aucun de ces maladies" }
+				{ "id": "4", "text": "Aucun de ces maladies" },
+          { "id": "5", "text": "Autre :" }
+          
         ],
         "requiredConfirmation": true,
         "ageMin": 0,
         "ageMax": 100,
-        "gender": ["homme", "femme"]
+        "gender": ["homme", "femme"],
+"allowAppendOptions": true
       },
       {
         "id": "109",
@@ -2362,13 +2365,14 @@
           { "id": "1", "text": "Implant" },
           { "id": "2", "text": "Stérilet" },
           { "id": "3", "text": "Contraception d'urgence" },
-          { "id": "4", "text": " Préservatif seul" },
+          { "id": "4", "text": "Préservatif seul" },
           { "id": "5", "text": "autre : …" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
         "ageMax": 50,
-        "gender": ["femme"]
+        "gender": ["femme"],
+"allowAppendOptions": true
       },
       {
         "id": "133",
@@ -2570,7 +2574,7 @@
       {
         "id": "143",
         "question": "Lequels ? (Merci de préparer vos dernières ordonnances)",
-        "type": 14,
+        "type": 3,
         "options": [],
         "requiredConfirmation": true,
         "ageMin": 0,
@@ -2939,7 +2943,7 @@
       {
         "id": "169",
         "question": "Motif de l'arrêt ?",
-        "type": 14,
+        "type": 3,
         "options": [],
         "requiredConfirmation": true,
         "ageMin": 0,
@@ -3167,7 +3171,8 @@
         "requiredConfirmation": true,
         "ageMin": 0,
         "ageMax": 100,
-        "gender": ["homme", "femme"]
+        "gender": ["homme", "femme"],
+		"allowAppendOptions": true
       }
     ]
   },
@@ -3203,81 +3208,8 @@
         "gender": ["homme", "femme"]
       },
 {
-"id": "204",
-        "question": "Test de la vue",
-        "type": 13,
-        "options": [
-          {
-            "id": "1",
-            "text": "Procédure :\n• Assurez-vous que rien ne se reflète sur votre écran\n• Placez-vous à environ 50 cm devant l’écran\n• Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux\n• Couvrez votre oeil droit avec votre main droite\n• Fixez le point noir au milieu\n• Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l’oeil gauche"
-          }
-        ],
-        "requiredConfirmation": true,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "205",
-        "question": "Les lignes droites sont déformées ?",
-        "type": 22,
-        "options": [
-          {
-            "id": "1",
-            "text": "Oui"
-          },
-          {
-            "id": "2",
-            "text": "Non"
-          }
-        ],
-        "picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/visiontest.jpg?raw=true",
-        "requiredConfirmation": true,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "206",
-        "question": "Elles vous paraissent ternes ?",
-        "type": 1,
-        "options": [
-          {
-            "id": "1",
-            "text": "Oui"
-          },
-          {
-            "id": "2",
-            "text": "Non"
-          }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "207",
-        "question": "Vous voyez une ou plusieurs taches sombres au centre de la grille?",
-        "type": 1,
-        "options": [
-          {
-            "id": "1",
-            "text": "Oui"
-          },
-          {
-            "id": "2",
-            "text": "Non"
-          }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-{
 "id": "208",
-        "question": "Test de la vue",
+        "question": "TEST DE VISION",
         "type": 13,
         "options": [
           {
@@ -3475,7 +3407,7 @@
       },
       {
         "id": "217",
-        "question": "Équilibre sur une jambe 60 secs",
+        "question": "ÉQUILIBRE UNIPODAL (DROIT)",
         "type": 5,
         "options": [],
         "time": 60000,
@@ -3488,7 +3420,7 @@
       },
       {
         "id": "218",
-        "question": "Équilibre sur l'autre jambe 60 secs",
+        "question": "ÉQUILIBRE UNIPODAL (GAUCHE)",
         "type": 5,
         "options": [],
         "time": 60000,
@@ -3501,7 +3433,7 @@
       },
       {
         "id": "219",
-        "question": "Force DYNAMOMETRE",
+        "question": "TEST DE FORCE DE PRÉHENSION",
         "type": 17,
         "options": [],
         "requiredConfirmation": true,
@@ -3511,7 +3443,7 @@
       },
       {
         "id": "220",
-        "question": "EQUILIBRE ROMBERG",
+        "question": "TEST D'ÉQUILIBRE",
         "type": 18,
         "options": [],
         "requiredConfirmation": true,
