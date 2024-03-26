@@ -1645,8 +1645,8 @@
         "question": "Si oui : depuis plus de 2 semaines ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
+          { "id": "1", "text": "Oui" ,"jump":"95"},
+          { "id": "2", "text": "Non" ,"jump":"95"}
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -1811,13 +1811,14 @@
             "id": "29",
             "text": "UN OU PLUSIEURS ADÉNOMES AVANCÉS (POLYPE ADÉNOMATEUX)"
           },
-          { "id": "30", "text": "AUCUNE DE CES PATHOLOGIES" },
-          { "id": "31", "text": "" }
+          { "id": "30", "text": "AUCUNE DE CES PATHOLOGIES" }
+          
         ],
         "requiredConfirmation": true,
         "ageMin": 0,
         "ageMax": 100,
-        "gender": ["homme", "femme"]
+        "gender": ["homme", "femme"],
+"allowAppendOptions": true
       },
       {
         "id": "102",
@@ -1871,33 +1872,21 @@
             "id": "29",
             "text": "UN OU PLUSIEURS ADÉNOMES AVANCÉS (POLYPE ADÉNOMATEUX)"
           },
-          { "id": "30", "text": "AUCUNE DE CES PATHOLOGIES" },
-          { "id": "31", "text": "" }
+          { "id": "30", "text": "AUCUNE DE CES PATHOLOGIES" }
+     
         ],
         "requiredConfirmation": true,
         "ageMin": 0,
         "ageMax": 100,
-        "gender": ["homme", "femme"]
+        "gender": ["homme", "femme"],
+"allowAppendOptions": true
       },
       {
         "id": "103",
         "question": "Avez vous réalisé une ostéodensitométrie ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "104",
-        "question": "Pouvez vous préparer les résultats ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
+          { "id": "1", "text": "Oui (Pouvez vous préparer les résultats ?)" },
           { "id": "2", "text": "Non" }
         ],
         "requiredConfirmation": false,
@@ -1907,16 +1896,13 @@
       },
       {
         "id": "105",
-        "question": "À quand remonte votre dernière prise de sang et/ou analyse d'urine",
+        "question": "À quand remonte votre dernière prise de sang et/ou analyse d'urine ? (merci de les préparer si vous y avez)",
         "type": 1,
         "options": [
           { "id": "1", "text": "moins de 6 mois" },
           { "id": "2", "text": "plus de 6 mois " },
-          { "id": "3", "text": "jamais réalisée" },
-          {
-            "id": "4",
-            "text": " et on rajoute le commentaire : merci de les préparer si vous y avez"
-          }
+          { "id": "3", "text": "jamais réalisée" }
+          
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -1968,13 +1954,13 @@
           { "id": "12", "text": "DMLA" },
           { "id": "13", "text": " Maladie d'Alzheimer" },
           { "id": "14", "text": " Ostéoporose" },
-          { "id": "15", "text": "AUCUNE DE CES ANTECEDENTS" },
-          { "id": "16", "text": "" }
+          { "id": "15", "text": "AUCUNE DE CES ANTECEDENTS" }
         ],
         "requiredConfirmation": true,
         "ageMin": 0,
         "ageMax": 100,
-        "gender": ["homme", "femme"]
+        "gender": ["homme", "femme"],
+	"allowAppendOptions": true
       }
     ]
   },
@@ -2054,13 +2040,13 @@
             "id": "29",
             "text": "UN OU PLUSIEURS ADÉNOMES AVANCÉS (POLYPE ADÉNOMATEUX)"
           },
-          { "id": "30", "text": "AUCUNE DE CES PATHOLOGIES" },
-          { "id": "31", "text": "" }
+          { "id": "30", "text": "AUCUNE DE CES PATHOLOGIES" }
         ],
         "requiredConfirmation": true,
         "ageMin": 0,
         "ageMax": 100,
         "gender": ["homme", "femme"]
+,"allowAppendOptions": true
       },
       {
         "id": "110",
@@ -2145,8 +2131,8 @@
         "question": "Avez vous des épisodes de diarrhée régulièrement ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
+          { "id": "1", "text": "Oui","jump":117 },
+          { "id": "2", "text": "Non","jump":118  }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -2155,7 +2141,7 @@
       },
       {
         "id": "117",
-        "question": "si oui : souffrez vous d’une maladie de malabsorption intestinale (Crohn, Coeliaque, …)",
+        "question": "Souffrez vous d’une maladie de malabsorption intestinale (Crohn, Coeliaque, …)",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -2198,7 +2184,7 @@
         "question": "Avez-vous réalisé une exploration fonctionnelle respiratoire et/ou une spirométrie ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" },
+          { "id": "1", "text": "Oui (Pouvez vous préparer les résultats ?)" },
           { "id": "2", "text": "Non" }
         ],
         "requiredConfirmation": false,
@@ -2206,20 +2192,7 @@
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
-      {
-        "id": "121",
-        "question": "Pouvez vous préparer les résultats ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
+           {
         "id": "122",
         "question": "Avez vous des pauses respiratoires ou ronflement importants pendant le sommeil, constatés par votre entourage ?",
         "type": 1,
@@ -2237,7 +2210,7 @@
         "question": "Avez vous déjà réalisé une polysomnographie ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" },
+          { "id": "1", "text": "Oui (Pouvez vous préparer les résultats ?)" },
           { "id": "2", "text": "Non" }
         ],
         "requiredConfirmation": false,
@@ -2245,20 +2218,7 @@
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
-      {
-        "id": "124",
-        "question": "Si oui pouvez vous préparer les résultats ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
+        {
         "id": "125",
         "question": "Etes vous appareillé(e) pour une apnée du sommeil ?",
         "type": 1,
@@ -2296,7 +2256,7 @@
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": " Plusieurs fois par mois" },
+          { "id": "2", "text": "Plusieurs fois par mois" },
           { "id": "3", "text": "Plusieurs fois par semaine" },
           { "id": "4", "text": "Tous les jours ou presque" }
         ],
@@ -2307,7 +2267,7 @@
       },
       {
         "id": "128",
-        "question": "À quel âge avez vous  été ménopausée ?",
+        "question": "À quel âge avez vous été ménopausée ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -2365,14 +2325,13 @@
           { "id": "1", "text": "Implant" },
           { "id": "2", "text": "Stérilet" },
           { "id": "3", "text": "Contraception d'urgence" },
-          { "id": "4", "text": "Préservatif seul" },
-          { "id": "5", "text": "autre : …" }
+          { "id": "4", "text": "Préservatif seul" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
         "ageMax": 50,
         "gender": ["femme"],
-"allowAppendOptions": true
+		"allowAppendOptions": true
       },
       {
         "id": "133",
@@ -2455,7 +2414,7 @@
     ]
   },
   "vaccins": {
-    "title": "VACCINS et DEPISTAGES",
+    "title": "VACCINS et DÉPISTAGES",
     "description": "Parlons de vos vaccins et depistages",
     "endText": "Nous allons aborder votre traitement medical",
     "estimatedTime": "Temps estimé :  5 m",
@@ -2553,8 +2512,8 @@
     ]
   },
   "traitement": {
-    "title": "TRAITEMENT MEDICAL du patient",
-    "description": "Parlons de votre traitement medical",
+    "title": "TRAITEMENT MÉDICAMENTEUX",
+    "description": "Parlons de votre traitement médicamenteux",
     "endText": "Nous allons aborder votre souffle",
     "estimatedTime": "Temps estimé :  2 m",
     "items": [
@@ -2628,20 +2587,7 @@
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
-      {
-        "id": "147",
-        "question": "Avez-vous plus de 40 ans ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
+       {
         "id": "148",
         "question": "Avez-vous fumé ou fumez-vous ?",
         "type": 1,
