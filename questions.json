@@ -3349,7 +3349,7 @@
       },
       {
         "id": "217",
-        "question": "ÉQUILIBRE UNIPODAL (DROIT)",
+        "question": "ÉQUILIBRE UNIPODAL (JAMBE DROITE)",
         "type": 5,
         "options": [],
         "time": 60000,
@@ -3362,7 +3362,7 @@
       },
       {
         "id": "218",
-        "question": "ÉQUILIBRE UNIPODAL (GAUCHE)",
+        "question": "ÉQUILIBRE UNIPODAL (JAMBE GAUCHE)",
         "type": 5,
         "options": [],
         "time": 60000,
