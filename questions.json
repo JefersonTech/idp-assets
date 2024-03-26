@@ -3155,16 +3155,12 @@
       },
 {
 "id": "208",
-        "question": "TEST DE VISION",
-        "type": 13,
-        "options": [
-          {
-            "id": "1",
-            "text": "Procédure :\n• Assurez-vous que rien ne se reflète sur votre écran\n• Placez-vous à environ 50 cm devant l’écran\n• Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux\n• Couvrez votre oeil droit avec votre main droite\n• Fixez le point noir au milieu\n• Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l’oeil gauche"
-          }
-        ],
+        "question": "TEST DE VISION \nProcédure : Placez-vous à environ 50 cm devant l’écran\n• Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux\n• Couvrez votre oeil droit avec votre main droite\n• Fixez le point noir au milieu\n• Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l’oeil gauche"
+          ",
+        "type": 5,
+        "options": [ ],
         "requiredConfirmation": true,
-"picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/visiontest.jpg?raw=true",
+	"picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/visiontest.jpg?raw=true",
         "ageMin": null,
         "ageMax": null,
         "gender": ["homme", "femme"]
