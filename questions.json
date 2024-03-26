@@ -2903,7 +2903,7 @@
         "options": [
           { "id": "1", "text": "Jamais" },
           { "id": "2", "text": "Une fois par mois ou moins" },
-          { "id": "3", "text": "  Deux à 4 fois par mois" },
+          { "id": "3", "text": "Deux à 4 fois par mois" },
           { "id": "4", "text": "Deux à 3 fois par semaine" }
         ],
         "requiredConfirmation": false,
@@ -2918,7 +2918,7 @@
         "options": [
           { "id": "1", "text": "1 ou 2" },
           { "id": "2", "text": "3 ou 4 " },
-          { "id": "3", "text": " 5 ou 6" },
+          { "id": "3", "text": "5 ou 6" },
           { "id": "4", "text": "7 à 9" },
           { "id": "5", "text": "10 ou plus" }
         ],
@@ -3154,7 +3154,7 @@
         "gender": ["homme", "femme"]
       },
 {
-"id": "208",
+"id": "183",
         "question": "TEST DE VISION \nProcédure : Placez-vous à environ 50 cm devant l’écran\n• Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux\n• Couvrez votre oeil droit avec votre main droite\n• Fixez le point noir au milieu\n• Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l’oeil gauche",
         "type": 5,
         "options": [ ],
@@ -3165,7 +3165,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "209",
+        "id": "184",
         "question": "Les lignes droites sont déformées ?",
         "type": 22,
         "options": [
@@ -3185,7 +3185,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "210",
+        "id": "185",
         "question": "Les lignes droites vous paraissent ternes ?",
         "type": 1,
         "options": [
@@ -3204,7 +3204,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "211",
+        "id": "186",
         "question": "Vous voyez une ou plusieurs taches sombres au centre de la grille ?",
         "type": 1,
         "options": [
@@ -3224,7 +3224,7 @@
       },
 
       {
-        "id": "212",
+        "id": "187",
         "question": "BIOIMPEDANCEMETRIE",
         "type": 16,
         "options": [],
@@ -3234,7 +3234,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "213",
+        "id": "188",
         "question": "Test de lever de chaise  Demander au sujet de se lever d’une chaise 5 fois de suite, le plus vite possible, les bras croisés sur la poitrine. Lui laisser au moins 20 secondes.",
         "type": 5,
         "options": [],
@@ -3247,7 +3247,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "214",
+        "id": "189",
         "question": "Le sujet a-t-il réalisé les 5 levers de chaise ?",
         "type": 1,
         "options": [
@@ -3267,13 +3267,13 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "215",
+        "id": "191",
         "question": "Combien en a-t-il réalisé en 15 secondes ?",
         "type": 12,
         "options": [
           {
             "id": "1",
-            "text": "0",
+            "text": "Combien en a-t-il réalisé en 15 secondes ?",
             "data": [
               {
                 "id": "1",
@@ -3328,7 +3328,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "216",
+        "id": "192",
         "question": "Avez-vous fait le test en moins de 14 secondes (si le paticipant a moins de 80 ans) ou en moins de 16 secondes (si le participanta 80 ans ou plus) ?",
         "type": 1,
         "options": [
@@ -3347,7 +3347,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "217",
+        "id": "193",
         "question": "ÉQUILIBRE UNIPODAL (JAMBE DROITE)",
         "type": 5,
         "options": [],
@@ -3360,7 +3360,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "218",
+        "id": "194",
         "question": "ÉQUILIBRE UNIPODAL (JAMBE GAUCHE)",
         "type": 5,
         "options": [],
@@ -3373,7 +3373,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "219",
+        "id": "195",
         "question": "TEST DE FORCE DE PRÉHENSION",
         "type": 17,
         "options": [],
@@ -3383,7 +3383,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "220",
+        "id": "196",
         "question": "TEST D'ÉQUILIBRE",
         "type": 18,
         "options": [],
@@ -3393,7 +3393,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "221",
+        "id": "197",
         "question": "TUG",
         "type": 19,
         "options": [],
@@ -3403,8 +3403,8 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "222",
-        "question": "MARCHE",
+        "id": "198",
+        "question": "TEST DE MARCHE",
         "type": 20,
         "options": [],
         "requiredConfirmation": true,
