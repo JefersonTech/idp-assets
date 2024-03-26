@@ -1722,7 +1722,7 @@
     ]
   },
   "antedecents": {
-    "title": "ANTECEDENTS PERSONNELS ET FAMILIAUX",
+    "title": "ANTÉCÉDENTS PERSONNELS ET FAMILIAUX",
     "description": "Parlons de vos antécedents personnels et familiaux",
     "endText": "Nous allons aborder votre état de santé actuel",
     "estimatedTime": "Temps estimé :  3 m",
@@ -3156,7 +3156,7 @@
 {
 "id": "183",
         "question": "TEST DE VISION \nProcédure : Placez-vous à environ 50 cm devant l’écran\n• Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux\n• Couvrez votre oeil droit avec votre main droite\n• Fixez le point noir au milieu\n• Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l’oeil gauche",
-        "type": 5,
+        "type": 22,
         "options": [ ],
         "requiredConfirmation": true,
 	"picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/visiontest.jpg?raw=true",
@@ -3167,7 +3167,7 @@
       {
         "id": "184",
         "question": "Les lignes droites sont déformées ?",
-        "type": 22,
+        "type": 1,
         "options": [
           {
             "id": "1",
