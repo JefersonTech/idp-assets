@@ -478,7 +478,7 @@
       },
       {
         "id": "32",
-        "question": "Je n’ai pas d’énergie pour l’école, pour le travail.",
+        "question": "Je n’ai pas d’énergie pour l’école, pour le travail",
         "type": 1,
         "options": [
           { "id": "1", "text": "VRAI" },
@@ -491,7 +491,7 @@
       },
       {
         "id": "33",
-        "question": "J’ai du mal à réfléchir.",
+        "question": "J’ai du mal à réfléchir",
         "type": 1,
         "options": [
           { "id": "1", "text": "VRAI" },
@@ -504,7 +504,7 @@
       },
       {
         "id": "34",
-        "question": "Je sens que la tristesse, le cafard me débordent en ce moment.",
+        "question": "Je sens que la tristesse, le cafard me débordent en ce moment",
         "type": 1,
         "options": [
           { "id": "1", "text": "VRAI" },
@@ -517,7 +517,7 @@
       },
       {
         "id": "35",
-        "question": "Il n’y a rien qui m’intéresse, plus rien ne m’amuse.",
+        "question": "Il n’y a rien qui m’intéresse, plus rien ne m’amuse",
         "type": 1,
         "options": [
           { "id": "1", "text": "VRAI" },
@@ -530,7 +530,7 @@
       },
       {
         "id": "36",
-        "question": "Ce que je fais ne sert à rien.",
+        "question": "Ce que je fais ne sert à rien",
         "type": 1,
         "options": [
           { "id": "1", "text": "VRAI" },
@@ -543,7 +543,7 @@
       },
       {
         "id": "37",
-        "question": "Au fond, quand c’est comme ça, j’ai envie de mourir.",
+        "question": "Au fond, quand c’est comme ça, j’ai envie de mourir",
         "type": 1,
         "options": [
           { "id": "1", "text": "VRAI" },
@@ -556,7 +556,7 @@
       },
       {
         "id": "38",
-        "question": "Je ne supporte pas grand-chose.",
+        "question": "Je ne supporte pas grand-chose",
         "type": 1,
         "options": [
           { "id": "1", "text": "VRAI" },
@@ -569,7 +569,7 @@
       },
       {
         "id": "39",
-        "question": "Je me sens découragé(e).",
+        "question": "Je me sens découragé(e)",
         "type": 1,
         "options": [
           { "id": "1", "text": "VRAI" },
@@ -582,7 +582,7 @@
       },
       {
         "id": "40",
-        "question": "Je dors très mal.",
+        "question": "Je dors très mal",
         "type": 1,
         "options": [
           { "id": "1", "text": "VRAI" },
@@ -595,7 +595,7 @@
       },
       {
         "id": "41",
-        "question": "A l’école, au boulot, je n’y arrive pas.",
+        "question": "A l’école, au boulot, je n’y arrive pas",
         "type": 1,
         "options": [
           { "id": "1", "text": "VRAI" },
@@ -612,9 +612,9 @@
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui, tout autant." },
-          { "id": "2", "text": "Pas autant." },
-          { "id": "3", "text": "Un peu seulement." },
-          { "id": "4", "text": "Presque plus." }
+          { "id": "2", "text": "Pas autant" },
+          { "id": "3", "text": "Un peu seulement" },
+          { "id": "4", "text": "Presque plus" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -626,10 +626,10 @@
         "question": "Je ris facilement et vois le bon côté des choses",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Autant que par le passé." },
-          { "id": "2", "text": "Plus autant qu'avant." },
-          { "id": "3", "text": "Vraiment moins qu'avant." },
-          { "id": "4", "text": "Plus du tout." }
+          { "id": "1", "text": "Autant que par le passé" },
+          { "id": "2", "text": "Plus autant qu'avant" },
+          { "id": "3", "text": "Vraiment moins qu'avant" },
+          { "id": "4", "text": "Plus du tout" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -642,9 +642,9 @@
         "type": 1,
         "options": [
           { "id": "1", "text": "La plupart du temps" },
-          { "id": "2", "text": "Assez souvent.2" },
-          { "id": "3", "text": "Rarement." },
-          { "id": "4", "text": "Jamais." }
+          { "id": "2", "text": "Assez souvent" },
+          { "id": "3", "text": "Rarement" },
+          { "id": "4", "text": "Jamais" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -656,10 +656,10 @@
         "question": "J’ai l’impression de fonctionner au ralenti",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Jamais." },
-          { "id": "2", "text": "Parfois." },
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
           { "id": "3", "text": "Très souvent" },
-          { "id": "4", "text": "Presque toujours." }
+          { "id": "4", "text": "Presque toujours" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -677,13 +677,13 @@
           },
           {
             "id": "2",
-            "text": "Il se peut que je n'y fasse plus autant attention."
+            "text": "Il se peut que je n'y fasse plus autant attention"
           },
           {
             "id": "3",
-            "text": "Je n'y accorde pas autant d'attention que je devrais."
+            "text": "Je n'y accorde pas autant d'attention que je devrais"
           },
-          { "id": "4", "text": "Plus du tout." }
+          { "id": "4", "text": "Plus du tout" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -695,10 +695,10 @@
         "question": "Je me réjouis d’avance à l’idée de faire certaines choses",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Autant qu'avant." },
-          { "id": "2", "text": "Un peu moins qu'avant." },
-          { "id": "3", "text": "Bien moins qu'avant." },
-          { "id": "4", "text": "Presque jamais." }
+          { "id": "1", "text": "Autant qu'avant" },
+          { "id": "2", "text": "Un peu moins qu'avant" },
+          { "id": "3", "text": "Bien moins qu'avant" },
+          { "id": "4", "text": "Presque jamais" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -710,10 +710,10 @@
         "question": "Je peux prendre plaisir à un bon livre ou à une bonne émission de radio ou de télévision",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Souvent." },
-          { "id": "2", "text": "Parfois." },
-          { "id": "3", "text": "Rarement." },
-          { "id": "4", "text": "Très rarement." }
+          { "id": "1", "text": "Souvent" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "Rarement" },
+          { "id": "4", "text": "Très rarement" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -846,8 +846,8 @@
         "options": [
           { "id": "1", "text": "Pas du tout" },
           { "id": "2", "text": "Un peu mais cela ne m’inquiète pas" },
-          { "id": "3", "text": "Oui, mais ce n’est pas trop grave." },
-          { "id": "4", "text": "Oui, très nettement." }
+          { "id": "3", "text": "Oui, mais ce n’est pas trop grave" },
+          { "id": "4", "text": "Oui, très nettement" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -861,7 +861,7 @@
         "options": [
           { "id": "1", "text": "Très occasionnellement" },
           { "id": "2", "text": "Occasionnellement " },
-          { "id": "3", "text": "Assez souvent." }
+          { "id": "3", "text": "Assez souvent" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -873,10 +873,10 @@
         "question": "Je peux rester tranquillement assis(e) à ne rien faire et me sentir décontracté(e)",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui, quoi qu’il arrive." },
-          { "id": "2", "text": "Oui, en général." },
-          { "id": "3", "text": "Rarement." },
-          { "id": "4", "text": "Jamais." }
+          { "id": "1", "text": "Oui, quoi qu’il arrive" },
+          { "id": "2", "text": "Oui, en général" },
+          { "id": "3", "text": "Rarement" },
+          { "id": "4", "text": "Jamais" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -888,10 +888,10 @@
         "question": "J’éprouve des sensations de peur et j’ai l’estomac noué",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Jamais." },
-          { "id": "2", "text": "Parfois." },
-          { "id": "3", "text": "Assez souvent." },
-          { "id": "4", "text": "Très souvent." }
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "Assez souvent" },
+          { "id": "4", "text": "Très souvent" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -903,10 +903,10 @@
         "question": "J’ai la bougeotte et n’arrive pas à tenir en place",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Pas du tout." },
-          { "id": "2", "text": "Pas tellement." },
-          { "id": "3", "text": "Un peu." },
-          { "id": "4", "text": "Oui, c’est tout à fait le cas." }
+          { "id": "1", "text": "Pas du tout" },
+          { "id": "2", "text": "Pas tellement" },
+          { "id": "3", "text": "Un peu" },
+          { "id": "4", "text": "Oui, c’est tout à fait le cas" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -918,10 +918,10 @@
         "question": "J’éprouve des sensations soudaines de panique",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Jamais." },
-          { "id": "2", "text": "Pas très souvent." },
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Pas très souvent" },
           { "id": "3", "text": "Assez souvent" },
-          { "id": "4", "text": "Vraiment très souvent." }
+          { "id": "4", "text": "Vraiment très souvent" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
