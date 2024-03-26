@@ -3155,7 +3155,7 @@
       },
 {
 "id": "183",
-        "question": "TEST DE VISION \nProcédure : Placez-vous à environ 50 cm devant l’écran\n• Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux\n• Couvrez votre oeil droit avec votre main droite\n• Fixez le point noir au milieu\n• Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l’oeil gauche",
+        "question": "TEST DE VISION \n• Placez-vous à environ 50 cm devant l’écran\n• Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux\n• Couvrez votre oeil droit avec votre main droite\n• Fixez le point noir au milieu\n• Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l’oeil gauche",
         "type": 22,
         "options": [ ],
         "requiredConfirmation": true,
@@ -3179,7 +3179,7 @@
           }
         ],
         
-        "requiredConfirmation": true,
+        "requiredConfirmation": false,
         "ageMin": null,
         "ageMax": null,
         "gender": ["homme", "femme"]
@@ -3225,7 +3225,7 @@
 
       {
         "id": "187",
-        "question": "BIOIMPEDANCEMETRIE",
+        "question": "BIO-IMPÉDANCEMÉTRIE",
         "type": 16,
         "options": [],
         "requiredConfirmation": true,
@@ -3235,7 +3235,7 @@
       },
       {
         "id": "188",
-        "question": "Test de lever de chaise  Demander au sujet de se lever d’une chaise 5 fois de suite, le plus vite possible, les bras croisés sur la poitrine. Lui laisser au moins 20 secondes.",
+        "question": "TEST DU LEVER DE CHAISE.  \nDemander au sujet de se lever d’une chaise 5 fois de suite, le plus vite possible, les bras croisés sur la poitrine. Lui laisser au moins 20 secondes.",
         "type": 5,
         "options": [],
         "time": 20000,
