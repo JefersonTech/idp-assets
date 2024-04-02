@@ -339,8 +339,7 @@
           {
             "id": "7",
             "text": "Lieu de loisir (vacances, camping, associations"
-          },
-          { "id": "8", "text": "autres : ..." }
+          }
         ],
         "requiredConfirmation": true,
         "ageMin": 0,
@@ -1929,31 +1928,27 @@
         "type": 2,
         "options": [
           { "id": "1", "text": "Cancer du sein et ou des ovaires" },
-          { "id": "2", "text": " Cancer colorectal" },
+          { "id": "2", "text": "Cancer colorectal" },
           {
             "id": "3",
             "text": "Un ou plusieurs adénomes avancés (polype adénomateux)"
           },
           {
             "id": "4",
-            "text": "polypose adanomateuse familiale ou syndrome de Lynch"
+            "text": "Polypose adanomateuse familiale ou syndrome de Lynch"
           },
           {
             "id": "5",
-            "text": " maladie de Crohn ou rectocolite hémorragique"
+            "text": "Maladie de Crohn ou rectocolite hémorragique"
           },
-          {
-            "id": "6",
-            "text": " Pour la case autre cancer, demander à préciser lequel"
-          },
-          { "id": "7", "text": "diabète" },
+          { "id": "7", "text": "Diabète" },
           { "id": "8", "text": "HTA" },
           { "id": "9", "text": "Infarctus du myocard ou mort subite" },
           { "id": "10", "text": "AVC" },
           { "id": "11", "text": "Hypercholestérolémie familiale" },
           { "id": "12", "text": "DMLA" },
-          { "id": "13", "text": " Maladie d'Alzheimer" },
-          { "id": "14", "text": " Ostéoporose" },
+          { "id": "13", "text": "Maladie d'Alzheimer" },
+          { "id": "14", "text": "Ostéoporose" },
           { "id": "15", "text": "AUCUNE DE CES ANTECEDENTS" }
         ],
         "requiredConfirmation": true,
@@ -1978,8 +1973,7 @@
           { "id": "1", "text": "Infection" },
           { "id": "2", "text": "Grippe" },
           { "id": "3", "text": "COVID" },
-				{ "id": "4", "text": "Aucun de ces maladies" },
-          { "id": "5", "text": "Autre :" }
+	{ "id": "4", "text": "Aucun de ces maladies" }
           
         ],
         "requiredConfirmation": true,
@@ -2770,7 +2764,7 @@
       },
       {
         "id": "161",
-        "question": "Au cours des douze derniers mois :Avez-vous rejoué une autre journée pour récupérer l'argent que vous aviez perdu en jouant ?",
+        "question": "Au cours des douze derniers mois : Avez-vous rejoué une autre journée pour récupérer l'argent que vous aviez perdu en jouant ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
@@ -3111,8 +3105,7 @@
             "id": "9",
             "text": "Passer moins de temps devant les écrans ou mon téléphone"
           },
-          { "id": "10", "text": "Dépister les cancers" },
-          { "id": "11", "text": "Autre :" }
+          { "id": "10", "text": "Dépister les cancers" }
         ],
         "requiredConfirmation": true,
         "ageMin": 0,
@@ -3254,20 +3247,39 @@
           {
             "id": "1",
             "text": "Oui",
-            "jump": "96"
+            "jump": "191"
           },
           {
             "id": "2",
             "text": "Non",
-            "jump": "95"
+            "jump": "192"
           }
         ],
         "ageMin": null,
         "ageMax": null,
         "gender": ["homme", "femme"]
       },
-      {
+	{
         "id": "191",
+        "question": "Avez-vous fait le test en moins de 14 secondes (si le paticipant a moins de 80 ans) ou en moins de 16 secondes (si le participanta 80 ans ou plus) ?",
+        "type": 1,
+        "options": [
+          {
+            "id": "1",
+            "text": "Oui"
+          },
+          {
+            "id": "2",
+            "text": "Non"
+          }
+        ],
+        "requiredConfirmation": true,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "192",
         "question": "Combien en a-t-il réalisé en 15 secondes ?",
         "type": 12,
         "options": [
@@ -3320,25 +3332,6 @@
                 "text": "10"
               }
             ]
-          }
-        ],
-        "requiredConfirmation": true,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "192",
-        "question": "Avez-vous fait le test en moins de 14 secondes (si le paticipant a moins de 80 ans) ou en moins de 16 secondes (si le participanta 80 ans ou plus) ?",
-        "type": 1,
-        "options": [
-          {
-            "id": "1",
-            "text": "Oui"
-          },
-          {
-            "id": "2",
-            "text": "Non"
           }
         ],
         "requiredConfirmation": true,
