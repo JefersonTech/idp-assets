@@ -63,7 +63,7 @@
   "vie": {
     "title": "VIE",
     "description": "Parlons de vos conditions de vie",
-    "endText": "Nous allons parler peu de psychologie",
+    "endText": "Nous allons aborder des aspects psychologiques",
     "estimatedTime": "Temps estimé :  3 m",
     "items": [
       {
@@ -458,7 +458,7 @@
   },
   "psychologie": {
     "title": "PSYCHOLOGIE",
-    "description": "Parlons un peu de psychologie",
+    "description": "Parlons des aspects psychologiques",
     "endText": "Nous allons aborder votre cognition/comportement",
     "estimatedTime": "Temps estimé :  3 m",
     "items": [
