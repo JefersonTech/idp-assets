@@ -1744,14 +1744,14 @@
       },
       {
         "id": "100",
-        "question": "Avez-vous été hospitalisé au cours :",
+        "question": "Avez-vous été hospitalisé ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "au cours des 7 derniers jours ?" },
-          { "id": "2", "text": "au cours du dernier mois ?" },
-          { "id": "3", "text": "au cours des 3 derniers mois ?" },
-          { "id": "4", "text": "au cours des 6 derniers mois ?" },
-          { "id": "5", "text": "Je n'ai pas été hospitalisé" }
+          { "id": "1", "text": "Oui, au cours des 7 derniers jours " },
+          { "id": "2", "text": "Oui, au cours du dernier mois " },
+          { "id": "3", "text": "Oui, au cours des 3 derniers mois " },
+          { "id": "4", "text": "Oui, au cours des 6 derniers mois " },
+          { "id": "5", "text": "Non, je n'ai pas été hospitalisé" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
