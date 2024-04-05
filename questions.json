@@ -1565,16 +1565,6 @@
     "estimatedTime": "Temps estimé :  2 m",
     "items": [
       {
-        "id": "87",
-        "question": "Merci d'indiquer votre poids actuel (kg)",
-        "type": 14,
-        "options": [],
-        "requiredConfirmation": true,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
         "id": "88",
         "question": "Avez-vous perdu involontairement plus de 3kg au cours de 3 derniers mois ?",
         "type": 1,
