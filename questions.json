@@ -2506,8 +2506,8 @@
         "question": "Prenez vous des médicaments ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
+          { "id": "1", "text": "Oui","jump": "143" },
+          { "id": "2", "text": "Non","jump": "144" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
