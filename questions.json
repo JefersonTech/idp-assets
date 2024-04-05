@@ -1728,13 +1728,13 @@
     "items": [
       {
         "id": "99",
-        "question": "Avez-vous chuté :",
+        "question": "Avez-vous chuté ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "au cours des 7 derniers jours ?" },
-          { "id": "2", "text": "au cours du dernier mois ?" },
-          { "id": "3", "text": "au cours des 3 derniers mois ?" },
-          { "id": "4", "text": "au cours des 6 derniers mois ?" },
+          { "id": "1", "text": "Oui, au cours des 7 derniers jours" },
+          { "id": "2", "text": "Oui, au cours du dernier mois" },
+          { "id": "3", "text": "Oui, au cours des 3 derniers mois" },
+          { "id": "4", "text": "Oui, au cours des 6 derniers mois" },
           { "id": "5", "text": "Je n'ai pas chuté" }
         ],
         "requiredConfirmation": false,
