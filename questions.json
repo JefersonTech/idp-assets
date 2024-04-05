@@ -222,22 +222,22 @@
       },
       {
         "id": "16",
-        "question": "Avez-vous des diffcultés à réaliser les gestes de la vie quotidienne :",
+        "question": "Avez-vous des diffcultés à réaliser les gestes de la vie quotidienne ?",
         "type": 2,
         "options": [
-          { "id": "1", "text": "Quitter son lit et/ou se coucher seul(e)" },
-          { "id": "2", "text": "Aller seul(e) aux toilettes" },
-          { "id": "3", "text": "Faire sa toilette seul(e)" },
-          { "id": "4", "text": "Manger et boire seul(e)" },
+          { "id": "1", "text": "Oui, Quitter son lit et/ou se coucher seul(e)" },
+          { "id": "2", "text": "Oui, Aller seul(e) aux toilettes" },
+          { "id": "3", "text": "Oui, Faire sa toilette seul(e)" },
+          { "id": "4", "text": "Oui, Manger et boire seul(e)" },
           {
             "id": "5",
-            "text": "Marcher seul(e) avec ou sans béquille, canne, …"
+            "text": "Oui, Marcher seul(e) avec ou sans béquille, canne, …"
           },
           {
             "id": "6",
-            "text": "Utiliser seul(e) un moyen de transport (transport en commun, voiture, …)"
+            "text": "Oui, Utiliser seul(e) un moyen de transport (transport en commun, voiture, …)"
           },
-          { "id": "7", "text": "Pas de difficulté" }
+          { "id": "7", "text": "Non, Pas de difficulté" }
         ],
         "requiredConfirmation": true,
         "ageMin": 0,
@@ -349,13 +349,13 @@
       },
       {
         "id": "23",
-        "question": "Vous êtes :",
+        "question": "Vous êtes ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "en études ?" },
-          { "id": "2", "text": "en emploi ?" },
-          { "id": "3", "text": "a la recherche d'un emploi ?" },
-          { "id": "4", "text": "en cumul étude-emploi ?" }
+          { "id": "1", "text": "en études" },
+          { "id": "2", "text": "en emploi" },
+          { "id": "3", "text": "a la recherche d'un emploi" },
+          { "id": "4", "text": "en cumul étude-emploi" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
