@@ -3034,7 +3034,7 @@
           { "id": "15", "text": "Handball" },
           { "id": "16", "text": "Squash" },
           { "id": "17", "text": "Football" },
-          { "id": "18", "text": "Football" }
+          { "id": "18", "text": "Golf" }
         ],
         "requiredConfirmation": true,
         "ageMin": 0,
@@ -3072,7 +3072,7 @@
   "souhait": {
     "title": "SOUHAITS",
     "description": "Parlons de vos souhaits",
-    "endText": "Nous allons efectuer quelques tests physiques. Assurez-vous d'être accompagné de votre aidant ou du personnel médical.",
+    "endText": "Nous allons effectuer quelques tests physiques. Assurez-vous d'être accompagné de votre aidant ou du personnel médical.",
     "estimatedTime": "Temps estimé :  2 m",
     "items": [
       {
