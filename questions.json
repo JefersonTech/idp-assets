@@ -3261,7 +3261,7 @@
       },
 	{
         "id": "191",
-        "question": "Avez-vous fait le test en moins de 14 secondes (si le paticipant a moins de 80 ans) ou en moins de 16 secondes (si le participanta 80 ans ou plus) ?",
+        "question": "Avez-vous fait le test en moins de 14 secondes (si le paticipant a moins de 80 ans) ou en moins de 16 secondes (si le participant a 80 ans ou plus) ?",
         "type": 1,
         "options": [
           {
