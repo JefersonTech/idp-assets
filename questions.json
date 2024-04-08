@@ -3121,7 +3121,7 @@
       },
 {
 "id": "183",
-        "question": "TEST DE VISION \n• Placez-vous à environ 50 cm devant l'écran\n• Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux\n• Couvrez votre oeil droit avec votre main droite\n• Fixez le point noir au milieu\n• Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l'oeil gauche",
+        "question": "TEST DE VISION \n• Placez-vous à environ 50 cm devant l'écran. Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux. Couvrez votre oeil droit avec votre main droite. Fixez le point noir au milieu. Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l'oeil gauche",
         "type": 22,
         "options": [ ],
         "requiredConfirmation": true,
