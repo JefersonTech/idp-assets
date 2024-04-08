@@ -2236,7 +2236,7 @@
       },
       {
         "id": "127",
-        "question": "Etes vous devant un écrant avant de vous endormir ?",
+        "question": "Etes vous devant un écran avant de vous endormir ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
@@ -2264,7 +2264,7 @@
       },
       {
         "id": "129",
-        "question": "Présentez vsou des symptômes de ménopause (bouffées de chaleur, problèmes de sommeil, sécheresse vaginale, troubles urinaires, fatigue, anxiété, irritabilité) ?",
+        "question": "Présentez vous des symptômes de ménopause (bouffées de chaleur, problèmes de sommeil, sécheresse vaginale, troubles urinaires, fatigue, anxiété, irritabilité) ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -2303,7 +2303,7 @@
       },
       {
         "id": "132",
-        "question": "De quell moyen s'agit-il ?",
+        "question": "De quel moyen s'agit-il ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Implant" },
@@ -2498,7 +2498,7 @@
   "traitement": {
     "title": "TRAITEMENT MÉDICAMENTEUX",
     "description": "Parlons de votre traitement médicamenteux",
-    "endText": "Nous allons aborder votre souffle",
+    "endText": "Nous allons aborder votre consommation d'alcool, tabac, autres substances",
     "estimatedTime": "Temps estimé :  2 m",
     "items": [
       {
@@ -2526,13 +2526,13 @@
       }
     ]
   },
-  "spiro": {
-    "title": "Spirométrie",
-    "description": "Parlons de votre souffle",
-    "endText": "Nous allons aborder votre consommation d'alcool, tabac, autres substances",
-    "estimatedTime": "Temps estimé :  3 m",
+  "alcool": {
+    "title": "CONSOMMATION D'ALCOOL, TABAC, AUTRES SUBSTANCES",
+    "description": "Parlons de votre consommation d'alcool, tabac, autres substances",
+    "endText": "Nous allons aborder votre mobilité",
+    "estimatedTime": "Temps estimé :  4 m",
     "items": [
-      {
+	{
         "id": "144",
         "question": "Toussez-vous souvent (tous les jours) ?",
         "type": 1,
@@ -2572,33 +2572,22 @@
         "gender": ["homme", "femme"]
       },
        {
+        "id": "147",
+        "question": "Fumez-vous ? (Hors cigarettes électroniques)",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" ,"jump":"148"},
+          { "id": "2", "text": "Non" ,"jump":"151"},
+          { "id": "3", "text": "Je ne fume plus","jump":"150" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+       
+      {
         "id": "148",
-        "question": "Avez-vous fumé ou fumez-vous ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "149",
-        "question": "Avez-vous été exposé de manière prolongée ou répétée à des gaz, poussières, fumées, vapeurs dans le cadre de votre travail ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "150",
         "question": "Combien de cigarettes fumez-vous par jour ?",
         "type": 1,
         "options": [
@@ -2613,36 +2602,14 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "151",
+        "id": "149",
         "question": "Dans quel délai après le réveil fumez-vous votre première cigarette ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": " Moins de 5 minutes" },
-          { "id": "2", "text": "6 à 30 minutes" },
-          { "id": "3", "text": "31 à 60 minutes" },
-          { "id": "4", "text": "Après plus d'1 heure" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      }
-    ]
-  },
-  "alcool": {
-    "title": "CONSOMMATION D'ALCOOL, TABAC, AUTRES SUBSTANCES",
-    "description": "Parlons de votre consommation d'alcool, tabac, autres substances",
-    "endText": "Nous allons aborder votre mobilité",
-    "estimatedTime": "Temps estimé :  4 m",
-    "items": [
-      {
-        "id": "152",
-        "question": "Fumez-vous ? (Hors cigarettes électroniques)",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" },
-          { "id": "3", "text": "Je ne fume plus" }
+          { "id": "1", "text": " Moins de 5 minutes" ,"jump":"151"},
+          { "id": "2", "text": "6 à 30 minutes","jump":"151" },
+          { "id": "3", "text": "31 à 60 minutes" ,"jump":"151"},
+          { "id": "4", "text": "Après plus d'1 heure" ,"jump":"151"}
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -2650,7 +2617,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "153",
+        "id": "150",
         "question": "Si vous avez arrêté de fumer, depuis combien de temps ?",
         "type": 1,
         "options": [
@@ -2663,29 +2630,10 @@
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
+     
       {
-        "id": "154",
-        "question": "Nombre de verres que vous consommez les jours où vous buvez de l'alcool ?",
-        "type": 14,
-        "options": [],
-        "requiredConfirmation": true,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "155",
-        "question": "Nombre de jours où vous consommez de l'alcool par semaine ?",
-        "type": 14,
-        "options": [],
-        "requiredConfirmation": true,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "156",
-        "question": "Consommez vous dans certaines occasions au moins 6 verres en un minimum de temps ou pratiquez vous le Binge Drinking ?",
+        "id": "151",
+        "question": "Avez-vous été exposé de manière prolongée ou répétée à des gaz, poussières, fumées, vapeurs dans le cadre de votre travail ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -2696,207 +2644,25 @@
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
-      {
-        "id": "157",
-        "question": "Avez-vous consommé d'autres substances au cours des 12 derniers mois ? Canabis, haschisch, marijuana, herbe, joint, shit) ou d'autres drogues (extasy, cocaïne, héroïne, etc)",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "158",
-        "question": "Au cours des 12 derniers mois, avez-vous misé de l'argent pour un jeu (loterie, poker, etc) un pari (sportif, hippique, etc) ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "159",
-        "question": "Au cours des douze derniers mois : Avez-vous misé plus d'argent que vous pouviez vous permettre de perdre ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "160",
-        "question": "Au cours des douze derniers mois : Avez-vous besoin de miser de plus en plus d'argent pour avoir la même excitation ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "161",
-        "question": "Au cours des douze derniers mois : Avez-vous rejoué une autre journée pour récupérer l'argent que vous aviez perdu en jouant ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "162",
-        "question": "Au cours des douze derniers mois : Avez-vous vendu ou emprunté quelque chose pour obtenir de l'argent pour jouer ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "163",
-        "question": "Au cours des douze derniers mois : Avez-vous déjà senti que vous aviez peut-être un problème avec le jeu ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "164",
-        "question": "Au cours des douze derniers mois : Le jeu a-t-il causé chez vous des problèmes de santé, y compris du stress ou de l'angoisse ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "165",
-        "question": "Au cours des douze derniers mois : Des personnes ont-elles critiqué vos habitudes de jeu ou dit que vous aviez un problème avec le jeu ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "166",
-        "question": "Au cours des douze derniers mois : Vos habitudes de jeu ont-elles causé des difficultés financières à vous ou à votre entourage ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "167",
-        "question": "Au cours des douze derniers mois : Vous êtes-vous déjà senti coupable de vos habitudes de jeu ou de ce qui arrive quand vous jouez ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "168",
-        "question": "Avez-vous jouer/parier antérieurement et arrêté ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" ,"jump":"169"},
-          { "id": "2", "text": "Non" ,"jump":"170"}
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "169",
-        "question": "Motif de l'arrêt ?",
-        "type": 3,
-        "options": [],
-        "requiredConfirmation": true,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "170",
+    {
+        "id": "152",
         "question": "À quelle fréquence consommez-vous des boissons contenant de l'alcool ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Une fois par mois ou moins" },
-          { "id": "3", "text": "Deux à 4 fois par mois" },
-          { "id": "4", "text": "Deux à 3 fois par semaine" }
+          { "id": "1", "text": "Jamais","jump":"160" },
+          { "id": "2", "text": "Une fois par mois ou moins","jump":"153" },
+          { "id": "3", "text": "Deux à 4 fois par mois","jump":"153" },
+          { "id": "4", "text": "Deux à 3 fois par semaine","jump":"153" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
+
+	    
       {
-        "id": "171",
+        "id": "153",
         "question": "Combien de verres standard buvez-vous, les jours où vous buvez de l'alcool ?",
         "type": 1,
         "options": [
@@ -2912,7 +2678,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "172",
+        "id": "154",
         "question": "Est-ce que votre entourage vous a fait des remarques concernant votre consommation d'alcool ?",
         "type": 1,
         "options": [
@@ -2925,7 +2691,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "173",
+        "id": "155",
         "question": "Vous est-il arrivé de consommer de l'alcool le matin pour vous sentir en forme ?",
         "type": 1,
         "options": [
@@ -2938,7 +2704,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "174",
+        "id": "156",
         "question": "Vous est-il arrivé de boire et de ne plus vous souvenir le matin de ce que vous avez pu dire ou faire ?",
         "type": 1,
         "options": [
@@ -2950,6 +2716,224 @@
         "ageMax": 100,
         "gender": ["homme", "femme"]
       }
+      {
+        "id": "157",
+        "question": "Nombre de verres que vous consommez les jours où vous buvez de l'alcool ?",
+        "type": 14,
+        "options": [],
+        "requiredConfirmation": true,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "158",
+        "question": "Nombre de jours où vous consommez de l'alcool par semaine ?",
+        "type": 14,
+        "options": [],
+        "requiredConfirmation": true,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "159",
+        "question": "Consommez vous dans certaines occasions au moins 6 verres en un minimum de temps ou pratiquez vous le Binge Drinking ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "160",
+        "question": "Avez-vous consommé d'autres substances au cours des 12 derniers mois ? Canabis, haschisch, marijuana, herbe, joint, shit) ou d'autres drogues (extasy, cocaïne, héroïne, etc)",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "161",
+        "question": "Au cours des 12 derniers mois, avez-vous misé de l'argent pour un jeu (loterie, poker, etc) un pari (sportif, hippique, etc) ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "162",
+        "question": "Au cours des douze derniers mois : Avez-vous misé plus d'argent que vous pouviez vous permettre de perdre ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "163",
+        "question": "Au cours des douze derniers mois : Avez-vous besoin de miser de plus en plus d'argent pour avoir la même excitation ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "164",
+        "question": "Au cours des douze derniers mois : Avez-vous rejoué une autre journée pour récupérer l'argent que vous aviez perdu en jouant ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "165",
+        "question": "Au cours des douze derniers mois : Avez-vous vendu ou emprunté quelque chose pour obtenir de l'argent pour jouer ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "166",
+        "question": "Au cours des douze derniers mois : Avez-vous déjà senti que vous aviez peut-être un problème avec le jeu ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "167",
+        "question": "Au cours des douze derniers mois : Le jeu a-t-il causé chez vous des problèmes de santé, y compris du stress ou de l'angoisse ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "168",
+        "question": "Au cours des douze derniers mois : Des personnes ont-elles critiqué vos habitudes de jeu ou dit que vous aviez un problème avec le jeu ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "169",
+        "question": "Au cours des douze derniers mois : Vos habitudes de jeu ont-elles causé des difficultés financières à vous ou à votre entourage ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "170",
+        "question": "Au cours des douze derniers mois : Vous êtes-vous déjà senti coupable de vos habitudes de jeu ou de ce qui arrive quand vous jouez ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "171",
+        "question": "Avez-vous jouer/parier antérieurement et arrêté ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" ,"jump":"172"},
+          { "id": "2", "text": "Non" ,"jump":"175"}
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "172",
+        "question": "Motif de l'arrêt ?",
+        "type": 3,
+        "options": [],
+        "requiredConfirmation": true,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      
     ]
   },
   "mobilite": {
