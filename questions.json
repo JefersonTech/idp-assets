@@ -1631,7 +1631,7 @@
       },
       {
         "id": "93",
-        "question": "Si oui : depuis plus de 2 semaines ?",
+        "question": "Depuis plus de 2 semaines ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" ,"jump":"95"},
@@ -1644,7 +1644,7 @@
       },
       {
         "id": "94",
-        "question": "Si non : est-ce que vous avez mangé la moitié de ce que vous mangez d'habitude pendant plus d'une semaine ?",
+        "question": "Est-ce que vous avez mangé la moitié de ce que vous mangez d'habitude pendant plus d'une semaine ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
