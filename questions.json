@@ -178,7 +178,7 @@
       },
       {
         "id": "13",
-        "question": "Quel est votre niveau d’études ?",
+        "question": "Quel est votre niveau d'études ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Sans diplôme" },
@@ -187,7 +187,7 @@
           { "id": "4", "text": "BEP" },
           { "id": "5", "text": "Brevet des collèges" },
           { "id": "6", "text": "BAC" },
-          { "id": "7", "text": "Universiaire et plus" }
+          { "id": "7", "text": "Universitaire et plus" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -209,7 +209,7 @@
       },
       {
         "id": "15",
-        "question": "En cas de besoin, pouvez vous compter sur une personnne de votre entourage ?",
+        "question": "En cas de besoin, pouvez vous compter sur une personne de votre entourage ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -222,7 +222,7 @@
       },
       {
         "id": "16",
-        "question": "Avez-vous des diffcultés à réaliser les gestes de la vie quotidienne ?",
+        "question": "Avez-vous des difficultés à réaliser les gestes de la vie quotidienne ?",
         "type": 2,
         "options": [
           { "id": "1", "text": "Oui, Quitter son lit et/ou se coucher seul(e)" },
@@ -231,11 +231,11 @@
           { "id": "4", "text": "Oui, Manger et boire seul(e)" },
           {
             "id": "5",
-            "text": "Oui, Marcher seul(e) avec ou sans béquille, canne, …"
+            "text": "Oui, Marcher seul(e) avec ou sans béquille, canne, etc."
           },
           {
             "id": "6",
-            "text": "Oui, Utiliser seul(e) un moyen de transport (transport en commun, voiture, …)"
+            "text": "Oui, Utiliser seul(e) un moyen de transport (transport en commun, voiture, etc.)"
           },
           { "id": "7", "text": "Non, Pas de difficulté" }
         ],
@@ -261,7 +261,7 @@
       },
       {
         "id": "18",
-        "question": "Depuis que vous êtes à la retraite, vous impliquez vous dans de nouveaux projets  (sorties, clubs, associations, …) ?",
+        "question": "Depuis que vous êtes à la retraite, vous impliquez vous dans de nouveaux projets  (sorties, clubs, associations, etc.) ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui j'ai déjà mis en place ces projets" },
@@ -281,7 +281,7 @@
       },
       {
         "id": "19",
-        "question": "A l'approche de la retraite (ou depuis votre nouveau passage à la retraite), envisagez vous de nouveaux projets (sorties, associations, … ?",
+        "question": "A l'approche de la retraite (ou depuis votre nouveau passage à la retraite), envisagez vous de nouveaux projets (sorties, associations, etc. ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui j'ai déjà mis en place ces projets" },
@@ -301,7 +301,7 @@
       },
       {
         "id": "20",
-        "question": "Pratiquez vous des activités de loisirs (culturelles, sportives, associatives, …)",
+        "question": "Pratiquez vous des activités de loisirs (culturelles, sportives, associatives, etc.)",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -314,7 +314,7 @@
       },
       {
         "id": "21",
-        "question": "Avez-vous été victime de violences physiques ou psychiques (coup, mutilsations, menaces, chantage, humiliations, …), harcèlements, discrimination, etc … .?",
+        "question": "Avez-vous été victime de violences physiques ou psychiques (coup, mutilations, menaces, chantage, humiliations, etc.), harcèlements, discrimination, etc etc. .?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" ,"jump": "22"},
@@ -364,7 +364,7 @@
       },
       {
         "id": "24",
-        "question": "Jugez vous vos conditions de travail ou d'étude difiiciles pénibles ?",
+        "question": "Jugez vous vos conditions de travail ou d'étude difficiles pénibles ?",
         "type": 2,
         "options": [
           { "id": "1", "text": "Oui, physiquement" },
@@ -430,7 +430,7 @@
       },
       {
         "id": "29",
-        "question": "Avez vous un logement facile d'accès en cas de mobilité réduite (logement de plain-pied, avec ascenceur, rampe d'accès à l'immeuble ou au perron de la maison …) ?",
+        "question": "Avez vous un logement facile d'accès en cas de mobilité réduite (logement de plain-pied, avec ascenseur, rampe d'accès à l'immeuble ou au perron de la maison) ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -443,7 +443,7 @@
       },
       {
         "id": "30",
-        "question": "Avez vous un logement adapté à la prévention des chutes (douche plutôt qu'une baignoire, barre de douche, revêtement anti-chutes, WC surelevées, ...) ?",
+        "question": "Avez vous un logement adapté à la prévention des chutes (douche plutôt qu'une baignoire, barre de douche, revêtement anti-chutes, WC surelevées) ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -477,7 +477,7 @@
       },
       {
         "id": "32",
-        "question": "Je n’ai pas d’énergie pour l’école, pour le travail",
+        "question": "Je n'ai pas d'énergie pour l'école, pour le travail",
         "type": 1,
         "options": [
           { "id": "1", "text": "VRAI" },
@@ -490,7 +490,7 @@
       },
       {
         "id": "33",
-        "question": "J’ai du mal à réfléchir",
+        "question": "J'ai du mal à réfléchir",
         "type": 1,
         "options": [
           { "id": "1", "text": "VRAI" },
@@ -516,7 +516,7 @@
       },
       {
         "id": "35",
-        "question": "Il n’y a rien qui m’intéresse, plus rien ne m’amuse",
+        "question": "Il n'y a rien qui m'intéresse, plus rien ne m'amuse",
         "type": 1,
         "options": [
           { "id": "1", "text": "VRAI" },
@@ -542,7 +542,7 @@
       },
       {
         "id": "37",
-        "question": "Au fond, quand c’est comme ça, j’ai envie de mourir",
+        "question": "Au fond, quand c'est comme ça, j'ai envie de mourir",
         "type": 1,
         "options": [
           { "id": "1", "text": "VRAI" },
@@ -594,7 +594,7 @@
       },
       {
         "id": "41",
-        "question": "A l’école, au boulot, je n’y arrive pas",
+        "question": "A l'école, au boulot, je n'y arrive pas",
         "type": 1,
         "options": [
           { "id": "1", "text": "VRAI" },
@@ -607,7 +607,7 @@
       },
       {
         "id": "42",
-        "question": "Je prends plaisir aux mêmes choses qu’autrefois",
+        "question": "Je prends plaisir aux mêmes choses qu'autrefois",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui, tout autant." },
@@ -652,7 +652,7 @@
       },
       {
         "id": "45",
-        "question": "J’ai l’impression de fonctionner au ralenti",
+        "question": "J'ai l'impression de fonctionner au ralenti",
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
@@ -667,7 +667,7 @@
       },
       {
         "id": "46",
-        "question": "Je ne m’intéresse plus à mon apparence",
+        "question": "Je ne m'intéresse plus à mon apparence",
         "type": 1,
         "options": [
           {
@@ -691,7 +691,7 @@
       },
       {
         "id": "47",
-        "question": "Je me réjouis d’avance à l’idée de faire certaines choses",
+        "question": "Je me réjouis d'avance à l'idée de faire certaines choses",
         "type": 1,
         "options": [
           { "id": "1", "text": "Autant qu'avant" },
@@ -840,12 +840,12 @@
       },
       {
         "id": "58",
-        "question": "J’ai une sensation de peur comme si quelque chose d’horrible allait m’arriver",
+        "question": "J'ai une sensation de peur comme si quelque chose d'horrible allait m'arriver",
         "type": 1,
         "options": [
           { "id": "1", "text": "Pas du tout" },
-          { "id": "2", "text": "Un peu mais cela ne m’inquiète pas" },
-          { "id": "3", "text": "Oui, mais ce n’est pas trop grave" },
+          { "id": "2", "text": "Un peu mais cela ne m'inquiète pas" },
+          { "id": "3", "text": "Oui, mais ce n'est pas trop grave" },
           { "id": "4", "text": "Oui, très nettement" }
         ],
         "requiredConfirmation": false,
@@ -872,7 +872,7 @@
         "question": "Je peux rester tranquillement assis(e) à ne rien faire et me sentir décontracté(e)",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui, quoi qu’il arrive" },
+          { "id": "1", "text": "Oui, quoi qu'il arrive" },
           { "id": "2", "text": "Oui, en général" },
           { "id": "3", "text": "Rarement" },
           { "id": "4", "text": "Jamais" }
@@ -884,7 +884,7 @@
       },
       {
         "id": "61",
-        "question": "J’éprouve des sensations de peur et j’ai l’estomac noué",
+        "question": "J'éprouve des sensations de peur et j'ai l'estomac noué",
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
@@ -899,13 +899,13 @@
       },
       {
         "id": "62",
-        "question": "J’ai la bougeotte et n’arrive pas à tenir en place",
+        "question": "J'ai la bougeotte et n'arrive pas à tenir en place",
         "type": 1,
         "options": [
           { "id": "1", "text": "Pas du tout" },
           { "id": "2", "text": "Pas tellement" },
           { "id": "3", "text": "Un peu" },
-          { "id": "4", "text": "Oui, c’est tout à fait le cas" }
+          { "id": "4", "text": "Oui, c'est tout à fait le cas" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -914,7 +914,7 @@
       },
       {
         "id": "63",
-        "question": "J’éprouve des sensations soudaines de panique",
+        "question": "J'éprouve des sensations soudaines de panique",
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
@@ -929,7 +929,7 @@
       },
       {
         "id": "64",
-        "question": "Avez-vous manqué d'énergie au point de ne pas être capable de faire quelque chose ? (Il doit s’agir d’un élément significatif au cours des 3 derniers mois.)",
+        "question": "Avez-vous manqué d'énergie au point de ne pas être capable de faire quelque chose ? (Il doit s'agir d'un élément significatif au cours des 3 derniers mois.)",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -1010,7 +1010,7 @@
       },
       {
         "id": "69",
-        "question": "Avez vous des problèmes d’orientation (comme ne pas retrouver votre chemin dans un lieu connu, ne pas savoir où l’on est ou quel jour on est?)",
+        "question": "Avez vous des problèmes d'orientation (comme ne pas retrouver votre chemin dans un lieu connu, ne pas savoir où l'on est ou quel jour on est?)",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -1036,7 +1036,7 @@
       },
       {
         "id": "71",
-        "question": "Test de 3 mots  \nDire au sujet : Je vais vous dire trois mots. Je voudrais que vous les répétiez maintenant et que vous essayiez de les retenir car je vous les redemanderai tout à l’heure : DRAPEAU, FLEUR, PORTE.",
+        "question": "Test de 3 mots  \nDire au sujet : Je vais vous dire trois mots. Je voudrais que vous les répétiez maintenant et que vous essayiez de les retenir car je vous les redemanderai tout à l'heure : DRAPEAU, FLEUR, PORTE.",
         "type": 8,
         "options": [
           { "id": "1", "text": "DRAPEAU" },
@@ -1322,7 +1322,7 @@
       },
       {
         "id": "74",
-        "question": "Rappel de 3 mots :   Dire au sujet : « Pouvez-vous me dire quels étaient les 3 mots que je vous ai demandés de répéter et de retenir tout à l’heure? »",
+        "question": "Rappel de 3 mots : « Pouvez-vous me dire quels étaient les 3 mots que je vous ai demandés de répéter et de retenir tout à l'heure? »",
         "type": 9,
         "options": [
           { "id": "1", "text": "DRAPEAU" },
@@ -1532,7 +1532,7 @@
       },
       {
         "id": "85",
-        "question": "Avez-vous l’impression que votre vue a baissé au cours des quatre derniers mois ou depuis votre dernière évaluation ?",
+        "question": "Avez-vous l'impression que votre vue a baissé au cours des quatre derniers mois ou depuis votre dernière évaluation ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -1592,7 +1592,7 @@
       },
       {
         "id": "90",
-        "question": "Avez-vous noté une perte de poids en dehors d’un régime ?",
+        "question": "Avez-vous noté une perte de poids en dehors d'un régime ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -1618,7 +1618,7 @@
       },
       {
         "id": "92",
-        "question": "Avez-vous perdu de l’appétit récemment ?",
+        "question": "Avez-vous perdu de l'appétit récemment ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" ,"jump":"93"},
@@ -1644,7 +1644,7 @@
       },
       {
         "id": "94",
-        "question": "Si non : est-ce que vous avez mangé la moitié de ce que vous mangez d’habitude pendant plus d’une semaine ?",
+        "question": "Si non : est-ce que vous avez mangé la moitié de ce que vous mangez d'habitude pendant plus d'une semaine ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -1875,7 +1875,7 @@
         "question": "Avez vous réalisé une ostéodensitométrie ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui (Pouvez vous préparer les résultats ?)" },
+          { "id": "1", "text": "Oui" },
           { "id": "2", "text": "Non" }
         ],
         "requiredConfirmation": false,
@@ -1957,7 +1957,7 @@
     "items": [
       {
         "id": "108",
-        "question": "Souffrez vous actuellement d’une maladie aiguë :",
+        "question": "Souffrez vous actuellement d'une maladie aiguë :",
         "type": 2,
         "options": [
           { "id": "1", "text": "Infection" },
@@ -1974,7 +1974,7 @@
       },
       {
         "id": "109",
-        "question": "Souffrez vous actuellement d’une maladie chronique :",
+        "question": "Souffrez vous actuellement d'une maladie chronique :",
         "type": 2,
         "options": [
           { "id": "1", "text": "ARTHROSE" },
@@ -2034,7 +2034,7 @@
       },
       {
         "id": "110",
-        "question": "Souffrez vous actuellement d’une maladie cancéreuse :",
+        "question": "Souffrez vous actuellement d'une maladie cancéreuse :",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -2125,7 +2125,7 @@
       },
       {
         "id": "117",
-        "question": "Souffrez vous d’une maladie de malabsorption intestinale (Crohn, Coeliaque, …)",
+        "question": "Souffrez vous d'une maladie de malabsorption intestinale (Crohn, Coeliaque, etc.)",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -2168,7 +2168,7 @@
         "question": "Avez-vous réalisé une exploration fonctionnelle respiratoire et/ou une spirométrie ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui (Pouvez vous préparer les résultats ?)" },
+          { "id": "1", "text": "Oui" },
           { "id": "2", "text": "Non" }
         ],
         "requiredConfirmation": false,
@@ -2194,7 +2194,7 @@
         "question": "Avez vous déjà réalisé une polysomnographie ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui (Pouvez vous préparer les résultats ?)" },
+          { "id": "1", "text": "Oui" },
           { "id": "2", "text": "Non" }
         ],
         "requiredConfirmation": false,
@@ -2226,7 +2226,7 @@
           { "id": "4", "text": "Mal tout le temps" },
           {
             "id": "5",
-            "text": " Ma consommation d'écran (smartphone, ordinateur, télévision, …) limite mon temps de sommeil"
+            "text": " Ma consommation d'écran (smartphone, ordinateur, télévision, etc.) limite mon temps de sommeil"
           }
         ],
         "requiredConfirmation": false,
@@ -2384,7 +2384,7 @@
       },
       {
         "id": "136",
-        "question": "Etes-vous porteur d’un pace maker ou d’un défibrillateur ?",
+        "question": "Etes-vous porteur d'un pace maker ou d'un défibrillateur ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -2410,7 +2410,7 @@
         "options": [
           {
             "id": "1",
-            "text": "Oui (merci de préparer votre carnet de vaccination si vous l'avez)"
+            "text": "Oui"
           },
           { "id": "2", "text": "Non" },
           { "id": "3", "text": "je ne sais pas" }
@@ -2441,7 +2441,7 @@
         "options": [
           {
             "id": "1",
-            "text": "Oui (pouvez vous préparer les réusltats si vous y avez accès ?)"
+            "text": "Oui"
           },
           { "id": "2", "text": "Non" },
           { "id": "3", "text": "je ne sais pas" }
@@ -2480,7 +2480,7 @@
           },
           {
             "id": "3",
-            "text": "Mon partenaire sexuel(le) a eu un ou plusieurs diagnostics di'nfection sexuellement transmissible (VIH, chlamydia, gonocoque, syphilis, …)"
+            "text": "Mon partenaire sexuel(le) a eu un ou plusieurs diagnostics di'nfection sexuellement transmissible (VIH, chlamydia, gonocoque, syphilis, etc.)"
           },
           {
             "id": "4",
@@ -2620,7 +2620,7 @@
           { "id": "1", "text": " Moins de 5 minutes" },
           { "id": "2", "text": "6 à 30 minutes" },
           { "id": "3", "text": "31 à 60 minutes" },
-          { "id": "4", "text": "Après plus d’1 heure" }
+          { "id": "4", "text": "Après plus d'1 heure" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -2882,7 +2882,7 @@
       },
       {
         "id": "170",
-        "question": "À quelle fréquence consommez-vous des boissons contenant de l’alcool ?",
+        "question": "À quelle fréquence consommez-vous des boissons contenant de l'alcool ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
@@ -2897,7 +2897,7 @@
       },
       {
         "id": "171",
-        "question": "Combien de verres standard buvez-vous, les jours où vous buvez de l’alcool ?",
+        "question": "Combien de verres standard buvez-vous, les jours où vous buvez de l'alcool ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "1 ou 2" },
@@ -2913,7 +2913,7 @@
       },
       {
         "id": "172",
-        "question": "Est-ce que votre entourage vous a fait des remarques concernant votre consommation d’alcool ?",
+        "question": "Est-ce que votre entourage vous a fait des remarques concernant votre consommation d'alcool ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Non" },
@@ -2926,7 +2926,7 @@
       },
       {
         "id": "173",
-        "question": "Vous est-il arrivé de consommer de l’alcool le matin pour vous sentir en forme ?",
+        "question": "Vous est-il arrivé de consommer de l'alcool le matin pour vous sentir en forme ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Non" },
@@ -2960,7 +2960,7 @@
     "items": [
       {
         "id": "175",
-        "question": "Pratiquez-vous 1h30 d’activité physique cumulée par semaine ? (Balade, faire les courses, sport....)",
+        "question": "Pratiquez-vous 1h30 d'activité physique cumulée par semaine ? (Balade, faire les courses, sport....)",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -2985,7 +2985,7 @@
           { "id": "4", "text": "Vélo pour le plaisir" },
           { "id": "5", "text": "Nager à la plage" },
           { "id": "6", "text": "Tondre la pelouse" },
-          { "id": "7", "text": "S'occuper de son jardin (désherber, …)" },
+          { "id": "7", "text": "S'occuper de son jardin (désherber, etc.)" },
           { "id": "8", "text": "Pêche" },
           { "id": "9", "text": "Chasse" }
         ],
@@ -3043,7 +3043,7 @@
       },
       {
         "id": "179",
-        "question": "Avez-vous eu la sensation que votre vitesse de marche était plus lente que d’habitude ?",
+        "question": "Avez-vous eu la sensation que votre vitesse de marche était plus lente que d'habitude ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -3138,7 +3138,7 @@
       },
 {
 "id": "183",
-        "question": "TEST DE VISION \n• Placez-vous à environ 50 cm devant l’écran\n• Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux\n• Couvrez votre oeil droit avec votre main droite\n• Fixez le point noir au milieu\n• Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l’oeil gauche",
+        "question": "TEST DE VISION \n• Placez-vous à environ 50 cm devant l'écran\n• Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux\n• Couvrez votre oeil droit avec votre main droite\n• Fixez le point noir au milieu\n• Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l'oeil gauche",
         "type": 22,
         "options": [ ],
         "requiredConfirmation": true,
@@ -3218,7 +3218,7 @@
       },
       {
         "id": "188",
-        "question": "TEST DU LEVER DE CHAISE.  \nDemander au sujet de se lever d’une chaise 5 fois de suite, le plus vite possible, les bras croisés sur la poitrine. Lui laisser au moins 20 secondes.",
+        "question": "TEST DU LEVER DE CHAISE.  \nDemander au sujet de se lever d'une chaise 5 fois de suite, le plus vite possible, les bras croisés sur la poitrine. Lui laisser au moins 20 secondes.",
         "type": 5,
         "options": [],
         "time": 20000,
