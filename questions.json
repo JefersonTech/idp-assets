@@ -2166,8 +2166,21 @@
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
-      {
+	 {
         "id": "120",
+        "question": "Êtes-vous plus facilement essoufflé que les personnes de votre âge ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "121",
         "question": "Avez-vous réalisé une exploration fonctionnelle respiratoire et/ou une spirométrie ?",
         "type": 1,
         "options": [
@@ -2179,6 +2192,7 @@
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
+	  
            {
         "id": "122",
         "question": "Avez vous des pauses respiratoires ou ronflement importants pendant le sommeil, constatés par votre entourage ?",
@@ -2535,45 +2549,6 @@
     "endText": "Nous allons aborder votre mobilité",
     "estimatedTime": "Temps estimé :  4 m",
     "items": [
-	{
-        "id": "144",
-        "question": "Toussez-vous souvent (tous les jours) ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "145",
-        "question": "Avez-vous souvent une toux grasse ou qui ramène des crachats ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "146",
-        "question": "Êtes-vous plus facilement essoufflé que les personnes de votre âge ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
        {
         "id": "147",
         "question": "Fumez-vous ? (Hors cigarettes électroniques)",
