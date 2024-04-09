@@ -2769,7 +2769,7 @@
       },
       {
         "id": "163",
-        "question": "Au cours des douze derniers mois : Avez-vous besoin de miser de plus en plus d'argent pour avoir la même excitation ?",
+        "question": "Au cours des douze derniers mois : Avez-vous besoin de miser de plus en plus d'argent pour avoir la même excitation ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
@@ -2814,7 +2814,7 @@
       },
       {
         "id": "166",
-        "question": "Au cours des douze derniers mois : Avez-vous déjà senti que vous aviez peut-être un problème avec le jeu ?",
+        "question": "Au cours des douze derniers mois : Avez-vous déjà senti que vous aviez peut-être un problème avec le jeu ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
@@ -2874,7 +2874,7 @@
       },
       {
         "id": "170",
-        "question": "Au cours des douze derniers mois : Vous êtes-vous déjà senti coupable de vos habitudes de jeu ou de ce qui arrive quand vous jouez ?",
+        "question": "Au cours des douze derniers mois : Vous êtes-vous déjà senti coupable de vos habitudes de jeu ou de ce qui arrive quand vous jouez ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
