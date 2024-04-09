@@ -1,4 +1,5 @@
 
+
 {
   "general": {
     "title": "GÉNÉRAL",
@@ -1513,7 +1514,7 @@
           { "id": "2", "text": "Oui, des difficultés pour lire" },
 	  { "id": "3", "text": "Oui, des pathologies oculaires" },
 	  { "id": "4", "text": "Oui, je suis actuellement un traitement (diabète, hypertension)" },
-	  { "id": "5", "text": "Non, pas de porbleme particulier" },
+	  { "id": "5", "text": "Non, pas de porbleme particulier" }
         ],
         "requiredConfirmation": true,
         "ageMin": 0,
