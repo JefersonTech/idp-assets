@@ -2784,7 +2784,7 @@
       },
       {
         "id": "164",
-        "question": "Au cours des douze derniers mois : Avez-vous rejoué une autre journée pour récupérer l'argent que vous aviez perdu en jouant ?",
+        "question": "Au cours des douze derniers mois : Avez-vous rejoué une autre journée pour récupérer l'argent que vous aviez perdu en jouant ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
