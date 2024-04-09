@@ -2814,7 +2814,7 @@
       },
       {
         "id": "166",
-        "question": "Au cours des douze derniers mois : Avez-vous déjà senti que vous aviez peut-être un problème avec le jeu ?",
+        "question": "Au cours des douze derniers mois : Avez-vous déjà senti que vous aviez peut-être un problème avec le jeu ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
@@ -2829,7 +2829,7 @@
       },
       {
         "id": "167",
-        "question": "Au cours des douze derniers mois : Le jeu a-t-il causé chez vous des problèmes de santé, y compris du stress ou de l'angoisse ?",
+        "question": "Au cours des douze derniers mois : Le jeu a-t-il causé chez vous des problèmes de santé, y compris du stress ou de l'angoisse ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
@@ -2844,7 +2844,7 @@
       },
       {
         "id": "168",
-        "question": "Au cours des douze derniers mois : Des personnes ont-elles critiqué vos habitudes de jeu ou dit que vous aviez un problème avec le jeu ?",
+        "question": "Au cours des douze derniers mois : Des personnes ont-elles critiqué vos habitudes de jeu ou dit que vous aviez un problème avec le jeu ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
@@ -2859,7 +2859,7 @@
       },
       {
         "id": "169",
-        "question": "Au cours des douze derniers mois : Vos habitudes de jeu ont-elles causé des difficultés financières à vous ou à votre entourage ?",
+        "question": "Au cours des douze derniers mois : Vos habitudes de jeu ont-elles causé des difficultés financières à vous ou à votre entourage ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
@@ -2874,7 +2874,7 @@
       },
       {
         "id": "170",
-        "question": "Au cours des douze derniers mois : Vous êtes-vous déjà senti coupable de vos habitudes de jeu ou de ce qui arrive quand vous jouez ?",
+        "question": "Au cours des douze derniers mois : Vous êtes-vous déjà senti coupable de vos habitudes de jeu ou de ce qui arrive quand vous jouez ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
