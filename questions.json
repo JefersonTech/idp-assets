@@ -2594,7 +2594,7 @@
         "question": "Combien de cigarettes fumez-vous par jour ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": " 10 ou moins" },
+          { "id": "1", "text": "10 ou moins" },
           { "id": "2", "text": "11 à 20" },
           { "id": "3", "text": "21 à 30 " },
           { "id": "4", "text": "31 ou plus" }
@@ -2609,7 +2609,7 @@
         "question": "Dans quel délai après le réveil fumez-vous votre première cigarette ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": " Moins de 5 minutes" ,"jump":"151"},
+          { "id": "1", "text": "Moins de 5 minutes" ,"jump":"151"},
           { "id": "2", "text": "6 à 30 minutes","jump":"151" },
           { "id": "3", "text": "31 à 60 minutes" ,"jump":"151"},
           { "id": "4", "text": "Après plus d'1 heure" ,"jump":"151"}
