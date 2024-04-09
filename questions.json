@@ -1506,13 +1506,16 @@
     "items": [
       {
         "id": "83",
-        "question": "Demander au sujet : Avez-vous des problèmes aux yeux (avec vos lunettes si vous en avez): des difficultés pour voir de loin, pour lire, des pathologies oculaires ou suivez-vous actuellement un traitement (diabète, hypertension)?",
-        "type": 1,
+        "question": "Avez-vous des problèmes aux yeux (avec vos lunettes si vous en avez) ? ",
+        "type": 10,
         "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
+          { "id": "1", "text": "Oui, des difficultés pour voir de loin" },
+          { "id": "2", "text": "Oui, des difficultés pour lire" },
+	  { "id": "3", "text": "Oui, des pathologies oculaires" },
+	  { "id": "4", "text": "Oui, je suis actuellement un traitement (diabète, hypertension)" },
+	  { "id": "5", "text": "Non, pas de porbleme particulier" },
         ],
-        "requiredConfirmation": false,
+        "requiredConfirmation": true,
         "ageMin": 0,
         "ageMax": 100,
         "gender": ["homme", "femme"]
