@@ -3174,7 +3174,17 @@
         "requiredConfirmation": true,
         "ageMin": null,
         "ageMax": null,
-        "gender": ["homme", "femme"]
+        "gender": ["homme", "femme"],
+	 "relatedQuestions": [
+          {
+            "questionId": "26",
+            "options": [{ "id": "1" }]
+          },
+          {
+            "questionId": "136",
+            "options": [{ "id": "1" }]
+          }
+        ]
       },
       {
         "id": "188",
