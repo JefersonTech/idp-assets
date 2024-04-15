@@ -3207,12 +3207,12 @@
           {
             "id": "1",
             "text": "Oui",
-            "jump": "191"
+            "jump": "182"
           },
           {
             "id": "2",
             "text": "Non",
-            "jump": "192"
+            "jump": "183"
           }
         ],
         "ageMin": null,
@@ -3226,11 +3226,13 @@
         "options": [
           {
             "id": "1",
-            "text": "Oui"
+            "text": "Oui",
+		"jump": "184"
           },
           {
             "id": "2",
-            "text": "Non"
+            "text": "Non",
+		  "jump": "184"
           }
         ],
         "requiredConfirmation": false,
