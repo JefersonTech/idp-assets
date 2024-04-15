@@ -1686,7 +1686,7 @@
       },
       {
         "id": "96",
-        "question": "Avez-vous tendance à consommer des aliments trop gras / sucrés / salés (charcuterie, sodqa, confiserie, plats industriels (fast food, plats préparés), ajout régulier de sel à table ?",
+        "question": "Avez-vous tendance à consommer des aliments trop gras / sucrés / salés (charcuterie, soda, confiserie, plats industriels (fast food, plats préparés), ajout régulier de sel à table ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -1801,7 +1801,11 @@
           {
             "id": "29",
             "text": "UN OU PLUSIEURS ADÉNOMES AVANCÉS (POLYPE ADÉNOMATEUX)"
-          }
+          },
+	 {
+            "id": "30",
+            "text": "AUCUNE DES PATHOLOGIES LISTÉES"
+          }	
           
         ],
         "requiredConfirmation": true,
@@ -1861,6 +1865,10 @@
           {
             "id": "29",
             "text": "UN OU PLUSIEURS ADÉNOMES AVANCÉS (POLYPE ADÉNOMATEUX)"
+          },
+	 {
+            "id": "30",
+            "text": "AUCUN DES ANTEDÉCENTS LISTÉS"
           }
      
         ],
@@ -1938,7 +1946,12 @@
           { "id": "11", "text": "Hypercholestérolémie familiale" },
           { "id": "12", "text": "DMLA" },
           { "id": "13", "text": "Maladie d'Alzheimer" },
-          { "id": "14", "text": "Ostéoporose" }
+          { "id": "14", "text": "Ostéoporose" },
+	 {
+            "id": "15",
+            "text": "AUCUN DES ANTEDÉCENTS LISTÉS"
+          }
+     	
 	],
         "requiredConfirmation": true,
         "ageMin": 0,
@@ -1961,7 +1974,13 @@
         "options": [
           { "id": "1", "text": "Infection" },
           { "id": "2", "text": "Grippe" },
-          { "id": "3", "text": "COVID" }          
+          { "id": "3", "text": "COVID" },
+	 {
+            "id": "4",
+            "text": "AUCUNE DES MALADIES LISTÉES"
+          }
+     
+		
         ],
         "requiredConfirmation": true,
         "ageMin": 0,
@@ -2098,8 +2117,8 @@
         "question": "Avez vous des épisodes de diarrhée régulièrement ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui","jump":117 },
-          { "id": "2", "text": "Non","jump":118  }
+          { "id": "1", "text": "Oui","jump":"114" },
+          { "id": "2", "text": "Non","jump":"115"  }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -2147,7 +2166,7 @@
         "gender": ["homme", "femme"]
       },
 	 {
-        "id": "1117",
+        "id": "117",
         "question": "Êtes-vous plus facilement essoufflé que les personnes de votre âge ?",
         "type": 1,
         "options": [
