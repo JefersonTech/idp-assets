@@ -1387,7 +1387,7 @@
             "picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/12-doce.png?raw=true"
           }
         ],
-        "requiredConfirmation": false,
+        "requiredConfirmation": true,
         "ageMin": 0,
         "ageMax": 100,
         "gender": ["homme", "femme"]
@@ -3077,9 +3077,28 @@
         "ageMax": null,
         "gender": ["homme", "femme"]
       },
+
 {
 "id": "174",
-        "question": "TEST DE VISION \n• Placez-vous à environ 50 cm devant l'écran. Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux. Couvrez votre oeil droit avec votre main droite. Fixez le point noir au milieu. Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l'oeil gauche",
+        "question": "TEST DE VISION",
+        "type": 13,
+
+
+ "options": [
+          {
+            "id": "1",
+            "text": "Placez-vous à environ 50 cm devant l'écran. Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux. Couvrez votre oeil droit avec votre main droite. Fixez le point noir au milieu. Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l'oeil gauche"
+          }
+        ],
+	 "requiredConfirmation": true,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"],
+      },
+	    
+{
+"id": "175",
+        "question": "GRILLE D'AMSLER",
         "type": 22,
         "options": [ ],
         "requiredConfirmation": true,
@@ -3089,7 +3108,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "175",
+        "id": "176",
         "question": "Les lignes droites sont déformées ?",
         "type": 1,
         "options": [
@@ -3109,7 +3128,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "176",
+        "id": "177",
         "question": "Les lignes droites vous paraissent ternes ?",
         "type": 1,
         "options": [
@@ -3128,7 +3147,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "177",
+        "id": "178",
         "question": "Vous voyez une ou plusieurs taches sombres au centre de la grille ?",
         "type": 1,
         "options": [
@@ -3148,7 +3167,7 @@
       },
 
       {
-        "id": "178",
+        "id": "179",
         "question": "BIO-IMPÉDANCEMÉTRIE",
         "type": 16,
         "options": [],
@@ -3162,13 +3181,13 @@
             "options": [{ "id": "1" }]
           },
           {
-            "questionId": "136",
+            "questionId": "132",
             "options": [{ "id": "1" }]
           }
         ]
       },
       {
-        "id": "179",
+        "id": "180",
         "question": "TEST DU LEVER DE CHAISE.  \nDemander au sujet de se lever d'une chaise 5 fois de suite, le plus vite possible, les bras croisés sur la poitrine. Lui laisser au moins 20 secondes.",
         "type": 5,
         "options": [],
@@ -3181,7 +3200,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "180",
+        "id": "181",
         "question": "Le sujet a-t-il réalisé les 5 levers de chaise ?",
         "type": 1,
         "options": [
@@ -3201,7 +3220,7 @@
         "gender": ["homme", "femme"]
       },
 	{
-        "id": "181",
+        "id": "182",
         "question": "Avez-vous fait le test en moins de 14 secondes (si le paticipant a moins de 80 ans) ou en moins de 16 secondes (si le participant a 80 ans ou plus) ?",
         "type": 1,
         "options": [
@@ -3214,13 +3233,13 @@
             "text": "Non"
           }
         ],
-        "requiredConfirmation": true,
+        "requiredConfirmation": false,
         "ageMin": null,
         "ageMax": null,
         "gender": ["homme", "femme"]
       },
       {
-        "id": "182",
+        "id": "183",
         "question": "Combien en a-t-il réalisé en 15 secondes ?",
         "type": 12,
         "options": [
@@ -3281,7 +3300,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "183",
+        "id": "184",
         "question": "ÉQUILIBRE UNIPODAL (JAMBE DROITE)",
         "type": 5,
         "options": [],
@@ -3294,7 +3313,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "184",
+        "id": "185",
         "question": "ÉQUILIBRE UNIPODAL (JAMBE GAUCHE)",
         "type": 5,
         "options": [],
@@ -3307,7 +3326,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "185",
+        "id": "186",
         "question": "TEST DE FORCE DE PRÉHENSION",
         "type": 17,
         "options": [],
@@ -3317,7 +3336,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "186",
+        "id": "187",
         "question": "TEST D'ÉQUILIBRE",
         "type": 18,
         "options": [],
@@ -3327,7 +3346,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "187",
+        "id": "188",
         "question": "TUG",
         "type": 19,
         "options": [],
@@ -3337,7 +3356,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "188",
+        "id": "189",
         "question": "TEST DE MARCHE",
         "type": 20,
         "options": [],
