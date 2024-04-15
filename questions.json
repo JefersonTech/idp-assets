@@ -1512,7 +1512,7 @@
           { "id": "2", "text": "Oui, des difficultés pour lire" },
 	  { "id": "3", "text": "Oui, des pathologies oculaires" },
 	  { "id": "4", "text": "Oui, je suis actuellement un traitement (diabète, hypertension)" },
-	  { "id": "5", "text": "Non, pas de porbleme particulier" }
+	  { "id": "5", "text": "Non, pas de problème particulier" }
         ],
         "requiredConfirmation": true,
         "ageMin": 0,
@@ -1557,17 +1557,104 @@
         "ageMin": 0,
         "ageMax": 100,
         "gender": ["homme", "femme"]
+      },
+{
+"id": "87",
+        "question": "TEST DE VISION",
+        "type": 13,
+
+ "options": [
+          {
+            "id": "1",
+            "text": "Placez-vous à environ 50 cm devant l'écran. Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux. Couvrez votre oeil droit avec votre main droite. Fixez le point noir au milieu. Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l'oeil gauche"
+          }
+        ],
+	 "requiredConfirmation": true,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+	    
+{
+"id": "88",
+        "question": "GRILLE D'AMSLER",
+        "type": 22,
+        "options": [ ],
+        "requiredConfirmation": true,
+	"picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/visiontest.jpg?raw=true",
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "89",
+        "question": "Les lignes droites sont déformées ?",
+        "type": 1,
+        "options": [
+          {
+            "id": "1",
+            "text": "Oui"
+          },
+          {
+            "id": "2",
+            "text": "Non"
+          }
+        ],
+        
+        "requiredConfirmation": false,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "90",
+        "question": "Les lignes droites vous paraissent ternes ?",
+        "type": 1,
+        "options": [
+          {
+            "id": "1",
+            "text": "Oui"
+          },
+          {
+            "id": "2",
+            "text": "Non"
+          }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "91",
+        "question": "Vous voyez une ou plusieurs taches sombres au centre de la grille ?",
+        "type": 1,
+        "options": [
+          {
+            "id": "1",
+            "text": "Oui"
+          },
+          {
+            "id": "2",
+            "text": "Non"
+          }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": null,
+        "ageMax": null,
+        "gender": ["homme", "femme"]
       }
+
     ]
   },
   "nutrition": {
     "title": "NUTRITION",
     "description": "Parlons de nutrition",
-    "endText": "Nous allons aborder vos antécedents personnels et familiaux",
+    "endText": "Nous allons aborder vos antécédents personnels et familiaux",
     "estimatedTime": "Temps estimé :  2 m",
     "items": [
       {
-        "id": "87",
+        "id": "92",
         "question": "Avez-vous perdu involontairement plus de 3kg au cours de 3 derniers mois ?",
         "type": 1,
         "options": [
@@ -1580,7 +1667,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "88",
+        "id": "93",
         "question": "Comment qualifiez-vous votre appétit au cours du dernier mois ? ",
         "type": 10,
         "options": [
@@ -1593,7 +1680,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "89",
+        "id": "94",
         "question": "Avez-vous noté une perte de poids en dehors d'un régime ?",
         "type": 1,
         "options": [
@@ -1606,7 +1693,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "90",
+        "id": "95",
         "question": "Au cours de l'année passée, avez-vous perdu plus de 4,5kg involontairement ?",
         "type": 1,
         "options": [
@@ -1619,12 +1706,12 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "91",
+        "id": "96",
         "question": "Avez-vous perdu de l'appétit récemment ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" ,"jump":"92"},
-          { "id": "2", "text": "Non" ,"jump":"93"}
+          { "id": "1", "text": "Oui" ,"jump":"97"},
+          { "id": "2", "text": "Non" ,"jump":"98"}
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -1632,12 +1719,12 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "92",
+        "id": "97",
         "question": "Depuis plus de 2 semaines ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" ,"jump":"94"},
-          { "id": "2", "text": "Non" ,"jump":"94"}
+          { "id": "1", "text": "Oui" ,"jump":"99"},
+          { "id": "2", "text": "Non" ,"jump":"99"}
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -1645,7 +1732,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "93",
+        "id": "98",
         "question": "Est-ce que vous avez mangé la moitié de ce que vous mangez d'habitude pendant plus d'une semaine ?",
         "type": 1,
         "options": [
@@ -1658,7 +1745,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "94",
+        "id": "99",
         "question": "Etes vous allez chez le dentiste dans les 12 derniers mois ?",
         "type": 1,
         "options": [
@@ -1671,7 +1758,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "95",
+        "id": "100",
         "question": "Mangez vous des fruits et des légumes ?",
         "type": 1,
         "options": [
@@ -1685,12 +1772,13 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "96",
-        "question": "Avez-vous tendance à consommer des aliments trop gras / sucrés / salés (charcuterie, soda, confiserie, plats industriels (fast food, plats préparés), ajout régulier de sel à table ?",
+        "id": "101",
+        "question": "Avez-vous tendance à consommer des aliments trop gras/ sucrés/salés (charcuterie, soda, confiserie, plats industriels (fast-food, plats préparés), ajout régulier de sel à table) ? : ",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
           { "id": "2", "text": "Non" }
+
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -1698,7 +1786,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "97",
+        "id": "102",
         "question": "Êtes-vous un consommateur particulièrement important de thé ou de café ?",
         "type": 1,
         "options": [
@@ -1714,12 +1802,12 @@
   },
   "antedecents": {
     "title": "ANTÉCÉDENTS PERSONNELS ET FAMILIAUX",
-    "description": "Parlons de vos antécedents personnels et familiaux",
+    "description": "Parlons de vos antécédents personnels et familiaux",
     "endText": "Nous allons aborder votre état de santé actuel",
     "estimatedTime": "Temps estimé :  3 m",
     "items": [
       {
-        "id": "98",
+        "id": "103",
         "question": "Avez-vous chuté ?",
         "type": 1,
         "options": [
@@ -1735,15 +1823,15 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "99",
+        "id": "104",
         "question": "Avez-vous été hospitalisé ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui, au cours des 7 derniers jours " ,"jump":"100" },
-          { "id": "2", "text": "Oui, au cours du dernier mois " ,"jump":"100" },
-          { "id": "3", "text": "Oui, au cours des 3 derniers mois ","jump":"100"  },
-          { "id": "4", "text": "Oui, au cours des 6 derniers mois " ,"jump":"100" },
-          { "id": "5", "text": "Non, je n'ai pas été hospitalisé","jump":"101" }
+          { "id": "1", "text": "Oui, au cours des 7 derniers jours " ,"jump":"105" },
+          { "id": "2", "text": "Oui, au cours du dernier mois " ,"jump":"105" },
+          { "id": "3", "text": "Oui, au cours des 3 derniers mois ","jump":"105"  },
+          { "id": "4", "text": "Oui, au cours des 6 derniers mois " ,"jump":"105" },
+          { "id": "5", "text": "Non, je n'ai pas été hospitalisé","jump":"106" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -1751,7 +1839,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "100",
+        "id": "105",
         "question": "Pour quelle(s) pathologie(s) s'agit-t-il ?",
         "type": 2,
         "options": [
@@ -1815,7 +1903,7 @@
 "allowAppendOptions": true
       },
       {
-        "id": "101",
+        "id": "106",
         "question": "Avez-vous eu un ou plusieurs de ces antécédents auparavant ?",
         "type": 2,
         "options": [
@@ -1868,7 +1956,7 @@
           },
 	 {
             "id": "30",
-            "text": "AUCUN DES ANTEDÉCENTS LISTÉS"
+            "text": "AUCUN DES ANTÉCÉDENTS LISTÉS"
           }
      
         ],
@@ -1879,7 +1967,7 @@
 "allowAppendOptions": true
       },
       {
-        "id": "102",
+        "id": "107",
         "question": "Avez vous réalisé une ostéodensitométrie ?",
         "type": 1,
         "options": [
@@ -1892,7 +1980,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "103",
+        "id": "108",
         "question": "À quand remonte votre dernière prise de sang et/ou analyse d'urine ? (merci de les préparer si vous y avez)",
         "type": 1,
         "options": [
@@ -1907,13 +1995,13 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "104",
+        "id": "109",
         "question": "Il y a des antécédents connus de maladies dans votre famille proche ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" ,"jump":"105"},
-          { "id": "2", "text": "Non","jump":"106" },
-          { "id": "3", "text": "Je ne sais pas","jump":"106" }
+          { "id": "1", "text": "Oui" ,"jump":"110"},
+          { "id": "2", "text": "Non","jump":"111" },
+          { "id": "3", "text": "Je ne sais pas","jump":"111" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -1921,8 +2009,8 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "105",
-        "question": "De quel antecedent(s) s'agit il ?",
+        "id": "110",
+        "question": "De quel antécédent(s) s'agit il ?",
         "type": 2,
         "options": [
           { "id": "1", "text": "Cancer du sein et ou des ovaires" },
@@ -1933,7 +2021,7 @@
           },
           {
             "id": "4",
-            "text": "Polypose adanomateuse familiale ou syndrome de Lynch"
+            "text": "Polypose adénomateuse familiale ou syndrome de Lynch"
           },
           {
             "id": "5",
@@ -1941,7 +2029,7 @@
           },
           { "id": "7", "text": "Diabète" },
           { "id": "8", "text": "HTA" },
-          { "id": "9", "text": "Infarctus du myocard ou mort subite" },
+          { "id": "9", "text": "Infarctus du myocarde ou mort subite" },
           { "id": "10", "text": "AVC" },
           { "id": "11", "text": "Hypercholestérolémie familiale" },
           { "id": "12", "text": "DMLA" },
@@ -1949,7 +2037,7 @@
           { "id": "14", "text": "Ostéoporose" },
 	 {
             "id": "15",
-            "text": "AUCUN DES ANTEDÉCENTS LISTÉS"
+            "text": "AUCUN DES ANTÉCÉDENTS LISTÉS"
           }
      	
 	],
@@ -1959,16 +2047,19 @@
         "gender": ["homme", "femme"],
 	"allowAppendOptions": true
       }
+
+
+
     ]
   },
   "sante": {
     "title": "ÉTAT DE SANTÉ ACTUEL",
     "description": "Parlons de votre état de santé actuel",
-    "endText": "Nous allons aborder vos vaccins et depistages",
+    "endText": "Nous allons aborder vos vaccins et dépistages",
     "estimatedTime": "Temps estimé :  4 m",
     "items": [
       {
-        "id": "106",
+        "id": "111",
         "question": "Souffrez vous actuellement d'une maladie aiguë :",
         "type": 2,
         "options": [
@@ -1989,7 +2080,7 @@
 "allowAppendOptions": true
       },
       {
-        "id": "107",
+        "id": "112",
         "question": "Souffrez vous actuellement d'une maladie chronique :",
         "type": 2,
         "options": [
@@ -2047,8 +2138,68 @@
         "gender": ["homme", "femme"]
 ,"allowAppendOptions": true
       },
+
+{
+        "id": "113",
+        "question": "Vous arrive t'il de vous faire vomir ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+
+
+
+{
+        "id": "114",
+        "question": "Vous inquiétez vous d'avoir perdu le contrôle de ce que vous mangez ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+
+
+{
+        "id": "115",
+        "question": "Pensez vous que vous êtes gros(se) alors que d'autres vous trouvent trop mince ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+
+{
+        "id": "116",
+        "question": "Diriez vous que la nourriture domine votre vie ? ",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+
       {
-        "id": "108",
+        "id": "117",
         "question": "Avez vous des douleurs ?",
         "type": 1,
         "options": [
@@ -2061,7 +2212,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "109",
+        "id": "118",
         "question": "Vous sentez vous fatigué ?",
         "type": 1,
         "options": [
@@ -2074,8 +2225,8 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "110",
-        "question": "Vous sentez vous fièvreux ?",
+        "id": "119",
+        "question": "Vous sentez vous fiévreux ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -2087,7 +2238,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "111",
+        "id": "120",
         "question": "Avez vous du mal à respirer ?",
         "type": 1,
         "options": [
@@ -2100,7 +2251,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "112",
+        "id": "121",
         "question": "Avez vous des jambes enflées ?",
         "type": 1,
         "options": [
@@ -2113,12 +2264,12 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "113",
+        "id": "122",
         "question": "Avez vous des épisodes de diarrhée régulièrement ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui","jump":"114" },
-          { "id": "2", "text": "Non","jump":"115"  }
+          { "id": "1", "text": "Oui","jump":"123" },
+          { "id": "2", "text": "Non","jump":"124"  }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -2126,7 +2277,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "114",
+        "id": "123",
         "question": "Souffrez vous d'une maladie de malabsorption intestinale (Crohn, Coeliaque, etc.)",
         "type": 1,
         "options": [
@@ -2140,7 +2291,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "115",
+        "id": "124",
         "question": "Toussez vous souvent (tous les jours) ?",
         "type": 1,
         "options": [
@@ -2153,7 +2304,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "116",
+        "id": "125",
         "question": "Avez-vous souvent une toux grasse  oui qui ramène des crachats ?",
         "type": 1,
         "options": [
@@ -2166,7 +2317,7 @@
         "gender": ["homme", "femme"]
       },
 	 {
-        "id": "117",
+        "id": "126",
         "question": "Êtes-vous plus facilement essoufflé que les personnes de votre âge ?",
         "type": 1,
         "options": [
@@ -2179,7 +2330,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "118",
+        "id": "127",
         "question": "Avez-vous réalisé une exploration fonctionnelle respiratoire et/ou une spirométrie ?",
         "type": 1,
         "options": [
@@ -2193,7 +2344,7 @@
       },
 	  
            {
-        "id": "119",
+        "id": "128",
         "question": "Avez vous des pauses respiratoires ou ronflement importants pendant le sommeil, constatés par votre entourage ?",
         "type": 1,
         "options": [
@@ -2206,7 +2357,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "120",
+        "id": "129",
         "question": "Avez vous déjà réalisé une polysomnographie ?",
         "type": 1,
         "options": [
@@ -2219,7 +2370,7 @@
         "gender": ["homme", "femme"]
       },
         {
-        "id": "121",
+        "id": "130",
         "question": "Etes vous appareillé(e) pour une apnée du sommeil ?",
         "type": 1,
         "options": [
@@ -2232,7 +2383,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "122",
+        "id": "131",
         "question": "Comment dormez vous ?",
         "type": 1,
         "options": [
@@ -2251,7 +2402,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "123",
+        "id": "132",
         "question": "Etes vous devant un écran avant de vous endormir ?",
         "type": 1,
         "options": [
@@ -2266,7 +2417,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "124",
+        "id": "133",
         "question": "À quel âge avez vous été ménopausée ?",
         "type": 1,
         "options": [
@@ -2279,7 +2430,7 @@
         "gender": ["femme"]
       },
       {
-        "id": "125",
+        "id": "134",
         "question": "Présentez vous des symptômes de ménopause (bouffées de chaleur, problèmes de sommeil, sécheresse vaginale, troubles urinaires, fatigue, anxiété, irritabilité) ?",
         "type": 1,
         "options": [
@@ -2292,7 +2443,7 @@
         "gender": ["femme"]
       },
       {
-        "id": "126",
+        "id": "135",
         "question": "Ces symptômes ont des effets négatifs sur ma vie de tous les jours",
         "type": 1,
         "options": [
@@ -2305,7 +2456,7 @@
         "gender": ["femme"]
       },
       {
-        "id": "127",
+        "id": "136",
         "question": "Utilisez vous un moyen de contraception ?",
         "type": 1,
         "options": [
@@ -2318,7 +2469,7 @@
         "gender": ["femme"]
       },
       {
-        "id": "128",
+        "id": "137",
         "question": "De quel moyen s'agit-il ?",
         "type": 1,
         "options": [
@@ -2334,7 +2485,7 @@
 		"allowAppendOptions": true
       },
       {
-        "id": "129",
+        "id": "138",
         "question": "Vous est il arrivé d'utiliser un moyen de contraception d'urgence ?",
         "type": 1,
         "options": [
@@ -2347,12 +2498,12 @@
         "gender": ["femme"]
       },
       {
-        "id": "130",
+        "id": "139",
         "question": "Avez-vous des douleurs intenses au bas ventre au moment de la période des règles ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" ,"jump":"131"},
-          { "id": "2", "text": "Non" ,"jump":"132"}
+          { "id": "1", "text": "Oui" ,"jump":"140"},
+          { "id": "2", "text": "Non" ,"jump":"141"}
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -2360,13 +2511,13 @@
         "gender": ["femme"]
       },
       {
-        "id": "131",
+        "id": "140",
         "question": "Quel type de douleur ?",
         "type": 2,
         "options": [
           {
             "id": "1",
-            "text": "Les douleurs surviennet quelques jours avant les règles et/ou persistent quelques jours après les règles"
+            "text": "Les douleurs surviennent quelques jours avant les règles et/ou persistent quelques jours après les règles"
           },
           {
             "id": "2",
@@ -2378,7 +2529,7 @@
           },
           {
             "id": "4",
-            "text": " Des douleurs fortes/vives sont ressetnies en profondeur pendant les rapports sexuels"
+            "text": " Des douleurs fortes/vives sont ressenties en profondeur pendant les rapports sexuels"
           },
           {
             "id": "5",
@@ -2390,7 +2541,7 @@
           },
           {
             "id": "7",
-            "text": "Des douleurs sont présentes au moment d'aller à la selle, sourtout lors de la période des règles"
+            "text": "Des douleurs sont présentes au moment d'aller à la selle, surtout lors de la période des règles"
           }
         ],
         "requiredConfirmation": true,
@@ -2399,7 +2550,7 @@
         "gender": ["femme"]
       },
       {
-        "id": "132",
+        "id": "141",
         "question": "Etes-vous porteur d'un pace maker ou d'un défibrillateur ?",
         "type": 1,
         "options": [
@@ -2415,12 +2566,12 @@
   },
   "vaccins": {
     "title": "VACCINS et DÉPISTAGES",
-    "description": "Parlons de vos vaccins et depistages",
+    "description": "Parlons de vos vaccins et dépistages",
     "endText": "Nous allons aborder votre traitement medical",
     "estimatedTime": "Temps estimé :  5 m",
     "items": [
       {
-        "id": "133",
+        "id": "142",
         "question": "Etes vous à jour des vaccins obligatoires (diphtérie, tétanos, polio) ?",
         "type": 1,
         "options": [
@@ -2437,7 +2588,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "134",
+        "id": "143",
         "question": "Avez vous réalisé votre mammographie pour le dépistage du cancer du sein ou/et réalisé votre test de dépistage du cancer colorectal ?",
         "type": 1,
         "options": [
@@ -2451,7 +2602,7 @@
         "gender": ["femme"]
       },
       {
-        "id": "135",
+        "id": "144",
         "question": "Avez vous réalisé votre test de dépistage du cancer du col de l'utérus ?",
         "type": 1,
         "options": [
@@ -2468,7 +2619,7 @@
         "gender": ["femme"]
       },
       {
-        "id": "136",
+        "id": "145",
         "question": "Êtes vous vacciné(e) contre le papillomavirus humains (HPV) ?",
         "type": 1,
         "options": [
@@ -2482,7 +2633,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "137",
+        "id": "146",
         "question": "Etes vous dans l'une des situations suivantes",
         "type": 2,
         "options": [
@@ -2496,7 +2647,7 @@
           },
           {
             "id": "3",
-            "text": "Mon partenaire sexuel(le) a eu un ou plusieurs diagnostics di'nfection sexuellement transmissible (VIH, chlamydia, gonocoque, syphilis, etc.)"
+            "text": "Mon partenaire sexuel(le) a eu un ou plusieurs diagnostics d'infection sexuellement transmissible (VIH, chlamydia, gonocoque, syphilis, etc.)"
           },
           {
             "id": "4",
@@ -2518,12 +2669,12 @@
     "estimatedTime": "Temps estimé :  2 m",
     "items": [
       {
-        "id": "138",
+        "id": "147",
         "question": "Prenez vous des médicaments ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui","jump": "139" },
-          { "id": "2", "text": "Non","jump": "140" }
+          { "id": "1", "text": "Oui","jump": "148" },
+          { "id": "2", "text": "Non","jump": "149" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -2531,8 +2682,8 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "139",
-        "question": "Lequels ? (Merci de préparer vos dernières ordonnances)",
+        "id": "148",
+        "question": "Lesquels ? (Merci de préparer vos dernières ordonnances)",
         "type": 3,
         "options": [],
         "requiredConfirmation": true,
@@ -2549,13 +2700,13 @@
     "estimatedTime": "Temps estimé :  4 m",
     "items": [
        {
-        "id": "140",
+        "id": "149",
         "question": "Fumez-vous ? (Hors cigarettes électroniques)",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" ,"jump":"141"},
-          { "id": "2", "text": "Non" ,"jump":"144"},
-          { "id": "3", "text": "Je ne fume plus","jump":"143" }
+          { "id": "1", "text": "Oui" ,"jump":"150"},
+          { "id": "2", "text": "Non" ,"jump":"153"},
+          { "id": "3", "text": "Je ne fume plus","jump":"152" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -2564,7 +2715,7 @@
       },
        
       {
-        "id": "141",
+        "id": "150",
         "question": "Combien de cigarettes fumez-vous par jour ?",
         "type": 1,
         "options": [
@@ -2579,14 +2730,14 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "142",
+        "id": "151",
         "question": "Dans quel délai après le réveil fumez-vous votre première cigarette ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Moins de 5 minutes" ,"jump":"144"},
-          { "id": "2", "text": "6 à 30 minutes","jump":"144" },
-          { "id": "3", "text": "31 à 60 minutes" ,"jump":"144"},
-          { "id": "4", "text": "Après plus d'1 heure" ,"jump":"144"}
+          { "id": "1", "text": "Moins de 5 minutes" ,"jump":"153"},
+          { "id": "2", "text": "6 à 30 minutes","jump":"153" },
+          { "id": "3", "text": "31 à 60 minutes" ,"jump":"153"},
+          { "id": "4", "text": "Après plus d'1 heure" ,"jump":"153"}
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -2594,7 +2745,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "143",
+        "id": "152",
         "question": "Si vous avez arrêté de fumer, depuis combien de temps ?",
         "type": 1,
         "options": [
@@ -2609,7 +2760,7 @@
       },
      
       {
-        "id": "144",
+        "id": "153",
         "question": "Avez-vous été exposé de manière prolongée ou répétée à des gaz, poussières, fumées, vapeurs dans le cadre de votre travail ?",
         "type": 1,
         "options": [
@@ -2622,14 +2773,14 @@
         "gender": ["homme", "femme"]
       },
     {
-        "id": "145",
+        "id": "154",
         "question": "À quelle fréquence consommez-vous des boissons contenant de l'alcool ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Jamais","jump":"153" },
-          { "id": "2", "text": "Une fois par mois ou moins","jump":"146" },
-          { "id": "3", "text": "Deux à 4 fois par mois","jump":"146" },
-          { "id": "4", "text": "Deux à 3 fois par semaine","jump":"146" }
+          { "id": "1", "text": "Jamais","jump":"162" },
+          { "id": "2", "text": "Une fois par mois ou moins","jump":"155" },
+          { "id": "3", "text": "Deux à 4 fois par mois","jump":"155" },
+          { "id": "4", "text": "Deux à 3 fois par semaine","jump":"155" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -2639,7 +2790,7 @@
 
 	    
       {
-        "id": "146",
+        "id": "155",
         "question": "Combien de verres standard buvez-vous, les jours où vous buvez de l'alcool ?",
         "type": 1,
         "options": [
@@ -2655,7 +2806,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "147",
+        "id": "156",
         "question": "Est-ce que votre entourage vous a fait des remarques concernant votre consommation d'alcool ?",
         "type": 1,
         "options": [
@@ -2668,7 +2819,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "148",
+        "id": "157",
         "question": "Vous est-il arrivé de consommer de l'alcool le matin pour vous sentir en forme ?",
         "type": 1,
         "options": [
@@ -2681,7 +2832,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "149",
+        "id": "158",
         "question": "Vous est-il arrivé de boire et de ne plus vous souvenir le matin de ce que vous avez pu dire ou faire ?",
         "type": 1,
         "options": [
@@ -2694,7 +2845,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "150",
+        "id": "159",
         "question": "Nombre de verres que vous consommez les jours où vous buvez de l'alcool ?",
         "type": 14,
         "options": [],
@@ -2704,7 +2855,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "151",
+        "id": "160",
         "question": "Nombre de jours où vous consommez de l'alcool par semaine ?",
         "type": 14,
         "options": [],
@@ -2714,7 +2865,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "152",
+        "id": "161",
         "question": "Consommez vous dans certaines occasions au moins 6 verres en un minimum de temps ou pratiquez vous le Binge Drinking ?",
         "type": 1,
         "options": [
@@ -2727,7 +2878,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "153",
+        "id": "162",
         "question": "Avez-vous consommé d'autres substances au cours des 12 derniers mois ? Canabis, haschisch, marijuana, herbe, joint, shit) ou d'autres drogues (extasy, cocaïne, héroïne, etc)",
         "type": 1,
         "options": [
@@ -2740,7 +2891,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "154",
+        "id": "163",
         "question": "Au cours des 12 derniers mois, avez-vous misé de l'argent pour un jeu (loterie, poker, etc) un pari (sportif, hippique, etc) ?",
         "type": 1,
         "options": [
@@ -2753,7 +2904,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "155",
+        "id": "164",
         "question": "Au cours des douze derniers mois : Avez-vous misé plus d'argent que vous pouviez vous permettre de perdre ?",
         "type": 1,
         "options": [
@@ -2768,7 +2919,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "156",
+        "id": "165",
         "question": "Au cours des douze derniers mois : Avez-vous besoin de miser de plus en plus d'argent pour avoir la même excitation ?",
         "type": 1,
         "options": [
@@ -2783,7 +2934,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "157",
+        "id": "166",
         "question": "Au cours des douze derniers mois : Avez-vous rejoué une autre journée pour récupérer l'argent que vous aviez perdu en jouant ?",
         "type": 1,
         "options": [
@@ -2798,7 +2949,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "158",
+        "id": "167",
         "question": "Au cours des douze derniers mois : Avez-vous vendu ou emprunté quelque chose pour obtenir de l'argent pour jouer ?",
         "type": 1,
         "options": [
@@ -2813,7 +2964,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "159",
+        "id": "168",
         "question": "Au cours des douze derniers mois : Avez-vous déjà senti que vous aviez peut-être un problème avec le jeu ?",
         "type": 1,
         "options": [
@@ -2828,7 +2979,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "160",
+        "id": "169",
         "question": "Au cours des douze derniers mois : Le jeu a-t-il causé chez vous des problèmes de santé, y compris du stress ou de l'angoisse ?",
         "type": 1,
         "options": [
@@ -2843,7 +2994,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "161",
+        "id": "170",
         "question": "Au cours des douze derniers mois : Des personnes ont-elles critiqué vos habitudes de jeu ou dit que vous aviez un problème avec le jeu ?",
         "type": 1,
         "options": [
@@ -2858,7 +3009,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "162",
+        "id": "171",
         "question": "Au cours des douze derniers mois : Vos habitudes de jeu ont-elles causé des difficultés financières à vous ou à votre entourage ?",
         "type": 1,
         "options": [
@@ -2873,7 +3024,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "163",
+        "id": "172",
         "question": "Au cours des douze derniers mois : Vous êtes-vous déjà senti coupable de vos habitudes de jeu ou de ce qui arrive quand vous jouez ?",
         "type": 1,
         "options": [
@@ -2888,12 +3039,12 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "164",
+        "id": "173",
         "question": "Avez-vous jouer/parier antérieurement et arrêté ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" ,"jump":"165"},
-          { "id": "2", "text": "Non" ,"jump":"166"}
+          { "id": "1", "text": "Oui" ,"jump":"174"},
+          { "id": "2", "text": "Non" ,"jump":"175"}
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -2901,7 +3052,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "165",
+        "id": "174",
         "question": "Motif de l'arrêt ?",
         "type": 3,
         "options": [],
@@ -2919,7 +3070,7 @@
     "estimatedTime": "Temps estimé :  5 m",
     "items": [
       {
-        "id": "166",
+        "id": "175",
         "question": "Pratiquez-vous 1h30 d'activité physique cumulée par semaine ? (Balade, faire les courses, sport....)",
         "type": 1,
         "options": [
@@ -2932,7 +3083,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "167",
+        "id": "176",
         "question": "Combien de minutes par semaine pratiquez vous des activités à l'extérieur ?",
         "type": 15,
         "options": [
@@ -2955,7 +3106,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "168",
+        "id": "177",
         "question": "Combien de minutes par semaine pratiquez vous des activités à l'intérieur ?",
         "type": 15,
         "options": [
@@ -2973,7 +3124,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "169",
+        "id": "178",
         "question": "Combien de minutes par semaine pratiquez vous des activités sportives  ?",
         "type": 15,
         "options": [
@@ -3002,7 +3153,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "170",
+        "id": "179",
         "question": "Avez-vous eu la sensation que votre vitesse de marche était plus lente que d'habitude ?",
         "type": 1,
         "options": [
@@ -3015,7 +3166,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "171",
+        "id": "180",
         "question": "Avez-vous éprouvé des difficultés à vous déplacer ? (douleurs, gêne, etc)",
         "type": 1,
         "options": [
@@ -3036,7 +3187,7 @@
     "estimatedTime": "Temps estimé :  2 m",
     "items": [
       {
-        "id": "172",
+        "id": "181",
         "question": "Souhaitez vous aborder un ou plusieurs sujets en priorité, avec le professionnel de santé au cours de votre bilan de prévention ?",
         "type": 2,
         "options": [
@@ -3049,7 +3200,7 @@
           { "id": "7", "text": "Réduire ma consommation d'alcool" },
           {
             "id": "8",
-            "text": "Lutter / prévenir les violences, harcèlemetns ou dsicriminations"
+            "text": "Lutter / prévenir les violences, harcèlements ou discriminations"
           },
           {
             "id": "9",
@@ -3072,7 +3223,7 @@
     "estimatedTime": "Temps estimé : 25m",
     "items": [
       {
-        "id": "173",
+        "id": "182",
         "question": "Mesurez la circonférence de votre mollet (Vous allez mesurer la taille de votre mollet avec vos mains)",
         "type": 11,
         "options": [
@@ -3097,96 +3248,9 @@
         "gender": ["homme", "femme"]
       },
 
-{
-"id": "174",
-        "question": "TEST DE VISION",
-        "type": 13,
-
-
- "options": [
-          {
-            "id": "1",
-            "text": "Placez-vous à environ 50 cm devant l'écran. Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux. Couvrez votre oeil droit avec votre main droite. Fixez le point noir au milieu. Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l'oeil gauche"
-          }
-        ],
-	 "requiredConfirmation": true,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-	    
-{
-"id": "175",
-        "question": "GRILLE D'AMSLER",
-        "type": 22,
-        "options": [ ],
-        "requiredConfirmation": true,
-	"picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/visiontest.jpg?raw=true",
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "176",
-        "question": "Les lignes droites sont déformées ?",
-        "type": 1,
-        "options": [
-          {
-            "id": "1",
-            "text": "Oui"
-          },
-          {
-            "id": "2",
-            "text": "Non"
-          }
-        ],
-        
-        "requiredConfirmation": false,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "177",
-        "question": "Les lignes droites vous paraissent ternes ?",
-        "type": 1,
-        "options": [
-          {
-            "id": "1",
-            "text": "Oui"
-          },
-          {
-            "id": "2",
-            "text": "Non"
-          }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "178",
-        "question": "Vous voyez une ou plusieurs taches sombres au centre de la grille ?",
-        "type": 1,
-        "options": [
-          {
-            "id": "1",
-            "text": "Oui"
-          },
-          {
-            "id": "2",
-            "text": "Non"
-          }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": null,
-        "ageMax": null,
-        "gender": ["homme", "femme"]
-      },
 
       {
-        "id": "179",
+        "id": "183",
         "question": "BIO-IMPÉDANCEMÉTRIE",
         "type": 16,
         "options": [],
@@ -3206,7 +3270,7 @@
         ]
       },
       {
-        "id": "180",
+        "id": "184",
         "question": "TEST DU LEVER DE CHAISE.  \nDemander au sujet de se lever d'une chaise 5 fois de suite, le plus vite possible, les bras croisés sur la poitrine. Lui laisser au moins 20 secondes.",
         "type": 5,
         "options": [],
@@ -3219,19 +3283,19 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "181",
+        "id": "185",
         "question": "Le sujet a-t-il réalisé les 5 levers de chaise ?",
         "type": 1,
         "options": [
           {
             "id": "1",
             "text": "Oui",
-            "jump": "182"
+            "jump": "186"
           },
           {
             "id": "2",
             "text": "Non",
-            "jump": "183"
+            "jump": "188"
           }
         ],
         "ageMin": null,
@@ -3239,89 +3303,61 @@
         "gender": ["homme", "femme"]
       },
 	{
-        "id": "182",
-        "question": "Avez-vous fait le test en moins de 14 secondes (si le paticipant a moins de 80 ans) ou en moins de 16 secondes (si le participant a 80 ans ou plus) ?",
+        "id": "186",
+        "question": "La personne a fait le test en moins de 14 secondes ?",
         "type": 1,
         "options": [
           {
             "id": "1",
             "text": "Oui",
-		"jump": "184"
+		"jump": "189"
           },
           {
             "id": "2",
             "text": "Non",
-		  "jump": "184"
+		  "jump": "189"
           }
         ],
         "requiredConfirmation": false,
-        "ageMin": null,
-        "ageMax": null,
+        "ageMin": 0,
+        "ageMax": 79,
         "gender": ["homme", "femme"]
       },
-      {
-        "id": "183",
-        "question": "Combien en a-t-il réalisé en 15 secondes ?",
-        "type": 12,
+
+	{
+        "id": "187",
+        "question": "La personne a fait le test en moins de 16 secondes ?",
+        "type": 1,
         "options": [
           {
             "id": "1",
-            "text": "Combien :",
-            "data": [
-              {
-                "id": "1",
-                "text": "0"
-              },
-              {
-                "id": "2",
-                "text": "1"
-              },
-              {
-                "id": "3",
-                "text": "2"
-              },
-              {
-                "id": "4",
-                "text": "3"
-              },
-              {
-                "id": "5",
-                "text": "4"
-              },
-              {
-                "id": "6",
-                "text": "5"
-              },
-              {
-                "id": "7",
-                "text": "6"
-              },
-              {
-                "id": "8",
-                "text": "7"
-              },
-              {
-                "id": "9",
-                "text": "8"
-              },
-              {
-                "id": "10",
-                "text": "9"
-              },
-              {
-                "id": "11",
-                "text": "10"
-              }
-            ]
+            "text": "Oui",
+		"jump": "189"
+          },
+          {
+            "id": "2",
+            "text": "Non",
+		  "jump": "189"
           }
         ],
+        "requiredConfirmation": false,
+        "ageMin": 80,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "188",
+        "question": "Combien en a-t-il réalisé en 15 secondes ?",
+        "type": 14,
+        "options": [
+            ],
         "requiredConfirmation": true,
         "ageMin": null,
         "ageMax": null,
         "gender": ["homme", "femme"]
       },
       {
-        "id": "184",
+        "id": "189",
         "question": "ÉQUILIBRE UNIPODAL (JAMBE DROITE)",
         "type": 5,
         "options": [],
@@ -3334,7 +3370,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "185",
+        "id": "190",
         "question": "ÉQUILIBRE UNIPODAL (JAMBE GAUCHE)",
         "type": 5,
         "options": [],
@@ -3347,7 +3383,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "186",
+        "id": "191",
         "question": "TEST DE FORCE DE PRÉHENSION",
         "type": 17,
         "options": [],
@@ -3357,7 +3393,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "187",
+        "id": "192",
         "question": "TEST D'ÉQUILIBRE",
         "type": 18,
         "options": [],
@@ -3367,7 +3403,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "188",
+        "id": "193",
         "question": "TUG",
         "type": 19,
         "options": [],
@@ -3377,7 +3413,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "189",
+        "id": "194",
         "question": "TEST DE MARCHE",
         "type": 20,
         "options": [],
