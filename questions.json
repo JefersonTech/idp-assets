@@ -2938,8 +2938,8 @@
         "question": "Au cours des 12 derniers mois, avez-vous misé de l'argent pour un jeu (loterie, poker, etc) un pari (sportif, hippique, etc) ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
+          { "id": "1", "text": "Oui","jump":"164" },
+          { "id": "2", "text": "Non","jump":"173" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
