@@ -3093,7 +3093,7 @@
 	 "requiredConfirmation": true,
         "ageMin": 0,
         "ageMax": 100,
-        "gender": ["homme", "femme"],
+        "gender": ["homme", "femme"]
       },
 	    
 {
