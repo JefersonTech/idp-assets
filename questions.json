@@ -62,7 +62,7 @@
   "vie": {
     "title": "VIE",
     "description": "Parlons de vos conditions de vie",
-    "endText": "Nous allons aborder des aspects psychologiques",
+    "endText": "Nous allons aborder vos antécédents personnels et familiaux",
     "estimatedTime": "Temps estimé :  3 m",
     "items": [
       {
@@ -358,7 +358,7 @@
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
-        "ageMax": 100,
+        "ageMax": 30,
         "gender": ["homme", "femme"]
       },
       {
@@ -442,7 +442,7 @@
       },
       {
         "id": "30",
-        "question": "Avez vous un logement adapté à la prévention des chutes (douche plutôt qu'une baignoire, barre de douche, revêtement anti-chutes, WC surelevées) ?",
+        "question": "Avez vous un logement adapté à la prévention des chutes (douche plutôt qu'une baignoire, barre de douche, revêtement anti-chutes, WC surélevées) ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -455,19 +455,24 @@
       }
     ]
   },
-  "psychologie": {
-    "title": "PSYCHOLOGIE",
-    "description": "Parlons des aspects psychologiques",
-    "endText": "Nous allons aborder votre cognition/comportement",
+
+
+  "antedecents": {
+    "title": "ANTÉCÉDENTS PERSONNELS ET FAMILIAUX",
+    "description": "Parlons de vos antécédents personnels et familiaux",
+    "endText": "Nous allons aborder votre état de santé actuel",
     "estimatedTime": "Temps estimé :  3 m",
     "items": [
       {
         "id": "31",
-        "question": "Au cours des deux dernières semaines, Vous êtes-vous senti déprimé, ou sans espoir ?",
+        "question": "Avez-vous chuté ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui","jump": "32" },
-          { "id": "2", "text": "Non","jump": "49" }
+          { "id": "1", "text": "Oui, au cours des 7 derniers jours" },
+          { "id": "2", "text": "Oui, au cours du dernier mois" },
+          { "id": "3", "text": "Oui, au cours des 3 derniers mois" },
+          { "id": "4", "text": "Oui, au cours des 6 derniers mois" },
+          { "id": "5", "text": "Je n'ai pas chuté" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -476,6 +481,1307 @@
       },
       {
         "id": "32",
+        "question": "Avez-vous été hospitalisé ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui, au cours des 7 derniers jours " ,"jump":"33" },
+          { "id": "2", "text": "Oui, au cours du dernier mois " ,"jump":"33" },
+          { "id": "3", "text": "Oui, au cours des 3 derniers mois ","jump":"33"  },
+          { "id": "4", "text": "Oui, au cours des 6 derniers mois " ,"jump":"33" },
+          { "id": "5", "text": "Non, je n'ai pas été hospitalisé","jump":"34" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "33",
+        "question": "Pour quelle(s) pathologie(s) s'agit-t-il ?",
+        "type": 2,
+        "options": [
+          { "id": "1", "text": "ARTHROSE" },
+          { "id": "2", "text": "ASTHME" },
+          { "id": "3", "text": "AVC" },
+          { "id": "4", "text": "BPCO" },
+          { "id": "5", "text": "CANCER COLORECTAL" },
+          { "id": "6", "text": "CANCER DU SEIN" },
+          { "id": "7", "text": "AUTRE TYPE DE CANCER" },
+          { "id": "8", "text": "CATARACTE" },
+          { "id": "9", "text": "COVID" },
+          { "id": "10", "text": "DIABÈTE" },
+          { "id": "11", "text": "DMLA" },
+          { "id": "12", "text": "DÉPRESSION" },
+          { "id": "13", "text": "EMPHYSÈME" },
+          { "id": "14", "text": "GRIPPE" },
+          { "id": "15", "text": "HYPERCHOLESTÉROLÉMIE" },
+          { "id": "16", "text": "HYPERTENSION" },
+          {
+            "id": "17",
+            "text": "INFARCTUS DU MYOCARDE OU MORT SUBITE OU INSUFFISANCE CORONARIENNE"
+          },
+          { "id": "18", "text": "INFECTION" },
+          { "id": "19", "text": "INSUFFISANCE CARDIAQUE" },
+          { "id": "20", "text": "INSUFFISANCE RÉNALE" },
+          {
+            "id": "21",
+            "text": "IRRADIATION THORACIQUE HAUTE DOSE (RADIOTHÉRAPIE) POUR UN LYMPHOME DE HODGKIN"
+          },
+          {
+            "id": "22",
+            "text": "MALADIE DE CROHN OU RECTOCOLITE HÉMORRAGIQUE"
+          },
+          { "id": "23", "text": "MALADIES DU COEUR" },
+          { "id": "24", "text": "OBÉSITÉ" },
+          { "id": "25", "text": "OSTÉOPOROSE" },
+          {
+            "id": "26",
+            "text": "PRÉDISPOSITION GÉNÉTIQUES (BRCA 1, BRCA 2, OU AUTRE)"
+          },
+          { "id": "27", "text": "TROUBLES ANXIEUX" },
+          {
+            "id": "28",
+            "text": "TROUBLES DU COMPORTEMENT ALIMENTAIRE (ANOREXIE OU BOULIMIE ...)"
+          },
+          {
+            "id": "29",
+            "text": "UN OU PLUSIEURS ADÉNOMES AVANCÉS (POLYPE ADÉNOMATEUX)"
+          },
+	 {
+            "id": "30",
+            "text": "AUCUNE DES PATHOLOGIES LISTÉES"
+          }	
+          
+        ],
+        "requiredConfirmation": true,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"],
+"allowAppendOptions": true
+      },
+      {
+        "id": "34",
+        "question": "Avez-vous eu un ou plusieurs de ces antécédents auparavant ?",
+        "type": 2,
+        "options": [
+          { "id": "1", "text": "ARTHROSE" },
+          { "id": "2", "text": "ASTHME" },
+          { "id": "3", "text": "AVC" },
+          { "id": "4", "text": "BPCO" },
+          { "id": "5", "text": "CANCER COLORECTAL" },
+          { "id": "6", "text": "CANCER DU SEIN" },
+          { "id": "7", "text": "AUTRE TYPE DE CANCER" },
+          { "id": "8", "text": "CATARACTE" },
+          { "id": "9", "text": "COVID" },
+          { "id": "10", "text": "DIABÈTE" },
+          { "id": "11", "text": "DMLA" },
+          { "id": "12", "text": "DÉPRESSION" },
+          { "id": "13", "text": "EMPHYSÈME" },
+          { "id": "14", "text": "GRIPPE" },
+          { "id": "15", "text": "HYPERCHOLESTÉROLÉMIE" },
+          { "id": "16", "text": "HYPERTENSION" },
+          {
+            "id": "17",
+            "text": "INFARCTUS DU MYOCARDE OU MORT SUBITE OU INSUFFISANCE CORONARIENNE"
+          },
+          { "id": "18", "text": "INFECTION" },
+          { "id": "19", "text": "INSUFFISANCE CARDIAQUE" },
+          { "id": "20", "text": "INSUFFISANCE RÉNALE" },
+          {
+            "id": "21",
+            "text": "IRRADIATION THORACIQUE HAUTE DOSE (RADIOTHÉRAPIE) POUR UN LYMPHOME DE HODGKIN"
+          },
+          {
+            "id": "22",
+            "text": "MALADIE DE CROHN OU RECTOCOLITE HÉMORRAGIQUE"
+          },
+          { "id": "23", "text": "MALADIES DU COEUR" },
+          { "id": "24", "text": "OBÉSITÉ" },
+          { "id": "25", "text": "OSTÉOPOROSE" },
+          {
+            "id": "26",
+            "text": "PRÉDISPOSITION GÉNÉTIQUES (BRCA 1, BRCA 2, OU AUTRE)"
+          },
+          { "id": "27", "text": "TROUBLES ANXIEUX" },
+          {
+            "id": "28",
+            "text": "TROUBLES DU COMPORTEMENT ALIMENTAIRE (ANOREXIE OU BOULIMIE ...)"
+          },
+          {
+            "id": "29",
+            "text": "UN OU PLUSIEURS ADÉNOMES AVANCÉS (POLYPE ADÉNOMATEUX)"
+          },
+	 {
+            "id": "30",
+            "text": "AUCUN DES ANTÉCÉDENTS LISTÉS"
+          }
+     
+        ],
+        "requiredConfirmation": true,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"],
+"allowAppendOptions": true
+      },
+      {
+        "id": "35",
+        "question": "Avez vous réalisé une ostéodensitométrie ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "36",
+        "question": "À quand remonte votre dernière prise de sang et/ou analyse d'urine ? (merci de les préparer si vous y avez)",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "moins de 6 mois" },
+          { "id": "2", "text": "plus de 6 mois " },
+          { "id": "3", "text": "jamais réalisée" }
+          
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "37",
+        "question": "Il y a des antécédents connus de maladies dans votre famille proche ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" ,"jump":"38"},
+          { "id": "2", "text": "Non","jump":"39" },
+          { "id": "3", "text": "Je ne sais pas","jump":"39" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "38",
+        "question": "De quel antécédent(s) s'agit il ?",
+        "type": 2,
+        "options": [
+          { "id": "1", "text": "Cancer du sein et ou des ovaires" },
+          { "id": "2", "text": "Cancer colorectal" },
+          {
+            "id": "3",
+            "text": "Un ou plusieurs adénomes avancés (polype adénomateux)"
+          },
+          {
+            "id": "4",
+            "text": "Polypose adénomateuse familiale ou syndrome de Lynch"
+          },
+          {
+            "id": "5",
+            "text": "Maladie de Crohn ou rectocolite hémorragique"
+          },
+          { "id": "7", "text": "Diabète" },
+          { "id": "8", "text": "HTA" },
+          { "id": "9", "text": "Infarctus du myocarde ou mort subite" },
+          { "id": "10", "text": "AVC" },
+          { "id": "11", "text": "Hypercholestérolémie familiale" },
+          { "id": "12", "text": "DMLA" },
+          { "id": "13", "text": "Maladie d'Alzheimer" },
+          { "id": "14", "text": "Ostéoporose" },
+	 {
+            "id": "15",
+            "text": "AUCUN DES ANTÉCÉDENTS LISTÉS"
+          }
+     	
+	],
+        "requiredConfirmation": true,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"],
+	"allowAppendOptions": true
+      }
+
+
+
+    ]
+  },
+  "sante": {
+    "title": "ÉTAT DE SANTÉ ACTUEL",
+    "description": "Parlons de votre état de santé actuel",
+    "endText": "Nous allons aborder vos vaccins et dépistages",
+    "estimatedTime": "Temps estimé :  4 m",
+    "items": [
+      {
+        "id": "39",
+        "question": "Souffrez vous actuellement d'une maladie aiguë :",
+        "type": 2,
+        "options": [
+          { "id": "1", "text": "Infection" },
+          { "id": "2", "text": "Grippe" },
+          { "id": "3", "text": "COVID" },
+	 {
+            "id": "4",
+            "text": "AUCUNE DES MALADIES LISTÉES"
+          }
+     
+		
+        ],
+        "requiredConfirmation": true,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"],
+"allowAppendOptions": true
+      },
+      {
+        "id": "40",
+        "question": "Souffrez vous actuellement d'une maladie chronique :",
+        "type": 2,
+        "options": [
+          { "id": "1", "text": "ARTHROSE" },
+          { "id": "2", "text": "ASTHME" },
+          { "id": "3", "text": "AVC" },
+          { "id": "4", "text": "BPCO" },
+          { "id": "5", "text": "CANCER COLORECTAL" },
+          { "id": "6", "text": "CANCER DU SEIN" },
+          { "id": "7", "text": "AUTRE TYPE DE CANCER" },
+          { "id": "8", "text": "CATARACTE" },
+          { "id": "9", "text": "COVID" },
+          { "id": "10", "text": "DIABÈTE" },
+          { "id": "11", "text": "DMLA" },
+          { "id": "12", "text": "DÉPRESSION" },
+          { "id": "13", "text": "EMPHYSÈME" },
+          { "id": "14", "text": "GRIPPE" },
+          { "id": "15", "text": "HYPERCHOLESTÉROLÉMIE" },
+          { "id": "16", "text": "HYPERTENSION" },
+          {
+            "id": "17",
+            "text": "INFARCTUS DU MYOCARDE OU MORT SUBITE OU INSUFFISANCE CORONARIENNE"
+          },
+          { "id": "18", "text": "INFECTION" },
+          { "id": "19", "text": "INSUFFISANCE CARDIAQUE" },
+          { "id": "20", "text": "INSUFFISANCE RÉNALE" },
+          {
+            "id": "21",
+            "text": "IRRADIATION THORACIQUE HAUTE DOSE (RADIOTHÉRAPIE) POUR UN LYMPHOME DE HODGKIN"
+          },
+          {
+            "id": "22",
+            "text": "MALADIE DE CROHN OU RECTOCOLITE HÉMORRAGIQUE"
+          },
+          { "id": "23", "text": "MALADIES DU COEUR" },
+          { "id": "24", "text": "OBÉSITÉ" },
+          { "id": "25", "text": "OSTÉOPOROSE" },
+          {
+            "id": "26",
+            "text": "PRÉDISPOSITION GÉNÉTIQUES (BRCA 1, BRCA 2, OU AUTRE)"
+          },
+          { "id": "27", "text": "TROUBLES ANXIEUX" },
+          {
+            "id": "28",
+            "text": "TROUBLES DU COMPORTEMENT ALIMENTAIRE (ANOREXIE OU BOULIMIE ...)"
+          },
+          {
+            "id": "29",
+            "text": "UN OU PLUSIEURS ADÉNOMES AVANCÉS (POLYPE ADÉNOMATEUX)"
+          }
+	],
+        "requiredConfirmation": true,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+,"allowAppendOptions": true
+      },
+
+{
+        "id": "41",
+        "question": "Vous arrive t'il de vous faire vomir ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+	"includedQuestions": [
+          {
+            "questionId": "34",
+            "options": [{ "id": "28" }]
+          },
+          {
+            "questionId": "40",
+            "options": [{ "id": "28" }]
+          }
+        ],
+
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+
+
+
+{
+        "id": "42",
+        "question": "Vous inquiétez vous d'avoir perdu le contrôle de ce que vous mangez ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+	"includedQuestions": [
+          {
+            "questionId": "34",
+            "options": [{ "id": "28" }]
+          },
+          {
+            "questionId": "40",
+            "options": [{ "id": "28" }]
+          }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+
+
+{
+        "id": "43",
+        "question": "Pensez vous que vous êtes gros(se) alors que d'autres vous trouvent trop mince ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+	"includedQuestions": [
+          {
+            "questionId": "34",
+            "options": [{ "id": "28" }]
+          },
+          {
+            "questionId": "40",
+            "options": [{ "id": "28" }]
+          }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+
+{
+        "id": "44",
+        "question": "Diriez vous que la nourriture domine votre vie ? ",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+	"includedQuestions": [
+          {
+            "questionId": "34",
+            "options": [{ "id": "28" }]
+          },
+          {
+            "questionId": "40",
+            "options": [{ "id": "28" }]
+          }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+
+      {
+        "id": "45",
+        "question": "Avez vous des douleurs ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "46",
+        "question": "Vous sentez vous fatigué ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "47",
+        "question": "Vous sentez vous fiévreux ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "48",
+        "question": "Avez vous du mal à respirer ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "49",
+        "question": "Avez vous des jambes enflées ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "50",
+        "question": "Avez vous des épisodes de diarrhée régulièrement ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui","jump":"51" },
+          { "id": "2", "text": "Non","jump":"52"  }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "51",
+        "question": "Souffrez vous d'une maladie de malabsorption intestinale (Crohn, Coeliaque, etc.)",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" },
+          { "id": "3", "text": "Je ne sais pas" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "52",
+        "question": "Toussez vous souvent (tous les jours) ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "53",
+        "question": "Avez-vous souvent une toux grasse  oui qui ramène des crachats ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+	 {
+        "id": "54",
+        "question": "Êtes-vous plus facilement essoufflé que les personnes de votre âge ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "55",
+        "question": "Avez-vous réalisé une exploration fonctionnelle respiratoire et/ou une spirométrie ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+	  
+           {
+        "id": "56",
+        "question": "Avez vous des pauses respiratoires ou ronflement importants pendant le sommeil, constatés par votre entourage ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "57",
+        "question": "Avez vous déjà réalisé une polysomnographie ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+        {
+        "id": "58",
+        "question": "Etes vous appareillé(e) pour une apnée du sommeil ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "59",
+        "question": "Comment dormez vous ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Bien" },
+          { "id": "2", "text": "Mal de temps en temps" },
+          { "id": "3", "text": "Mal souvent" },
+          { "id": "4", "text": "Mal tout le temps" },
+          {
+            "id": "5",
+            "text": " Ma consommation d'écran (smartphone, ordinateur, télévision, etc.) limite mon temps de sommeil"
+          }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "60",
+        "question": "Etes vous devant un écran avant de vous endormir ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Plusieurs fois par mois" },
+          { "id": "3", "text": "Plusieurs fois par semaine" },
+          { "id": "4", "text": "Tous les jours ou presque" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "61",
+        "question": "À quel âge avez vous été ménopausée ?",
+        "type": 14,
+        "options": [
+        ],
+        "requiredConfirmation": true,
+        "ageMin": 50,
+        "ageMax": 100,
+        "gender": ["femme"]
+      },
+      {
+        "id": "62",
+        "question": "Présentez vous des symptômes de ménopause (bouffées de chaleur, problèmes de sommeil, sécheresse vaginale, troubles urinaires, fatigue, anxiété, irritabilité) ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" ,"jump":"63"},
+          { "id": "2", "text": "Non" ,"jump":"64"}
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 40,
+        "ageMax": 100,
+        "gender": ["femme"]
+      },
+      {
+        "id": "63",
+        "question": "Ces symptômes ont des effets négatifs sur ma vie de tous les jours",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 40,
+        "ageMax": 100,
+        "gender": ["femme"]
+      },
+      {
+        "id": "64",
+        "question": "Utilisez vous un moyen de contraception ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui","jump":"65" },
+          { "id": "2", "text": "Non","jump":"67"  }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 50,
+        "gender": ["femme"]
+      },
+      {
+        "id": "65",
+        "question": "De quel moyen s'agit-il ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Implant" },
+          { "id": "2", "text": "Stérilet" },
+          { "id": "3", "text": "Contraception d'urgence" },
+          { "id": "4", "text": "Préservatif seul" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 50,
+        "gender": ["femme"],
+		"allowAppendOptions": true
+      },
+      {
+        "id": "66",
+        "question": "Vous est il arrivé d'utiliser un moyen de contraception d'urgence ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 50,
+        "gender": ["femme"]
+      },
+      {
+        "id": "67",
+        "question": "Avez-vous des douleurs intenses au bas ventre au moment de la période des règles ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" ,"jump":"68"},
+          { "id": "2", "text": "Non" ,"jump":"69"}
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 45,
+        "gender": ["femme"]
+      },
+      {
+        "id": "68",
+        "question": "Quel type de douleur ?",
+        "type": 2,
+        "options": [
+          {
+            "id": "1",
+            "text": "Les douleurs surviennent quelques jours avant les règles et/ou persistent quelques jours après les règles"
+          },
+          {
+            "id": "2",
+            "text": "Des douleurs fortes/violentes sont localisées au bas du ventre, en dehors des règles"
+          },
+          {
+            "id": "3",
+            "text": "Les douleurs ne sont pas calmées par la prise d'antalgiques"
+          },
+          {
+            "id": "4",
+            "text": " Des douleurs fortes/vives sont ressenties en profondeur pendant les rapports sexuels"
+          },
+          {
+            "id": "5",
+            "text": " Les douleurs entrainent une incapacité à se tenir debout, à marcher, à se mobiliser"
+          },
+          {
+            "id": "6",
+            "text": "Les douleurs entrainent un handicap pour les activités quotidiennes"
+          },
+          {
+            "id": "7",
+            "text": "Des douleurs sont présentes au moment d'aller à la selle, surtout lors de la période des règles"
+          }
+        ],
+        "requiredConfirmation": true,
+        "ageMin": 0,
+        "ageMax": 45,
+        "gender": ["femme"]
+      },
+      {
+        "id": "69",
+        "question": "Etes-vous porteur d'un pace maker ou d'un défibrillateur ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      }
+    ]
+  },
+  "vaccins": {
+    "title": "VACCINS et DÉPISTAGES",
+    "description": "Parlons de vos vaccins et dépistages",
+    "endText": "Nous allons aborder votre traitement medical",
+    "estimatedTime": "Temps estimé :  5 m",
+    "items": [
+      {
+        "id": "70",
+        "question": "Etes vous à jour des vaccins obligatoires (diphtérie, tétanos, polio) ?",
+        "type": 1,
+        "options": [
+          {
+            "id": "1",
+            "text": "Oui"
+          },
+          { "id": "2", "text": "Non" },
+          { "id": "3", "text": "je ne sais pas" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "71",
+        "question": "Avez vous réalisé votre mammographie pour le dépistage du cancer du sein ou/et réalisé votre test de dépistage du cancer colorectal ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" },
+          { "id": "3", "text": "je ne sais pas" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["femme"]
+      },
+      {
+        "id": "72",
+        "question": "Avez vous réalisé votre test de dépistage du cancer du col de l'utérus ?",
+        "type": 1,
+        "options": [
+          {
+            "id": "1",
+            "text": "Oui"
+          },
+          { "id": "2", "text": "Non" },
+          { "id": "3", "text": "je ne sais pas" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["femme"]
+      },
+      {
+        "id": "73",
+        "question": "Êtes vous vacciné(e) contre le papillomavirus humains (HPV) ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" },
+          { "id": "3", "text": "je ne sais pas" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "74",
+        "question": "Etes vous dans l'une des situations suivantes",
+        "type": 2,
+        "options": [
+          {
+            "id": "1",
+            "text": "Plus d'un partenaire sexuel au cours des 12 derniers mois"
+          },
+          {
+            "id": "2",
+            "text": "Souhait d'arrêter le préservatif avec mon nouveau (ma nouvelle) partenaire"
+          },
+          {
+            "id": "3",
+            "text": "Mon partenaire sexuel(le) a eu un ou plusieurs diagnostics d'infection sexuellement transmissible (VIH, chlamydia, gonocoque, syphilis, etc.)"
+          },
+          {
+            "id": "4",
+            "text": "Rapport sexuels ces 12 derniers mois mais non concerné(e) par une de ces trois situations ci-dessus"
+          },
+          { "id": "5", "text": "Non concernés" }
+        ],
+        "requiredConfirmation": true,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      }
+    ]
+  },
+  "traitement": {
+    "title": "TRAITEMENT MÉDICAMENTEUX",
+    "description": "Parlons de votre traitement médicamenteux",
+    "endText": "Nous allons aborder votre consommation d'alcool, tabac, autres substances",
+    "estimatedTime": "Temps estimé :  2 m",
+    "items": [
+      {
+        "id": "75",
+        "question": "Prenez vous des médicaments ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui","jump": "76" },
+          { "id": "2", "text": "Non","jump": "77" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "76",
+        "question": "Lesquels ? (Merci de préparer vos dernières ordonnances)",
+        "type": 3,
+        "options": [],
+        "requiredConfirmation": true,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      }
+    ]
+  },
+  "alcool": {
+    "title": "CONSOMMATION D'ALCOOL, TABAC, AUTRES SUBSTANCES",
+    "description": "Parlons de votre consommation d'alcool, tabac, autres substances",
+    "endText": "Nous allons aborder des aspects psychologiques",
+    "estimatedTime": "Temps estimé :  4 m",
+    "items": [
+       {
+        "id": "77",
+        "question": "Fumez-vous ? (Hors cigarettes électroniques)",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" ,"jump":"78"},
+          { "id": "2", "text": "Non" ,"jump":"81"},
+          { "id": "3", "text": "Je ne fume plus","jump":"80" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+       
+      {
+        "id": "78",
+        "question": "Combien de cigarettes fumez-vous par jour ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "10 ou moins" },
+          { "id": "2", "text": "11 à 20" },
+          { "id": "3", "text": "21 à 30 " },
+          { "id": "4", "text": "31 ou plus" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "79",
+        "question": "Dans quel délai après le réveil fumez-vous votre première cigarette ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Moins de 5 minutes" ,"jump":"81"},
+          { "id": "2", "text": "6 à 30 minutes","jump":"81" },
+          { "id": "3", "text": "31 à 60 minutes" ,"jump":"81"},
+          { "id": "4", "text": "Après plus d'1 heure" ,"jump":"81"}
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "80",
+        "question": "Si vous avez arrêté de fumer, depuis combien de temps ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Moins de 1 an" },
+          { "id": "2", "text": "Entre 1 et 5 ans" },
+          { "id": "3", "text": "Plus de 5 ans" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+     
+      {
+        "id": "81",
+        "question": "Avez-vous été exposé de manière prolongée ou répétée à des gaz, poussières, fumées, vapeurs dans le cadre de votre travail ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+    {
+        "id": "82",
+        "question": "À quelle fréquence consommez-vous des boissons contenant de l'alcool ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais","jump":"90" },
+          { "id": "2", "text": "Une fois par mois ou moins","jump":"83" },
+          { "id": "3", "text": "Deux à 4 fois par mois","jump":"83" },
+          { "id": "4", "text": "Deux à 3 fois par semaine","jump":"83" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+
+	    
+      {
+        "id": "83",
+        "question": "Combien de verres standard buvez-vous, les jours où vous buvez de l'alcool ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "1 ou 2" },
+          { "id": "2", "text": "3 ou 4 " },
+          { "id": "3", "text": "5 ou 6" },
+          { "id": "4", "text": "7 à 9" },
+          { "id": "5", "text": "10 ou plus" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "84",
+        "question": "Est-ce que votre entourage vous a fait des remarques concernant votre consommation d'alcool ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Non" },
+          { "id": "2", "text": "Oui" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "85",
+        "question": "Vous est-il arrivé de consommer de l'alcool le matin pour vous sentir en forme ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Non" },
+          { "id": "2", "text": "Oui" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "86",
+        "question": "Vous est-il arrivé de boire et de ne plus vous souvenir le matin de ce que vous avez pu dire ou faire ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Non" },
+          { "id": "2", "text": "Oui" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "87",
+        "question": "Nombre de verres que vous consommez les jours où vous buvez de l'alcool ?",
+        "type": 14,
+        "options": [],
+        "requiredConfirmation": true,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "88",
+        "question": "Nombre de jours où vous consommez de l'alcool par semaine ?",
+        "type": 14,
+        "options": [],
+        "requiredConfirmation": true,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "89",
+        "question": "Consommez vous dans certaines occasions au moins 6 verres en un minimum de temps ou pratiquez vous le Binge Drinking ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "90",
+        "question": "Avez-vous consommé d'autres substances au cours des 12 derniers mois ? Cannabis, haschisch, marijuana, herbe, joint, shit) ou d'autres drogues (ecstasy, cocaïne, héroïne, etc)",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "91",
+        "question": "Au cours des 12 derniers mois, avez-vous misé de l'argent pour un jeu (loterie, poker, etc) un pari (sportif, hippique, etc) ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "92",
+        "question": "Au cours des douze derniers mois : Avez-vous misé plus d'argent que vous pouviez vous permettre de perdre ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "93",
+        "question": "Au cours des douze derniers mois : Avez-vous besoin de miser de plus en plus d'argent pour avoir la même excitation ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "94",
+        "question": "Au cours des douze derniers mois : Avez-vous rejoué une autre journée pour récupérer l'argent que vous aviez perdu en jouant ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "95",
+        "question": "Au cours des douze derniers mois : Avez-vous vendu ou emprunté quelque chose pour obtenir de l'argent pour jouer ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "96",
+        "question": "Au cours des douze derniers mois : Avez-vous déjà senti que vous aviez peut-être un problème avec le jeu ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "97",
+        "question": "Au cours des douze derniers mois : Le jeu a-t-il causé chez vous des problèmes de santé, y compris du stress ou de l'angoisse ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "98",
+        "question": "Au cours des douze derniers mois : Des personnes ont-elles critiqué vos habitudes de jeu ou dit que vous aviez un problème avec le jeu ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "99",
+        "question": "Au cours des douze derniers mois : Vos habitudes de jeu ont-elles causé des difficultés financières à vous ou à votre entourage ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "100",
+        "question": "Au cours des douze derniers mois : Vous êtes-vous déjà senti coupable de vos habitudes de jeu ou de ce qui arrive quand vous jouez ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Jamais" },
+          { "id": "2", "text": "Parfois" },
+          { "id": "3", "text": "La plupart du temps" },
+          { "id": "4", "text": "Presque toujours" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "101",
+        "question": "Avez-vous jouer/parier antérieurement et arrêté ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui" ,"jump":"102"},
+          { "id": "2", "text": "Non" ,"jump":"103"}
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "102",
+        "question": "Motif de l'arrêt ?",
+        "type": 3,
+        "options": [],
+        "requiredConfirmation": true,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      }
+    ]
+  },
+
+
+  "psychologie": {
+    "title": "PSYCHOLOGIE",
+    "description": "Parlons des aspects psychologiques",
+    "endText": "Nous allons aborder votre cognition/comportement",
+    "estimatedTime": "Temps estimé :  3 m",
+    "items": [
+      {
+        "id": "103",
+        "question": "Au cours des deux dernières semaines, Vous êtes-vous senti déprimé, ou sans espoir ?",
+        "type": 1,
+        "options": [
+          { "id": "1", "text": "Oui","jump": "104" },
+          { "id": "2", "text": "Non","jump": "121" }
+        ],
+        "requiredConfirmation": false,
+        "ageMin": 0,
+        "ageMax": 100,
+        "gender": ["homme", "femme"]
+      },
+      {
+        "id": "104",
         "question": "Je n'ai pas d'énergie pour l'école, pour le travail",
         "type": 1,
         "options": [
@@ -488,7 +1794,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "33",
+        "id": "105",
         "question": "J'ai du mal à réfléchir",
         "type": 1,
         "options": [
@@ -501,7 +1807,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "34",
+        "id": "106",
         "question": "Je sens que la tristesse, le cafard me débordent en ce moment",
         "type": 1,
         "options": [
@@ -514,7 +1820,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "35",
+        "id": "107",
         "question": "Il n'y a rien qui m'intéresse, plus rien ne m'amuse",
         "type": 1,
         "options": [
@@ -527,7 +1833,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "36",
+        "id": "108",
         "question": "Ce que je fais ne sert à rien",
         "type": 1,
         "options": [
@@ -540,7 +1846,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "37",
+        "id": "109",
         "question": "Au fond, quand c'est comme ça, j'ai envie de mourir",
         "type": 1,
         "options": [
@@ -553,7 +1859,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "38",
+        "id": "110",
         "question": "Je ne supporte pas grand-chose",
         "type": 1,
         "options": [
@@ -566,7 +1872,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "39",
+        "id": "111",
         "question": "Je me sens découragé(e)",
         "type": 1,
         "options": [
@@ -579,7 +1885,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "40",
+        "id": "112",
         "question": "Je dors très mal",
         "type": 1,
         "options": [
@@ -592,7 +1898,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "41",
+        "id": "113",
         "question": "A l'école, au boulot, je n'y arrive pas",
         "type": 1,
         "options": [
@@ -605,7 +1911,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "42",
+        "id": "114",
         "question": "Je prends plaisir aux mêmes choses qu'autrefois",
         "type": 1,
         "options": [
@@ -615,12 +1921,12 @@
           { "id": "4", "text": "Presque plus" }
         ],
         "requiredConfirmation": false,
-        "ageMin": 0,
+        "ageMin": 17,
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
       {
-        "id": "43",
+        "id": "115",
         "question": "Je ris facilement et vois le bon côté des choses",
         "type": 1,
         "options": [
@@ -630,12 +1936,12 @@
           { "id": "4", "text": "Plus du tout" }
         ],
         "requiredConfirmation": false,
-        "ageMin": 0,
+        "ageMin": 17,
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
       {
-        "id": "44",
+        "id": "116",
         "question": "Je suis de bonne humeur",
         "type": 1,
         "options": [
@@ -645,12 +1951,12 @@
           { "id": "4", "text": "Jamais" }
         ],
         "requiredConfirmation": false,
-        "ageMin": 0,
+        "ageMin": 17,
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
       {
-        "id": "45",
+        "id": "117",
         "question": "J'ai l'impression de fonctionner au ralenti",
         "type": 1,
         "options": [
@@ -660,12 +1966,12 @@
           { "id": "4", "text": "Presque toujours" }
         ],
         "requiredConfirmation": false,
-        "ageMin": 0,
+        "ageMin": 17,
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
       {
-        "id": "46",
+        "id": "118",
         "question": "Je ne m'intéresse plus à mon apparence",
         "type": 1,
         "options": [
@@ -684,12 +1990,12 @@
           { "id": "4", "text": "Plus du tout" }
         ],
         "requiredConfirmation": false,
-        "ageMin": 0,
+        "ageMin": 17,
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
       {
-        "id": "47",
+        "id": "119",
         "question": "Je me réjouis d'avance à l'idée de faire certaines choses",
         "type": 1,
         "options": [
@@ -699,12 +2005,12 @@
           { "id": "4", "text": "Presque jamais" }
         ],
         "requiredConfirmation": false,
-        "ageMin": 0,
+        "ageMin": 18,
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
       {
-        "id": "48",
+        "id": "120",
         "question": "Je peux prendre plaisir à un bon livre ou à une bonne émission de radio ou de télévision",
         "type": 1,
         "options": [
@@ -714,12 +2020,12 @@
           { "id": "4", "text": "Très rarement" }
         ],
         "requiredConfirmation": false,
-        "ageMin": 0,
+        "ageMin": 19,
         "ageMax": 100,
         "gender": ["homme", "femme"]
       },
       {
-        "id": "49",
+        "id": "121",
         "question": "Au cours des deux dernières semaines, avez-vous trouvé peu d'intérêt ou de plaisir à faire les choses?",
         "type": 1,
         "options": [
@@ -732,7 +2038,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "50",
+        "id": "122",
         "question": "Avez vous ressenti de la tristesse au cours des 3 derniers mois ?",
         "type": 10,
         "options": [
@@ -745,7 +2051,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "51",
+        "id": "123",
         "question": "Ressentez-vous une fatigue physique, sans raison apparente ?",
         "type": 1,
         "options": [
@@ -758,7 +2064,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "52",
+        "id": "124",
         "question": "A quel point vous êtes-vous senti triste ou heureux au cours du dernier mois ?  ",
         "type": 10,
         "options": [
@@ -771,7 +2077,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "53",
+        "id": "125",
         "question": "A quel point vous êtes vous senti fatigué ou plein d'énergie au cours des 3 derniers mois  ? ",
         "type": 10,
         "options": [
@@ -784,7 +2090,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "54",
+        "id": "126",
         "question": "Vous êtes-vous senti épuisé au réveil au cours des 3 derniers mois ?",
         "type": 10,
         "options": [
@@ -797,7 +2103,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "55",
+        "id": "127",
         "question": "Diriez-vous que vous êtes optimiste dans la vie ?",
         "type": 10,
         "options": [
@@ -810,7 +2116,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "56",
+        "id": "128",
         "question": "Vous êtes-vous senti angoissé ou anxieux au cours des 3 derniers mois ?",
         "type": 10,
         "options": [
@@ -823,7 +2129,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "57",
+        "id": "129",
         "question": "Je me sens tendu(e) ou énervé(e)",
         "type": 1,
         "options": [
@@ -838,7 +2144,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "58",
+        "id": "130",
         "question": "J'ai une sensation de peur comme si quelque chose d'horrible allait m'arriver",
         "type": 1,
         "options": [
@@ -853,7 +2159,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "59",
+        "id": "131",
         "question": "Je me fais du souci",
         "type": 1,
         "options": [
@@ -867,7 +2173,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "60",
+        "id": "132",
         "question": "Je peux rester tranquillement assis(e) à ne rien faire et me sentir décontracté(e)",
         "type": 1,
         "options": [
@@ -882,7 +2188,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "61",
+        "id": "133",
         "question": "J'éprouve des sensations de peur et j'ai l'estomac noué",
         "type": 1,
         "options": [
@@ -897,7 +2203,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "62",
+        "id": "134",
         "question": "J'ai la bougeotte et n'arrive pas à tenir en place",
         "type": 1,
         "options": [
@@ -912,7 +2218,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "63",
+        "id": "135",
         "question": "J'éprouve des sensations soudaines de panique",
         "type": 1,
         "options": [
@@ -927,7 +2233,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "64",
+        "id": "136",
         "question": "Avez-vous manqué d'énergie au point de ne pas être capable de faire quelque chose ? (Il doit s'agir d'un élément significatif au cours des 3 derniers mois.)",
         "type": 1,
         "options": [
@@ -940,7 +2246,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "65",
+        "id": "137",
         "question": "Durant la semaine dernière, avez-vous eu l'impression que toute action vous demandait un effort",
         "type": 1,
         "options": [
@@ -957,7 +2263,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "66",
+        "id": "138",
         "question": "Durant la semaine dernière, avez-vous manqué d'entrain ?",
         "type": 1,
         "options": [
@@ -975,6 +2281,7 @@
       }
     ]
   },
+
   "cognition": {
     "title": "COGNITION / COMPORTEMENT",
     "description": "Parlons de votre cognition/comportement",
@@ -982,7 +2289,7 @@
     "estimatedTime": "Temps estimé :  4 m",
     "items": [
       {
-        "id": "67",
+        "id": "139",
         "question": "Avez-vous des problèmes de mémoire ?",
         "type": 1,
         "options": [
@@ -995,25 +2302,12 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "68",
-        "question": "Vous est-il déjà arrivé de ne pas retrouver votre chemin dans un lieu connu ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "69",
+        "id": "140",
         "question": "Avez vous des problèmes d'orientation (comme ne pas retrouver votre chemin dans un lieu connu, ne pas savoir où l'on est ou quel jour on est?)",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
+          { "id": "1", "text": "Oui","jump":"141" },
+          { "id": "2", "text": "Non","jump":"142" }
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -1021,7 +2315,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "70",
+        "id": "141",
         "question": "Avez-vous constaté une aggravation de ces problèmes au cours des 6 derniers mois ou depuis la dernière évaluation ?",
         "type": 1,
         "options": [
@@ -1034,7 +2328,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "71",
+        "id": "142",
         "question": "Test de 3 mots  \nDire au sujet : Je vais vous dire trois mots. Je voudrais que vous les répétiez maintenant et que vous essayiez de les retenir car je vous les redemanderai tout à l'heure : DRAPEAU, FLEUR, PORTE.",
         "type": 8,
         "options": [
@@ -1048,7 +2342,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "72",
+        "id": "143",
         "question": "Quelle date sommes-nous aujourd'hui ?",
         "type": 12,
         "options": [
@@ -1307,7 +2601,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "73",
+        "id": "144",
         "question": "Est-ce que votre entourage vous a fait remarquer des troubles de la mémoire inhabituels ?",
         "type": 1,
         "options": [
@@ -1320,7 +2614,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "74",
+        "id": "145",
         "question": "Rappel de 3 mots : « Pouvez-vous me dire quels étaient les 3 mots que je vous ai demandés de répéter et de retenir tout à l'heure? »",
         "type": 9,
         "options": [
@@ -1334,7 +2628,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "75",
+        "id": "146",
         "question": "Comment raisonnez-vous ? 1. Observez cette suite logique, 2. Parmi les propositions ci-dessous, sélectionnez la carte permettant de la compléter.",
         "type": 21,
         "options": [
@@ -1393,7 +2687,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "76",
+        "id": "147",
         "question": "Lisez attentivement, nous vous poserons une question sur ce texte ensuite.",
         "type": 13,
         "options": [
@@ -1408,7 +2702,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "77",
+        "id": "148",
         "question": "Dans quelle ville habite la narratrice ?",
         "type": 1,
         "options": [
@@ -1431,7 +2725,7 @@
     "estimatedTime": "Temps estimé :  3 m",
     "items": [
       {
-        "id": "78",
+        "id": "149",
         "question": "Est-ce que vous avez l'impression que votre audition a baissé au cours des 6 derniers mois ou depuis votre dernière évaluation ?",
         "type": 1,
         "options": [
@@ -1444,7 +2738,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "79",
+        "id": "150",
         "question": "Est ce que votre entourage a l'impression  que votre audition a baissé au cours des 6 derniers mois ou depuis votre dernière évaluation ?",
         "type": 1,
         "options": [
@@ -1457,7 +2751,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "80",
+        "id": "151",
         "question": "Augmentez-vous très régulièrement le son de la télévision et de la radio ?",
         "type": 1,
         "options": [
@@ -1470,7 +2764,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "81",
+        "id": "152",
         "question": "Avez-vous très régulièrement du mal à suivre une conversation dans un lieu bruyant ?",
         "type": 1,
         "options": [
@@ -1483,7 +2777,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "82",
+        "id": "153",
         "question": "Comment considérez-vous la qualité de votre audition (avec vos appareils auditifs, si besoin) au cours du dernier mois ? ",
         "type": 10,
         "options": [
@@ -1504,7 +2798,7 @@
     "estimatedTime": "Temps estimé :  3 m",
     "items": [
       {
-        "id": "83",
+        "id": "154",
         "question": "Avez-vous des problèmes aux yeux (avec vos lunettes si vous en avez) ? ",
         "type": 2,
         "options": [
@@ -1520,7 +2814,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "84",
+        "id": "155",
         "question": "Avez-vous consulté un ophtalmologue durant les 12 derniers mois ?",
         "type": 1,
         "options": [
@@ -1533,7 +2827,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "85",
+        "id": "156",
         "question": "Avez-vous l'impression que votre vue a baissé au cours des quatre derniers mois ou depuis votre dernière évaluation ?",
         "type": 1,
         "options": [
@@ -1546,7 +2840,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "86",
+        "id": "157",
         "question": "Comment considérez-vous la qualité de votre vue (avec vos lunettes si vous en avez) au cours du dernier mois ? ",
         "type": 10,
         "options": [
@@ -1559,14 +2853,14 @@
         "gender": ["homme", "femme"]
       },
 {
-"id": "87",
+"id": "158",
         "question": "TEST DE VISION",
         "type": 13,
 
  "options": [
           {
             "id": "1",
-            "text": "À continuation vous allez regarder une grille. Placez-vous à environ 50 cm devant l'écran. \n•Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux. \n•Couvrez votre oeil droit avec votre main droite. Fixez le point noir au milieu. Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l'oeil gauche"
+            "text": "Vous allez regarder une grille.\n•Placez-vous à environ 50 cm devant l'écran. \n•Positionnez-vous de manière à ce que le point central soit au niveau de vos yeux. Couvrez votre oeil droit avec votre main droite. Fixez le point noir au milieu. Observez le reste de la grille tout en fixant le point noir\n• Répétez le test avec l'oeil gauche"
           }
         ],
 	 "requiredConfirmation": true,
@@ -1576,7 +2870,7 @@
       },
 	    
 {
-"id": "88",
+"id": "159",
         "question": "GRILLE D'AMSLER",
         "type": 22,
         "options": [ ],
@@ -1587,7 +2881,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "89",
+        "id": "160",
         "question": "Les lignes droites sont déformées ?",
         "type": 1,
         "options": [
@@ -1607,7 +2901,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "90",
+        "id": "161",
         "question": "Les lignes droites vous paraissent ternes ?",
         "type": 1,
         "options": [
@@ -1626,7 +2920,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "91",
+        "id": "162",
         "question": "Vous voyez une ou plusieurs taches sombres au centre de la grille ?",
         "type": 1,
         "options": [
@@ -1650,11 +2944,11 @@
   "nutrition": {
     "title": "NUTRITION",
     "description": "Parlons de nutrition",
-    "endText": "Nous allons aborder vos antécédents personnels et familiaux",
+    "endText": "Nous allons aborder votre mobilité",
     "estimatedTime": "Temps estimé :  2 m",
     "items": [
       {
-        "id": "92",
+        "id": "163",
         "question": "Avez-vous perdu involontairement plus de 3kg au cours de 3 derniers mois ?",
         "type": 1,
         "options": [
@@ -1667,7 +2961,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "93",
+        "id": "164",
         "question": "Comment qualifiez-vous votre appétit au cours du dernier mois ? ",
         "type": 10,
         "options": [
@@ -1680,7 +2974,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "94",
+        "id": "165",
         "question": "Avez-vous noté une perte de poids en dehors d'un régime ?",
         "type": 1,
         "options": [
@@ -1693,7 +2987,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "95",
+        "id": "166",
         "question": "Au cours de l'année passée, avez-vous perdu plus de 4,5kg involontairement ?",
         "type": 1,
         "options": [
@@ -1706,12 +3000,12 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "96",
+        "id": "167",
         "question": "Avez-vous perdu de l'appétit récemment ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" ,"jump":"97"},
-          { "id": "2", "text": "Non" ,"jump":"98"}
+          { "id": "1", "text": "Oui" ,"jump":"168"},
+          { "id": "2", "text": "Non" ,"jump":"169"}
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -1719,12 +3013,12 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "97",
+        "id": "168",
         "question": "Depuis plus de 2 semaines ?",
         "type": 1,
         "options": [
-          { "id": "1", "text": "Oui" ,"jump":"99"},
-          { "id": "2", "text": "Non" ,"jump":"99"}
+          { "id": "1", "text": "Oui" ,"jump":"170"},
+          { "id": "2", "text": "Non" ,"jump":"170"}
         ],
         "requiredConfirmation": false,
         "ageMin": 0,
@@ -1732,7 +3026,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "98",
+        "id": "169",
         "question": "Est-ce que vous avez mangé la moitié de ce que vous mangez d'habitude pendant plus d'une semaine ?",
         "type": 1,
         "options": [
@@ -1745,7 +3039,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "99",
+        "id": "170",
         "question": "Etes vous allez chez le dentiste dans les 12 derniers mois ?",
         "type": 1,
         "options": [
@@ -1758,7 +3052,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "100",
+        "id": "171",
         "question": "Mangez vous des fruits et des légumes ?",
         "type": 1,
         "options": [
@@ -1772,7 +3066,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "101",
+        "id": "172",
         "question": "Avez-vous tendance à consommer des aliments trop gras/ sucrés/salés (charcuterie, soda, confiserie, plats industriels (fast-food, plats préparés), ajout régulier de sel à table) ? : ",
         "type": 1,
         "options": [
@@ -1786,7 +3080,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "102",
+        "id": "173",
         "question": "Êtes-vous un consommateur particulièrement important de thé ou de café ?",
         "type": 1,
         "options": [
@@ -1800,1312 +3094,7 @@
       }
     ]
   },
-  "antedecents": {
-    "title": "ANTÉCÉDENTS PERSONNELS ET FAMILIAUX",
-    "description": "Parlons de vos antécédents personnels et familiaux",
-    "endText": "Nous allons aborder votre état de santé actuel",
-    "estimatedTime": "Temps estimé :  3 m",
-    "items": [
-      {
-        "id": "103",
-        "question": "Avez-vous chuté ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui, au cours des 7 derniers jours" },
-          { "id": "2", "text": "Oui, au cours du dernier mois" },
-          { "id": "3", "text": "Oui, au cours des 3 derniers mois" },
-          { "id": "4", "text": "Oui, au cours des 6 derniers mois" },
-          { "id": "5", "text": "Je n'ai pas chuté" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "104",
-        "question": "Avez-vous été hospitalisé ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui, au cours des 7 derniers jours " ,"jump":"105" },
-          { "id": "2", "text": "Oui, au cours du dernier mois " ,"jump":"105" },
-          { "id": "3", "text": "Oui, au cours des 3 derniers mois ","jump":"105"  },
-          { "id": "4", "text": "Oui, au cours des 6 derniers mois " ,"jump":"105" },
-          { "id": "5", "text": "Non, je n'ai pas été hospitalisé","jump":"106" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "105",
-        "question": "Pour quelle(s) pathologie(s) s'agit-t-il ?",
-        "type": 2,
-        "options": [
-          { "id": "1", "text": "ARTHROSE" },
-          { "id": "2", "text": "ASTHME" },
-          { "id": "3", "text": "AVC" },
-          { "id": "4", "text": "BPCO" },
-          { "id": "5", "text": "CANCER COLORECTAL" },
-          { "id": "6", "text": "CANCER DU SEIN" },
-          { "id": "7", "text": "AUTRE TYPE DE CANCER" },
-          { "id": "8", "text": "CATARACTE" },
-          { "id": "9", "text": "COVID" },
-          { "id": "10", "text": "DIABÈTE" },
-          { "id": "11", "text": "DMLA" },
-          { "id": "12", "text": "DÉPRESSION" },
-          { "id": "13", "text": "EMPHYSÈME" },
-          { "id": "14", "text": "GRIPPE" },
-          { "id": "15", "text": "HYPERCHOLESTÉROLÉMIE" },
-          { "id": "16", "text": "HYPERTENSION" },
-          {
-            "id": "17",
-            "text": "INFARCTUS DU MYOCARDE OU MORT SUBITE OU INSUFFISANCE CORONARIENNE"
-          },
-          { "id": "18", "text": "INFECTION" },
-          { "id": "19", "text": "INSUFFISANCE CARDIAQUE" },
-          { "id": "20", "text": "INSUFFISANCE RÉNALE" },
-          {
-            "id": "21",
-            "text": "IRRADIATION THORACIQUE HAUTE DOSE (RADIOTHÉRAPIE) POUR UN LYMPHOME DE HODGKIN"
-          },
-          {
-            "id": "22",
-            "text": "MALADIE DE CROHN OU RECTOCOLITE HÉMORRAGIQUE"
-          },
-          { "id": "23", "text": "MALADIES DU COEUR" },
-          { "id": "24", "text": "OBÉSITÉ" },
-          { "id": "25", "text": "OSTÉOPOROSE" },
-          {
-            "id": "26",
-            "text": "PRÉDISPOSITION GÉNÉTIQUES (BRCA 1, BRCA 2, OU AUTRE)"
-          },
-          { "id": "27", "text": "TROUBLES ANXIEUX" },
-          {
-            "id": "28",
-            "text": "TROUBLES DU COMPORTEMENT ALIMENTAIRE (ANOREXIE OU BOULIMIE ...)"
-          },
-          {
-            "id": "29",
-            "text": "UN OU PLUSIEURS ADÉNOMES AVANCÉS (POLYPE ADÉNOMATEUX)"
-          },
-	 {
-            "id": "30",
-            "text": "AUCUNE DES PATHOLOGIES LISTÉES"
-          }	
-          
-        ],
-        "requiredConfirmation": true,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"],
-"allowAppendOptions": true
-      },
-      {
-        "id": "106",
-        "question": "Avez-vous eu un ou plusieurs de ces antécédents auparavant ?",
-        "type": 2,
-        "options": [
-          { "id": "1", "text": "ARTHROSE" },
-          { "id": "2", "text": "ASTHME" },
-          { "id": "3", "text": "AVC" },
-          { "id": "4", "text": "BPCO" },
-          { "id": "5", "text": "CANCER COLORECTAL" },
-          { "id": "6", "text": "CANCER DU SEIN" },
-          { "id": "7", "text": "AUTRE TYPE DE CANCER" },
-          { "id": "8", "text": "CATARACTE" },
-          { "id": "9", "text": "COVID" },
-          { "id": "10", "text": "DIABÈTE" },
-          { "id": "11", "text": "DMLA" },
-          { "id": "12", "text": "DÉPRESSION" },
-          { "id": "13", "text": "EMPHYSÈME" },
-          { "id": "14", "text": "GRIPPE" },
-          { "id": "15", "text": "HYPERCHOLESTÉROLÉMIE" },
-          { "id": "16", "text": "HYPERTENSION" },
-          {
-            "id": "17",
-            "text": "INFARCTUS DU MYOCARDE OU MORT SUBITE OU INSUFFISANCE CORONARIENNE"
-          },
-          { "id": "18", "text": "INFECTION" },
-          { "id": "19", "text": "INSUFFISANCE CARDIAQUE" },
-          { "id": "20", "text": "INSUFFISANCE RÉNALE" },
-          {
-            "id": "21",
-            "text": "IRRADIATION THORACIQUE HAUTE DOSE (RADIOTHÉRAPIE) POUR UN LYMPHOME DE HODGKIN"
-          },
-          {
-            "id": "22",
-            "text": "MALADIE DE CROHN OU RECTOCOLITE HÉMORRAGIQUE"
-          },
-          { "id": "23", "text": "MALADIES DU COEUR" },
-          { "id": "24", "text": "OBÉSITÉ" },
-          { "id": "25", "text": "OSTÉOPOROSE" },
-          {
-            "id": "26",
-            "text": "PRÉDISPOSITION GÉNÉTIQUES (BRCA 1, BRCA 2, OU AUTRE)"
-          },
-          { "id": "27", "text": "TROUBLES ANXIEUX" },
-          {
-            "id": "28",
-            "text": "TROUBLES DU COMPORTEMENT ALIMENTAIRE (ANOREXIE OU BOULIMIE ...)"
-          },
-          {
-            "id": "29",
-            "text": "UN OU PLUSIEURS ADÉNOMES AVANCÉS (POLYPE ADÉNOMATEUX)"
-          },
-	 {
-            "id": "30",
-            "text": "AUCUN DES ANTÉCÉDENTS LISTÉS"
-          }
-     
-        ],
-        "requiredConfirmation": true,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"],
-"allowAppendOptions": true
-      },
-      {
-        "id": "107",
-        "question": "Avez vous réalisé une ostéodensitométrie ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "108",
-        "question": "À quand remonte votre dernière prise de sang et/ou analyse d'urine ? (merci de les préparer si vous y avez)",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "moins de 6 mois" },
-          { "id": "2", "text": "plus de 6 mois " },
-          { "id": "3", "text": "jamais réalisée" }
-          
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "109",
-        "question": "Il y a des antécédents connus de maladies dans votre famille proche ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" ,"jump":"110"},
-          { "id": "2", "text": "Non","jump":"111" },
-          { "id": "3", "text": "Je ne sais pas","jump":"111" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "110",
-        "question": "De quel antécédent(s) s'agit il ?",
-        "type": 2,
-        "options": [
-          { "id": "1", "text": "Cancer du sein et ou des ovaires" },
-          { "id": "2", "text": "Cancer colorectal" },
-          {
-            "id": "3",
-            "text": "Un ou plusieurs adénomes avancés (polype adénomateux)"
-          },
-          {
-            "id": "4",
-            "text": "Polypose adénomateuse familiale ou syndrome de Lynch"
-          },
-          {
-            "id": "5",
-            "text": "Maladie de Crohn ou rectocolite hémorragique"
-          },
-          { "id": "7", "text": "Diabète" },
-          { "id": "8", "text": "HTA" },
-          { "id": "9", "text": "Infarctus du myocarde ou mort subite" },
-          { "id": "10", "text": "AVC" },
-          { "id": "11", "text": "Hypercholestérolémie familiale" },
-          { "id": "12", "text": "DMLA" },
-          { "id": "13", "text": "Maladie d'Alzheimer" },
-          { "id": "14", "text": "Ostéoporose" },
-	 {
-            "id": "15",
-            "text": "AUCUN DES ANTÉCÉDENTS LISTÉS"
-          }
-     	
-	],
-        "requiredConfirmation": true,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"],
-	"allowAppendOptions": true
-      }
 
-
-
-    ]
-  },
-  "sante": {
-    "title": "ÉTAT DE SANTÉ ACTUEL",
-    "description": "Parlons de votre état de santé actuel",
-    "endText": "Nous allons aborder vos vaccins et dépistages",
-    "estimatedTime": "Temps estimé :  4 m",
-    "items": [
-      {
-        "id": "111",
-        "question": "Souffrez vous actuellement d'une maladie aiguë :",
-        "type": 2,
-        "options": [
-          { "id": "1", "text": "Infection" },
-          { "id": "2", "text": "Grippe" },
-          { "id": "3", "text": "COVID" },
-	 {
-            "id": "4",
-            "text": "AUCUNE DES MALADIES LISTÉES"
-          }
-     
-		
-        ],
-        "requiredConfirmation": true,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"],
-"allowAppendOptions": true
-      },
-      {
-        "id": "112",
-        "question": "Souffrez vous actuellement d'une maladie chronique :",
-        "type": 2,
-        "options": [
-          { "id": "1", "text": "ARTHROSE" },
-          { "id": "2", "text": "ASTHME" },
-          { "id": "3", "text": "AVC" },
-          { "id": "4", "text": "BPCO" },
-          { "id": "5", "text": "CANCER COLORECTAL" },
-          { "id": "6", "text": "CANCER DU SEIN" },
-          { "id": "7", "text": "AUTRE TYPE DE CANCER" },
-          { "id": "8", "text": "CATARACTE" },
-          { "id": "9", "text": "COVID" },
-          { "id": "10", "text": "DIABÈTE" },
-          { "id": "11", "text": "DMLA" },
-          { "id": "12", "text": "DÉPRESSION" },
-          { "id": "13", "text": "EMPHYSÈME" },
-          { "id": "14", "text": "GRIPPE" },
-          { "id": "15", "text": "HYPERCHOLESTÉROLÉMIE" },
-          { "id": "16", "text": "HYPERTENSION" },
-          {
-            "id": "17",
-            "text": "INFARCTUS DU MYOCARDE OU MORT SUBITE OU INSUFFISANCE CORONARIENNE"
-          },
-          { "id": "18", "text": "INFECTION" },
-          { "id": "19", "text": "INSUFFISANCE CARDIAQUE" },
-          { "id": "20", "text": "INSUFFISANCE RÉNALE" },
-          {
-            "id": "21",
-            "text": "IRRADIATION THORACIQUE HAUTE DOSE (RADIOTHÉRAPIE) POUR UN LYMPHOME DE HODGKIN"
-          },
-          {
-            "id": "22",
-            "text": "MALADIE DE CROHN OU RECTOCOLITE HÉMORRAGIQUE"
-          },
-          { "id": "23", "text": "MALADIES DU COEUR" },
-          { "id": "24", "text": "OBÉSITÉ" },
-          { "id": "25", "text": "OSTÉOPOROSE" },
-          {
-            "id": "26",
-            "text": "PRÉDISPOSITION GÉNÉTIQUES (BRCA 1, BRCA 2, OU AUTRE)"
-          },
-          { "id": "27", "text": "TROUBLES ANXIEUX" },
-          {
-            "id": "28",
-            "text": "TROUBLES DU COMPORTEMENT ALIMENTAIRE (ANOREXIE OU BOULIMIE ...)"
-          },
-          {
-            "id": "29",
-            "text": "UN OU PLUSIEURS ADÉNOMES AVANCÉS (POLYPE ADÉNOMATEUX)"
-          }
-	],
-        "requiredConfirmation": true,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-,"allowAppendOptions": true
-      },
-
-{
-        "id": "113",
-        "question": "Vous arrive t'il de vous faire vomir ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-
-
-"excludedQuestions": [
-          {
-            "questionId": "106",
-            "options": [{ "id": "1" },{ "id": "2" },{ "id": "3" },{ "id": "4" },{ "id": "5" },{ "id": "6" },{ "id": "7" },{ "id": "8" },{ "id": "9" },{ "id": "10" },{ "id": "11" },{ "id": "12" },{ "id": "13" },{ "id": "14" },{ "id": "15" },{ "id": "16" },{ "id": "17" },{ "id": "18" },{ "id": "19" },{ "id": "20" },{ "id": "21" },{ "id": "22" },{ "id": "23" },{ "id": "24" },{ "id": "25" },{ "id": "26" },{ "id": "27" },{ "id": "29" }]
-          },
-          {
-            "questionId": "112",
-            "options": [{ "id": "1" },{ "id": "2" },{ "id": "3" },{ "id": "4" },{ "id": "5" },{ "id": "6" },{ "id": "7" },{ "id": "8" },{ "id": "9" },{ "id": "10" },{ "id": "11" },{ "id": "12" },{ "id": "13" },{ "id": "14" },{ "id": "15" },{ "id": "16" },{ "id": "17" },{ "id": "18" },{ "id": "19" },{ "id": "20" },{ "id": "21" },{ "id": "22" },{ "id": "23" },{ "id": "24" },{ "id": "25" },{ "id": "26" },{ "id": "27" },{ "id": "29" }]
-          }
-        ],
-
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-
-
-
-{
-        "id": "114",
-        "question": "Vous inquiétez vous d'avoir perdu le contrôle de ce que vous mangez ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-"excludedQuestions": [
-          {
-            "questionId": "106",
-            "options": [{ "id": "1" },{ "id": "2" },{ "id": "3" },{ "id": "4" },{ "id": "5" },{ "id": "6" },{ "id": "7" },{ "id": "8" },{ "id": "9" },{ "id": "10" },{ "id": "11" },{ "id": "12" },{ "id": "13" },{ "id": "14" },{ "id": "15" },{ "id": "16" },{ "id": "17" },{ "id": "18" },{ "id": "19" },{ "id": "20" },{ "id": "21" },{ "id": "22" },{ "id": "23" },{ "id": "24" },{ "id": "25" },{ "id": "26" },{ "id": "27" },{ "id": "29" }]
-          },
-          {
-            "questionId": "112",
-            "options": [{ "id": "1" },{ "id": "2" },{ "id": "3" },{ "id": "4" },{ "id": "5" },{ "id": "6" },{ "id": "7" },{ "id": "8" },{ "id": "9" },{ "id": "10" },{ "id": "11" },{ "id": "12" },{ "id": "13" },{ "id": "14" },{ "id": "15" },{ "id": "16" },{ "id": "17" },{ "id": "18" },{ "id": "19" },{ "id": "20" },{ "id": "21" },{ "id": "22" },{ "id": "23" },{ "id": "24" },{ "id": "25" },{ "id": "26" },{ "id": "27" },{ "id": "29" }]
-          }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-
-
-{
-        "id": "115",
-        "question": "Pensez vous que vous êtes gros(se) alors que d'autres vous trouvent trop mince ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-"excludedQuestions": [
-          {
-            "questionId": "106",
-            "options": [{ "id": "1" },{ "id": "2" },{ "id": "3" },{ "id": "4" },{ "id": "5" },{ "id": "6" },{ "id": "7" },{ "id": "8" },{ "id": "9" },{ "id": "10" },{ "id": "11" },{ "id": "12" },{ "id": "13" },{ "id": "14" },{ "id": "15" },{ "id": "16" },{ "id": "17" },{ "id": "18" },{ "id": "19" },{ "id": "20" },{ "id": "21" },{ "id": "22" },{ "id": "23" },{ "id": "24" },{ "id": "25" },{ "id": "26" },{ "id": "27" },{ "id": "29" }]
-          },
-          {
-            "questionId": "112",
-            "options": [{ "id": "1" },{ "id": "2" },{ "id": "3" },{ "id": "4" },{ "id": "5" },{ "id": "6" },{ "id": "7" },{ "id": "8" },{ "id": "9" },{ "id": "10" },{ "id": "11" },{ "id": "12" },{ "id": "13" },{ "id": "14" },{ "id": "15" },{ "id": "16" },{ "id": "17" },{ "id": "18" },{ "id": "19" },{ "id": "20" },{ "id": "21" },{ "id": "22" },{ "id": "23" },{ "id": "24" },{ "id": "25" },{ "id": "26" },{ "id": "27" },{ "id": "29" }]
-          }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-
-{
-        "id": "116",
-        "question": "Diriez vous que la nourriture domine votre vie ? ",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-"excludedQuestions": [
-          {
-            "questionId": "106",
-            "options": [{ "id": "1" },{ "id": "2" },{ "id": "3" },{ "id": "4" },{ "id": "5" },{ "id": "6" },{ "id": "7" },{ "id": "8" },{ "id": "9" },{ "id": "10" },{ "id": "11" },{ "id": "12" },{ "id": "13" },{ "id": "14" },{ "id": "15" },{ "id": "16" },{ "id": "17" },{ "id": "18" },{ "id": "19" },{ "id": "20" },{ "id": "21" },{ "id": "22" },{ "id": "23" },{ "id": "24" },{ "id": "25" },{ "id": "26" },{ "id": "27" },{ "id": "29" }]
-          },
-          {
-            "questionId": "112",
-            "options": [{ "id": "1" },{ "id": "2" },{ "id": "3" },{ "id": "4" },{ "id": "5" },{ "id": "6" },{ "id": "7" },{ "id": "8" },{ "id": "9" },{ "id": "10" },{ "id": "11" },{ "id": "12" },{ "id": "13" },{ "id": "14" },{ "id": "15" },{ "id": "16" },{ "id": "17" },{ "id": "18" },{ "id": "19" },{ "id": "20" },{ "id": "21" },{ "id": "22" },{ "id": "23" },{ "id": "24" },{ "id": "25" },{ "id": "26" },{ "id": "27" },{ "id": "29" }]
-          }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-
-      {
-        "id": "117",
-        "question": "Avez vous des douleurs ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "118",
-        "question": "Vous sentez vous fatigué ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "119",
-        "question": "Vous sentez vous fiévreux ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "120",
-        "question": "Avez vous du mal à respirer ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "121",
-        "question": "Avez vous des jambes enflées ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "122",
-        "question": "Avez vous des épisodes de diarrhée régulièrement ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui","jump":"123" },
-          { "id": "2", "text": "Non","jump":"124"  }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "123",
-        "question": "Souffrez vous d'une maladie de malabsorption intestinale (Crohn, Coeliaque, etc.)",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" },
-          { "id": "3", "text": "Je ne sais pas" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "124",
-        "question": "Toussez vous souvent (tous les jours) ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "125",
-        "question": "Avez-vous souvent une toux grasse  oui qui ramène des crachats ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-	 {
-        "id": "126",
-        "question": "Êtes-vous plus facilement essoufflé que les personnes de votre âge ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "127",
-        "question": "Avez-vous réalisé une exploration fonctionnelle respiratoire et/ou une spirométrie ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-	  
-           {
-        "id": "128",
-        "question": "Avez vous des pauses respiratoires ou ronflement importants pendant le sommeil, constatés par votre entourage ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "129",
-        "question": "Avez vous déjà réalisé une polysomnographie ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-        {
-        "id": "130",
-        "question": "Etes vous appareillé(e) pour une apnée du sommeil ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "131",
-        "question": "Comment dormez vous ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Bien" },
-          { "id": "2", "text": "Mal de temps en temps" },
-          { "id": "3", "text": "Mal souvent" },
-          { "id": "4", "text": "Mal tout le temps" },
-          {
-            "id": "5",
-            "text": " Ma consommation d'écran (smartphone, ordinateur, télévision, etc.) limite mon temps de sommeil"
-          }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "132",
-        "question": "Etes vous devant un écran avant de vous endormir ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Plusieurs fois par mois" },
-          { "id": "3", "text": "Plusieurs fois par semaine" },
-          { "id": "4", "text": "Tous les jours ou presque" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "133",
-        "question": "À quel âge avez vous été ménopausée ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 35,
-        "ageMax": 100,
-        "gender": ["femme"]
-      },
-      {
-        "id": "134",
-        "question": "Présentez vous des symptômes de ménopause (bouffées de chaleur, problèmes de sommeil, sécheresse vaginale, troubles urinaires, fatigue, anxiété, irritabilité) ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 35,
-        "ageMax": 100,
-        "gender": ["femme"]
-      },
-      {
-        "id": "135",
-        "question": "Ces symptômes ont des effets négatifs sur ma vie de tous les jours",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 35,
-        "ageMax": 100,
-        "gender": ["femme"]
-      },
-      {
-        "id": "136",
-        "question": "Utilisez vous un moyen de contraception ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 50,
-        "gender": ["femme"]
-      },
-      {
-        "id": "137",
-        "question": "De quel moyen s'agit-il ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Implant" },
-          { "id": "2", "text": "Stérilet" },
-          { "id": "3", "text": "Contraception d'urgence" },
-          { "id": "4", "text": "Préservatif seul" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 50,
-        "gender": ["femme"],
-		"allowAppendOptions": true
-      },
-      {
-        "id": "138",
-        "question": "Vous est il arrivé d'utiliser un moyen de contraception d'urgence ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 50,
-        "gender": ["femme"]
-      },
-      {
-        "id": "139",
-        "question": "Avez-vous des douleurs intenses au bas ventre au moment de la période des règles ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" ,"jump":"140"},
-          { "id": "2", "text": "Non" ,"jump":"141"}
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 50,
-        "gender": ["femme"]
-      },
-      {
-        "id": "140",
-        "question": "Quel type de douleur ?",
-        "type": 2,
-        "options": [
-          {
-            "id": "1",
-            "text": "Les douleurs surviennent quelques jours avant les règles et/ou persistent quelques jours après les règles"
-          },
-          {
-            "id": "2",
-            "text": "Des douleurs fortes/violentes sont localisées au bas du ventre, en dehors des règles"
-          },
-          {
-            "id": "3",
-            "text": "Les douleurs ne sont pas calmées par la prise d'antalgiques"
-          },
-          {
-            "id": "4",
-            "text": " Des douleurs fortes/vives sont ressenties en profondeur pendant les rapports sexuels"
-          },
-          {
-            "id": "5",
-            "text": " Les douleurs entrainent une incapacité à se tenir debout, à marcher, à se mobiliser"
-          },
-          {
-            "id": "6",
-            "text": "Les douleurs entrainent un handicap pour les activités quotidiennes"
-          },
-          {
-            "id": "7",
-            "text": "Des douleurs sont présentes au moment d'aller à la selle, surtout lors de la période des règles"
-          }
-        ],
-        "requiredConfirmation": true,
-        "ageMin": 0,
-        "ageMax": 50,
-        "gender": ["femme"]
-      },
-      {
-        "id": "141",
-        "question": "Etes-vous porteur d'un pace maker ou d'un défibrillateur ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      }
-    ]
-  },
-  "vaccins": {
-    "title": "VACCINS et DÉPISTAGES",
-    "description": "Parlons de vos vaccins et dépistages",
-    "endText": "Nous allons aborder votre traitement medical",
-    "estimatedTime": "Temps estimé :  5 m",
-    "items": [
-      {
-        "id": "142",
-        "question": "Etes vous à jour des vaccins obligatoires (diphtérie, tétanos, polio) ?",
-        "type": 1,
-        "options": [
-          {
-            "id": "1",
-            "text": "Oui"
-          },
-          { "id": "2", "text": "Non" },
-          { "id": "3", "text": "je ne sais pas" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "143",
-        "question": "Avez vous réalisé votre mammographie pour le dépistage du cancer du sein ou/et réalisé votre test de dépistage du cancer colorectal ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" },
-          { "id": "3", "text": "je ne sais pas" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["femme"]
-      },
-      {
-        "id": "144",
-        "question": "Avez vous réalisé votre test de dépistage du cancer du col de l'utérus ?",
-        "type": 1,
-        "options": [
-          {
-            "id": "1",
-            "text": "Oui"
-          },
-          { "id": "2", "text": "Non" },
-          { "id": "3", "text": "je ne sais pas" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["femme"]
-      },
-      {
-        "id": "145",
-        "question": "Êtes vous vacciné(e) contre le papillomavirus humains (HPV) ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" },
-          { "id": "3", "text": "je ne sais pas" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "146",
-        "question": "Etes vous dans l'une des situations suivantes",
-        "type": 2,
-        "options": [
-          {
-            "id": "1",
-            "text": "Plus d'un partenaire sexuel au cours des 12 derniers mois"
-          },
-          {
-            "id": "2",
-            "text": "Souhait d'arrêter le préservatif avec mon nouveau (ma nouvelle) partenaire"
-          },
-          {
-            "id": "3",
-            "text": "Mon partenaire sexuel(le) a eu un ou plusieurs diagnostics d'infection sexuellement transmissible (VIH, chlamydia, gonocoque, syphilis, etc.)"
-          },
-          {
-            "id": "4",
-            "text": "Rapport sexuels ces 12 derniers mois mais non concerné(e) par une de ces trois situations ci-dessus"
-          },
-          { "id": "5", "text": "Non concernés" }
-        ],
-        "requiredConfirmation": true,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      }
-    ]
-  },
-  "traitement": {
-    "title": "TRAITEMENT MÉDICAMENTEUX",
-    "description": "Parlons de votre traitement médicamenteux",
-    "endText": "Nous allons aborder votre consommation d'alcool, tabac, autres substances",
-    "estimatedTime": "Temps estimé :  2 m",
-    "items": [
-      {
-        "id": "147",
-        "question": "Prenez vous des médicaments ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui","jump": "148" },
-          { "id": "2", "text": "Non","jump": "149" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "148",
-        "question": "Lesquels ? (Merci de préparer vos dernières ordonnances)",
-        "type": 3,
-        "options": [],
-        "requiredConfirmation": true,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      }
-    ]
-  },
-  "alcool": {
-    "title": "CONSOMMATION D'ALCOOL, TABAC, AUTRES SUBSTANCES",
-    "description": "Parlons de votre consommation d'alcool, tabac, autres substances",
-    "endText": "Nous allons aborder votre mobilité",
-    "estimatedTime": "Temps estimé :  4 m",
-    "items": [
-       {
-        "id": "149",
-        "question": "Fumez-vous ? (Hors cigarettes électroniques)",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" ,"jump":"150"},
-          { "id": "2", "text": "Non" ,"jump":"153"},
-          { "id": "3", "text": "Je ne fume plus","jump":"152" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-       
-      {
-        "id": "150",
-        "question": "Combien de cigarettes fumez-vous par jour ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "10 ou moins" },
-          { "id": "2", "text": "11 à 20" },
-          { "id": "3", "text": "21 à 30 " },
-          { "id": "4", "text": "31 ou plus" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "151",
-        "question": "Dans quel délai après le réveil fumez-vous votre première cigarette ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Moins de 5 minutes" ,"jump":"153"},
-          { "id": "2", "text": "6 à 30 minutes","jump":"153" },
-          { "id": "3", "text": "31 à 60 minutes" ,"jump":"153"},
-          { "id": "4", "text": "Après plus d'1 heure" ,"jump":"153"}
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "152",
-        "question": "Si vous avez arrêté de fumer, depuis combien de temps ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Moins de 1 an" },
-          { "id": "2", "text": "Entre 1 et 5 ans" },
-          { "id": "3", "text": "Plus de 5 ans" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-     
-      {
-        "id": "153",
-        "question": "Avez-vous été exposé de manière prolongée ou répétée à des gaz, poussières, fumées, vapeurs dans le cadre de votre travail ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-    {
-        "id": "154",
-        "question": "À quelle fréquence consommez-vous des boissons contenant de l'alcool ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais","jump":"162" },
-          { "id": "2", "text": "Une fois par mois ou moins","jump":"155" },
-          { "id": "3", "text": "Deux à 4 fois par mois","jump":"155" },
-          { "id": "4", "text": "Deux à 3 fois par semaine","jump":"155" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-
-	    
-      {
-        "id": "155",
-        "question": "Combien de verres standard buvez-vous, les jours où vous buvez de l'alcool ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "1 ou 2" },
-          { "id": "2", "text": "3 ou 4 " },
-          { "id": "3", "text": "5 ou 6" },
-          { "id": "4", "text": "7 à 9" },
-          { "id": "5", "text": "10 ou plus" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "156",
-        "question": "Est-ce que votre entourage vous a fait des remarques concernant votre consommation d'alcool ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Non" },
-          { "id": "2", "text": "Oui" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "157",
-        "question": "Vous est-il arrivé de consommer de l'alcool le matin pour vous sentir en forme ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Non" },
-          { "id": "2", "text": "Oui" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "158",
-        "question": "Vous est-il arrivé de boire et de ne plus vous souvenir le matin de ce que vous avez pu dire ou faire ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Non" },
-          { "id": "2", "text": "Oui" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "159",
-        "question": "Nombre de verres que vous consommez les jours où vous buvez de l'alcool ?",
-        "type": 14,
-        "options": [],
-        "requiredConfirmation": true,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "160",
-        "question": "Nombre de jours où vous consommez de l'alcool par semaine ?",
-        "type": 14,
-        "options": [],
-        "requiredConfirmation": true,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "161",
-        "question": "Consommez vous dans certaines occasions au moins 6 verres en un minimum de temps ou pratiquez vous le Binge Drinking ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "162",
-        "question": "Avez-vous consommé d'autres substances au cours des 12 derniers mois ? Canabis, haschisch, marijuana, herbe, joint, shit) ou d'autres drogues (extasy, cocaïne, héroïne, etc)",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" },
-          { "id": "2", "text": "Non" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "163",
-        "question": "Au cours des 12 derniers mois, avez-vous misé de l'argent pour un jeu (loterie, poker, etc) un pari (sportif, hippique, etc) ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui","jump":"164" },
-          { "id": "2", "text": "Non","jump":"173" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "164",
-        "question": "Au cours des douze derniers mois : Avez-vous misé plus d'argent que vous pouviez vous permettre de perdre ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "165",
-        "question": "Au cours des douze derniers mois : Avez-vous besoin de miser de plus en plus d'argent pour avoir la même excitation ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "166",
-        "question": "Au cours des douze derniers mois : Avez-vous rejoué une autre journée pour récupérer l'argent que vous aviez perdu en jouant ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "167",
-        "question": "Au cours des douze derniers mois : Avez-vous vendu ou emprunté quelque chose pour obtenir de l'argent pour jouer ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "168",
-        "question": "Au cours des douze derniers mois : Avez-vous déjà senti que vous aviez peut-être un problème avec le jeu ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "169",
-        "question": "Au cours des douze derniers mois : Le jeu a-t-il causé chez vous des problèmes de santé, y compris du stress ou de l'angoisse ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "170",
-        "question": "Au cours des douze derniers mois : Des personnes ont-elles critiqué vos habitudes de jeu ou dit que vous aviez un problème avec le jeu ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "171",
-        "question": "Au cours des douze derniers mois : Vos habitudes de jeu ont-elles causé des difficultés financières à vous ou à votre entourage ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "172",
-        "question": "Au cours des douze derniers mois : Vous êtes-vous déjà senti coupable de vos habitudes de jeu ou de ce qui arrive quand vous jouez ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Jamais" },
-          { "id": "2", "text": "Parfois" },
-          { "id": "3", "text": "La plupart du temps" },
-          { "id": "4", "text": "Presque toujours" }
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "173",
-        "question": "Avez-vous jouer/parier antérieurement et arrêté ?",
-        "type": 1,
-        "options": [
-          { "id": "1", "text": "Oui" ,"jump":"174"},
-          { "id": "2", "text": "Non" ,"jump":"175"}
-        ],
-        "requiredConfirmation": false,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      },
-      {
-        "id": "174",
-        "question": "Motif de l'arrêt ?",
-        "type": 3,
-        "options": [],
-        "requiredConfirmation": true,
-        "ageMin": 0,
-        "ageMax": 100,
-        "gender": ["homme", "femme"]
-      }
-    ]
-  },
   "mobilite": {
     "title": "MOBILITE / FORCE MUSCULAIRE",
     "description": "Parlons de votre mobilité",
@@ -3113,7 +3102,7 @@
     "estimatedTime": "Temps estimé :  5 m",
     "items": [
       {
-        "id": "175",
+        "id": "174",
         "question": "Pratiquez-vous 1h30 d'activité physique cumulée par semaine ? (Balade, faire les courses, sport....)",
         "type": 1,
         "options": [
@@ -3126,7 +3115,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "176",
+        "id": "175",
         "question": "Combien de minutes par semaine pratiquez vous des activités à l'extérieur ?",
         "type": 15,
         "options": [
@@ -3149,7 +3138,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "177",
+        "id": "176",
         "question": "Combien de minutes par semaine pratiquez vous des activités à l'intérieur ?",
         "type": 15,
         "options": [
@@ -3167,7 +3156,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "178",
+        "id": "177",
         "question": "Combien de minutes par semaine pratiquez vous des activités sportives  ?",
         "type": 15,
         "options": [
@@ -3196,7 +3185,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "179",
+        "id": "178",
         "question": "Avez-vous eu la sensation que votre vitesse de marche était plus lente que d'habitude ?",
         "type": 1,
         "options": [
@@ -3209,7 +3198,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "180",
+        "id": "179",
         "question": "Avez-vous éprouvé des difficultés à vous déplacer ? (douleurs, gêne, etc)",
         "type": 1,
         "options": [
@@ -3230,7 +3219,7 @@
     "estimatedTime": "Temps estimé :  2 m",
     "items": [
       {
-        "id": "181",
+        "id": "180",
         "question": "Souhaitez vous aborder un ou plusieurs sujets en priorité, avec le professionnel de santé au cours de votre bilan de prévention ?",
         "type": 2,
         "options": [
@@ -3266,7 +3255,7 @@
     "estimatedTime": "Temps estimé : 25m",
     "items": [
       {
-        "id": "182",
+        "id": "181",
         "question": "Mesurez la circonférence de votre mollet (Vous allez mesurer la taille de votre mollet avec vos mains)",
         "type": 11,
         "options": [
@@ -3293,7 +3282,7 @@
 
 
       {
-        "id": "183",
+        "id": "182",
         "question": "BIO-IMPÉDANCEMÉTRIE",
         "type": 16,
         "options": [],
@@ -3307,13 +3296,13 @@
             "options": [{ "id": "1" }]
           },
           {
-            "questionId": "141",
+            "questionId": "69",
             "options": [{ "id": "1" }]
           }
         ]
       },
       {
-        "id": "184",
+        "id": "183",
         "question": "TEST DU LEVER DE CHAISE.  \nDemander au sujet de se lever d'une chaise 5 fois de suite, le plus vite possible, les bras croisés sur la poitrine. Lui laisser au moins 20 secondes.",
         "type": 5,
         "options": [],
@@ -3326,19 +3315,19 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "185",
+        "id": "184",
         "question": "Le sujet a-t-il réalisé les 5 levers de chaise ?",
         "type": 1,
         "options": [
           {
             "id": "1",
             "text": "Oui",
-            "jump": "186"
+            "jump": "185"
           },
           {
             "id": "2",
             "text": "Non",
-            "jump": "188"
+            "jump": "187"
           }
         ],
         "ageMin": null,
@@ -3346,19 +3335,19 @@
         "gender": ["homme", "femme"]
       },
 	{
-        "id": "186",
+        "id": "185",
         "question": "La personne a fait le test en moins de 14 secondes ?",
         "type": 1,
         "options": [
           {
             "id": "1",
             "text": "Oui",
-		"jump": "189"
+		"jump": "188"
           },
           {
             "id": "2",
             "text": "Non",
-		  "jump": "189"
+		  "jump": "188"
           }
         ],
         "requiredConfirmation": false,
@@ -3368,19 +3357,19 @@
       },
 
 	{
-        "id": "187",
+        "id": "186",
         "question": "La personne a fait le test en moins de 16 secondes ?",
         "type": 1,
         "options": [
           {
             "id": "1",
             "text": "Oui",
-		"jump": "189"
+		"jump": "188"
           },
           {
             "id": "2",
             "text": "Non",
-		  "jump": "189"
+		  "jump": "188"
           }
         ],
         "requiredConfirmation": false,
@@ -3389,7 +3378,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "188",
+        "id": "187",
         "question": "Combien en a-t-il réalisé en 15 secondes ?",
         "type": 14,
         "options": [
@@ -3400,7 +3389,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "189",
+        "id": "188",
         "question": "ÉQUILIBRE UNIPODAL (JAMBE DROITE)",
         "type": 5,
         "options": [],
@@ -3413,7 +3402,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "190",
+        "id": "189",
         "question": "ÉQUILIBRE UNIPODAL (JAMBE GAUCHE)",
         "type": 5,
         "options": [],
@@ -3426,7 +3415,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "191",
+        "id": "190",
         "question": "TEST DE FORCE DE PRÉHENSION",
         "type": 17,
         "options": [],
@@ -3436,7 +3425,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "192",
+        "id": "191",
         "question": "TEST D'ÉQUILIBRE",
         "type": 18,
         "options": [],
@@ -3446,7 +3435,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "193",
+        "id": "192",
         "question": "TUG",
         "type": 19,
         "options": [],
@@ -3456,7 +3445,7 @@
         "gender": ["homme", "femme"]
       },
       {
-        "id": "194",
+        "id": "193",
         "question": "TEST DE MARCHE",
         "type": 20,
         "options": [],
