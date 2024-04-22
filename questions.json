@@ -1,7 +1,7 @@
 {
   "general": {
     "title": "GÉNÉRAL",
-    "description": "Parlons de vous aujourd'hui",
+    "description": "Parlons de vous aujourd'hui",https://github.com/JefersonTech/idp-assets/blob/main/questions.json
     "endText": "Nous allons aborder vos conditions de vie",
     "estimatedTime": "Temps estimé :  2 m",
     "items": [
@@ -1016,7 +1016,7 @@
       },
 	 {
         "id": "54",
-        "question": "Êtes-vous plus facilement essoufflé que les personnes de votre âge ?",
+        "question": "Êtes-vous plus facilement essoufflé que les personnes de votre âge ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -1101,7 +1101,7 @@
       },
       {
         "id": "60",
-        "question": "Etes vous devant un écran avant de vous endormir ?",
+        "question": "Êtes vous devant un écran avant de vous endormir ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Jamais" },
@@ -1247,7 +1247,7 @@
       },
       {
         "id": "69",
-        "question": "Etes-vous porteur d'un pace maker ou d'un défibrillateur ?",
+        "question": "Êtes-vous porteur d'un pace maker ou d'un défibrillateur ?",
         "type": 1,
         "options": [
           { "id": "1", "text": "Oui" },
@@ -1268,7 +1268,7 @@
     "items": [
       {
         "id": "70",
-        "question": "Etes vous à jour des vaccins obligatoires (diphtérie, tétanos, polio) ?",
+        "question": "Êtes vous à jour des vaccins obligatoires (diphtérie, tétanos, polio) ?",
         "type": 1,
         "options": [
           {
@@ -3391,7 +3391,7 @@
       {
         "id": "188",
         "question": "ÉQUILIBRE UNIPODAL (JAMBE DROITE)",
-        "type": 5,
+        "type": 23,
         "options": [],
         "time": 60000,
         "picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/left_leg_exercise.gif?raw=true",
@@ -3404,7 +3404,7 @@
       {
         "id": "189",
         "question": "ÉQUILIBRE UNIPODAL (JAMBE GAUCHE)",
-        "type": 5,
+        "type": 23,
         "options": [],
         "time": 60000,
         "picture": "https://github.com/JefersonTech/idp-assets/blob/main/assets/right_leg_exercise.gif?raw=true",
