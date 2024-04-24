@@ -787,7 +787,12 @@
           {
             "id": "29",
             "text": "UN OU PLUSIEURS ADÉNOMES AVANCÉS (POLYPE ADÉNOMATEUX)"
+          },
+	{
+            "id": "30",
+            "text": "AUCUNE DES PATHOLOGIES LISTÉES"
           }
+		
 	],
         "requiredConfirmation": true,
         "ageMin": 0,
@@ -1116,12 +1121,14 @@
       },
       {
         "id": "61",
-        "question": "À quel âge avez vous été ménopausée ?",
-        "type": 4,
+        "question": "Êtes-vous ménopausée ?",
+        "type": 1,
         "options": [
+	   { "id": "1", "text": "Oui" },
+          { "id": "2", "text": "Non"}
         ],
         "requiredConfirmation": true,
-        "ageMin": 50,
+        "ageMin": 40,
         "ageMax": 100,
         "gender": ["femme"]
       },
